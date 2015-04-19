@@ -1,0 +1,22 @@
+C:\Users\Пожиган\documents\visual studio 2013\Projects\MastaClasta\MastaClasta\obj\Debug\MastaClasta.MainForm.resources
+C:\Users\Пожиган\documents\visual studio 2013\Projects\MastaClasta\MastaClasta\obj\Debug\MastaClasta.OptionsForm.resources
+C:\Users\Пожиган\documents\visual studio 2013\Projects\MastaClasta\MastaClasta\obj\Debug\MastaClasta.Properties.Resources.resources
+C:\Users\Пожиган\documents\visual studio 2013\Projects\MastaClasta\MastaClasta\obj\Debug\MastaClasta.Resources.resources
+C:\Users\Пожиган\documents\visual studio 2013\Projects\MastaClasta\MastaClasta\obj\Debug\MastaClasta.csproj.GenerateResource.Cache
+C:\Users\Пожиган\documents\visual studio 2013\Projects\MastaClasta\MastaClasta\bin\Debug\MastaClasta.exe.config
+C:\Users\Пожиган\documents\visual studio 2013\Projects\MastaClasta\MastaClasta\bin\Debug\MastaClasta.exe
+C:\Users\Пожиган\documents\visual studio 2013\Projects\MastaClasta\MastaClasta\bin\Debug\MastaClasta.pdb
+C:\Users\Пожиган\documents\visual studio 2013\Projects\MastaClasta\MastaClasta\obj\Debug\MastaClasta.exe
+C:\Users\Пожиган\documents\visual studio 2013\Projects\MastaClasta\MastaClasta\obj\Debug\MastaClasta.pdb
+C:\Users\Пожиган\documents\visual studio 2013\Projects\MastaClasta\MastaClasta\obj\Debug\MastaClasta.csprojResolveAssemblyReference.cache
+e:\Книги\Уч. материалы и прочая хрень\_ЦОСиИ\s02\mine\MastaClasta\MastaClasta\bin\Debug\MastaClasta.exe.config
+e:\Книги\Уч. материалы и прочая хрень\_ЦОСиИ\s02\mine\MastaClasta\MastaClasta\obj\Debug\MastaClasta.exe
+e:\Книги\Уч. материалы и прочая хрень\_ЦОСиИ\s02\mine\MastaClasta\MastaClasta\obj\Debug\MastaClasta.pdb
+e:\Книги\Уч. материалы и прочая хрень\_ЦОСиИ\s02\mine\MastaClasta\MastaClasta\bin\Debug\MastaClasta.exe
+e:\Книги\Уч. материалы и прочая хрень\_ЦОСиИ\s02\mine\MastaClasta\MastaClasta\bin\Debug\MastaClasta.pdb
+e:\Книги\Уч. материалы и прочая хрень\_ЦОСиИ\s02\mine\MastaClasta\MastaClasta\obj\Debug\MastaClasta.csprojResolveAssemblyReference.cache
+e:\Книги\Уч. материалы и прочая хрень\_ЦОСиИ\s02\mine\MastaClasta\MastaClasta\obj\Debug\MastaClasta.MainForm.resources
+e:\Книги\Уч. материалы и прочая хрень\_ЦОСиИ\s02\mine\MastaClasta\MastaClasta\obj\Debug\MastaClasta.OptionsForm.resources
+e:\Книги\Уч. материалы и прочая хрень\_ЦОСиИ\s02\mine\MastaClasta\MastaClasta\obj\Debug\MastaClasta.Properties.Resources.resources
+e:\Книги\Уч. материалы и прочая хрень\_ЦОСиИ\s02\mine\MastaClasta\MastaClasta\obj\Debug\MastaClasta.Resources.resources
+e:\Книги\Уч. материалы и прочая хрень\_ЦОСиИ\s02\mine\MastaClasta\MastaClasta\obj\Debug\MastaClasta.csproj.GenerateResource.Cache
