@@ -97,6 +97,7 @@ namespace MastaClasta
             }
 
             var grayScaleBitmap = new Bitmap(width, height, pixelFormat);
+            var colorMap = GetRgbValuesFromBmp(ProcessBitmap);
             var grayScaleData = ConvertRgbToGrayScale(GetRgbValuesFromBmp(ProcessBitmap));
 
             SetRgbValuesToBmp(ref grayScaleBitmap,
@@ -131,7 +132,7 @@ namespace MastaClasta
 
             byte[] regions = IterativeScan(binaryData, width, height);
 
-            IEnumerable<ImageClaster> fullObjects = CalculateMetricsForObjects(regions, width, height);
+            IEnumerable<ImageClaster> fullObjects = CalculateMetricsForObjects(regions, colorMap, width, height);
 
 
             var objects = new List<LightImageClaster>();
@@ -381,7 +382,7 @@ namespace MastaClasta
         }
 
 
-        private IEnumerable<ImageClaster> CalculateMetricsForObjects(Byte[] data, Int32 width, Int32 height)
+        private IEnumerable<ImageClaster> CalculateMetricsForObjects(Byte[] data, Byte[] colorMap, Int32 width, Int32 height)
         {
 
             Dictionary<Byte, ImageClaster> objects = new Dictionary<Byte, ImageClaster>();
@@ -399,9 +400,18 @@ namespace MastaClasta
                     if (!objects.ContainsKey(objectClass))
                     {
                         objects.Add(objectClass, new ImageClaster {ImageClass = objectClass});
-                        //MessageBox.Show(String.Format("X = {0}, Y = {1}, calss = {2}", offsetX, offsetY, objectClass));
                     }
-                    
+
+                    Byte[] colorByte = new Byte[3];
+                    for (int i = 0; i < 3; i++)
+                    {
+                        colorByte[i] = colorMap[byteOffset * 3 + i];
+                    }
+
+                    objects[objectClass].RColorSum += colorByte[0];
+                    objects[objectClass].GColorSum += colorByte[1];
+                    objects[objectClass].BColorSum += colorByte[2];
+
                     objects[objectClass].Square++;
                     objects[objectClass].MassX += offsetX;
                     objects[objectClass].MassY += offsetY;

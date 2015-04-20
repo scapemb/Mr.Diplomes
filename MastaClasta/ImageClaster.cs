@@ -27,6 +27,16 @@ namespace MastaClasta
         public double Moment02 { set; get; }
         public double Moment11 { set; get; }
 
+        public int RColorSum { set; get; }
+        public int GColorSum { set; get; }
+        public int BColorSum { set; get; }
+
+
+        public double RAverageColor { get { return RColorSum / Square; } }
+        public double GAverageColor { get { return GColorSum / Square; } }
+        public double BAverageColor { get { return BColorSum / Square; } }
+
+
         public LightImageClaster ToLightImageClaster()
         {
             return new LightImageClaster
@@ -42,8 +52,11 @@ namespace MastaClasta
 
         public override String ToString()
         {
-            return String.Format("Image class {0} has Elongation = {1} and Compacness = {2}", ImageClass, Elongation.ToString("F2"),
-                Compactness.ToString("F2"));
+            return String.Format("Image class {0} has Elongation = {1}, Compacness = {2} & Average Color = {3};{4};{5}", ImageClass, Elongation.ToString("F2"),
+                Compactness.ToString("F2"),
+            RAverageColor.ToString("F2"),
+            GAverageColor.ToString("F2"),
+            BAverageColor.ToString("F2"));
         }
     }
 
@@ -81,6 +94,7 @@ namespace MastaClasta
         public double Elongation { set; get; }
         public double Perimeter { set; get; }
         public double Square { set; get; }
+        public double[] ColorMap { set; get; }
 
         public bool IsBadClaster()
         {
