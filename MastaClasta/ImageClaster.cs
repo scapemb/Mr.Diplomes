@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 
 namespace MastaClasta
 {
@@ -46,7 +47,8 @@ namespace MastaClasta
                 Elongation = Elongation,
                 ResultImageClass = 0,
                 Perimeter = Perimeter,
-                Square = Square
+                Square = Square,
+                ColorMap = new[] { RAverageColor, GAverageColor, BAverageColor}
             };
         }
 
@@ -62,6 +64,10 @@ namespace MastaClasta
 
     public class LightImageClaster
     {
+        public LightImageClaster()
+        {
+            ColorMap = new double[3];
+        }
         protected bool Equals(LightImageClaster other)
         {
             return Compactness.Equals(other.Compactness) && Elongation.Equals(other.Elongation);
@@ -101,13 +107,22 @@ namespace MastaClasta
             return Double.IsNaN(Compactness) || Double.IsPositiveInfinity(Compactness) ||
                    Double.IsNaN(Elongation) || Double.IsPositiveInfinity(Elongation) ||
                    Double.IsNaN(Perimeter) || Double.IsPositiveInfinity(Perimeter) ||
-                   Double.IsNaN(Square) || Double.IsPositiveInfinity(Square);
+                   Double.IsNaN(Square) || Double.IsPositiveInfinity(Square) || (ColorMap == null );
         }
         public double CalculateEuclideanDistance(LightImageClaster other)
         {
-            return
-               /* Math.Sqrt(Math.Pow(Compactness - other.Compactness, 2) + */  Math.Pow(Elongation - other.Elongation, 2) +
-                          Math.Pow(Square - other.Square, 2) /*+ Math.Pow(Perimeter - other.Perimeter, 2))*/;
+            var lol = 0.0;
+            
+            for (int i = 0; i < 3; i++)
+            {
+                lol += Math.Pow( ColorMap[i] - other.ColorMap[i], 2);
+            }
+
+           var heh =  Math.Pow( Elongation - other.Elongation, 2) +
+                          Math.Pow( Square - other.Square, 2) + 
+                         lol;
+
+           return heh;
         }
         public static bool operator ==(LightImageClaster thisClaster, LightImageClaster otherClaster)
         {

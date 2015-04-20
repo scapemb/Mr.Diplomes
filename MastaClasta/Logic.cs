@@ -137,34 +137,73 @@ namespace MastaClasta
 
             var objects = new List<LightImageClaster>();
             objects.AddRange(fullObjects.Select(im => im.ToLightImageClaster()));
-            int lol2;
             DeleteBadClasters(ref objects);
             Normaliztion(ref objects);
-            int lol;
+
             var changeObjectClassTable = new Hashtable();
+            var colorObjectClassTable = new Hashtable();
 
             foreach (LightImageClaster lightImageClaster in ClasterObjects(objects, CalculateGoodCenters(objects, Constants.Attributes.Square)))
-            //foreach (LightImageClaster lightImageClaster in ClasterObjects(objects, objects.GetRange(0, NumberOfClasters)))
+
             {
                 changeObjectClassTable.Add(lightImageClaster.BasicImageClass, lightImageClaster.ResultImageClass);
-                //MessageBox.Show(
-                //    String.Format(
-                //        "Changed class from {0} to {1}.\nElongation = {2}, Compactnes = {3}\nSquare = {4}, Perimeter = {5}",
-                //        lightImageClaster.BasicImageClass, lightImageClaster.ResultImageClass,
-                //        lightImageClaster.Elongation.ToString("F2"), lightImageClaster.Compactness.ToString("F2"),
-                //        lightImageClaster.Square, lightImageClaster.Perimeter), "lol");
+                
+                foreach (int ResultImageClass in changeObjectClassTable.Values)
+                {
+                    if (!colorObjectClassTable.ContainsKey(ResultImageClass))
+                    {
+                        var randomColorMap = new double[3];
+                        randomColorMap[0] = lightImageClaster.ColorMap[0] * GetRandomNumber(0.2, 1);
+                        randomColorMap[1] = lightImageClaster.ColorMap[1] * GetRandomNumber(0.2, 1);
+                        randomColorMap[2] = lightImageClaster.ColorMap[2] * GetRandomNumber(0.2, 1);
+                        colorObjectClassTable.Add(ResultImageClass, randomColorMap);
+                    }
+                }
+                
             }
+
+
 
             var resultBitmap = new Bitmap(width, height, pixelFormat);
 
             SetRgbValuesToBmp(ref resultBitmap,
-                ConvertGrayScaleToRgbWithColors(ColorObjects(regions, changeObjectClassTable, width*height)));
+                ConvertGrayScaleToRgbWithColors(ColorObjects(regions, changeObjectClassTable, width * height), changeObjectClassTable, colorObjectClassTable));
             resultBitmap.Save(Resources.ResultImageName);
+        }
+
+        public double GetRandomNumber(double minimum, double maximum)
+        {
+            Random random = new Random();
+            return random.NextDouble() * (maximum - minimum) + minimum;
         }
 
         private void DeleteBadClasters(ref List<LightImageClaster> objects)
         {
             objects.RemoveAll(t => t.IsBadClaster());
+        }
+
+        private Byte[] ConvertGrayScaleToRgbWithColors(Byte[] imageData, Hashtable changeObjectClassTable, Hashtable colorObjectClassTable)
+        {
+            var rgbValues = new Byte[imageData.Length * 3];
+
+            for (Int32 i = 0; i < rgbValues.Length - 2; i += 3)
+            {
+                var byteOffset = imageData[i / 3];
+                if (byteOffset == 0)
+                {
+                    continue;
+                }
+
+                if (changeObjectClassTable.ContainsKey((Int32)byteOffset))
+                {
+                    rgbValues[i] = Convert.ToByte(((double[])colorObjectClassTable[(Int32)byteOffset])[0]);
+                    rgbValues[i+1] = Convert.ToByte(((double[])colorObjectClassTable[(Int32)byteOffset])[1]);
+                    rgbValues[i+2] = Convert.ToByte(((double[])colorObjectClassTable[(Int32)byteOffset])[2]);
+                }
+
+            }
+
+            return rgbValues;
         }
 
         private Byte[] ColorObjects(Byte[] imageData, Hashtable changeObjectClassTable, Int32 size)
@@ -178,7 +217,7 @@ namespace MastaClasta
                 }
                 if (changeObjectClassTable.ContainsKey((Int32)offsetByte))
                 {
-                    imageData[i] = Convert.ToByte((Int32)changeObjectClassTable[(Int32)offsetByte] * (Byte.MaxValue / NumberOfClasters));
+                    imageData[i] = Convert.ToByte((Int32)changeObjectClassTable[(Int32)offsetByte]);
                 }
             }
 
@@ -659,10 +698,18 @@ namespace MastaClasta
             {
                 countCenter.Compactness += lightImageClaster.Compactness;
                 countCenter.Elongation += lightImageClaster.Elongation;
+
+                countCenter.ColorMap[0] += lightImageClaster.ColorMap[0];
+                countCenter.ColorMap[1] += lightImageClaster.ColorMap[1];
+                countCenter.ColorMap[2] += lightImageClaster.ColorMap[2];
             }
 
             countCenter.Compactness /= lightImageClasters.Count;
             countCenter.Elongation /= lightImageClasters.Count;
+
+            countCenter.ColorMap[0] /= lightImageClasters.Count;
+            countCenter.ColorMap[1] /= lightImageClasters.Count;
+            countCenter.ColorMap[2] /= lightImageClasters.Count;
 
 
             return
