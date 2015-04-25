@@ -83,6 +83,54 @@ namespace MastaClasta
             return rgbValues;
         }
 
+        public void Try()
+        {
+            Int32 width = ProcessBitmap.Width;
+            Int32 height = ProcessBitmap.Height;
+            PixelFormat pixelFormat = ProcessBitmap.PixelFormat;
+
+            if (pixelFormat != PixelFormat.Format24bppRgb)
+            {
+                MessageBox.Show(Properties.Resources.Logic_Start_Error,
+                    String.Format("Your image has {0}. It must be {1}", pixelFormat, PixelFormat.Format24bppRgb));
+                return;
+            }
+
+            var grayScaleBitmap = new Bitmap(width, height, pixelFormat);
+            var colorMap = GetRgbValuesFromBmp(ProcessBitmap);
+            var grayScaleData = ConvertRgbToGrayScale(GetRgbValuesFromBmp(ProcessBitmap));
+
+            SetRgbValuesToBmp(ref grayScaleBitmap,
+                ConvertGrayScaleToRgb(grayScaleData));
+            grayScaleBitmap.Save(Resources.GrayScaleImageName);
+
+            Bitmap bluredBitmap = new Bitmap(width, height, pixelFormat);
+            if (GaussianBlurRadius > 0)
+            {
+                SetRgbValuesToBmp(ref bluredBitmap,
+                    ConvertGrayScaleToRgb(ConvolutionFilter(grayScaleData, height, width,
+                        MatrixCalculator.Calculate(GaussianBlurRadius, GaussianBlurWeight))));
+            }
+            else
+            {
+                bluredBitmap = grayScaleBitmap;
+            }
+
+            bluredBitmap.Save(Resources.BluredImageName);
+
+
+            SetRgbValuesToBmp(ref bluredBitmap,
+                ConvertGrayScaleToRgb(CorrectBrightnessRange(
+                    ConvertRgbToGrayScale(GetRgbValuesFromBmp(bluredBitmap)), BlackBorder, WhiteBorder)));
+            bluredBitmap.Save(Resources.LeveledImageName);
+
+            byte[] binaryData = Binarization(ConvertRgbToGrayScale(GetRgbValuesFromBmp(bluredBitmap)), BinaryBorder);
+
+            var binaryImage = new Bitmap(width, height, pixelFormat);
+            SetRgbValuesToBmp(ref binaryImage, ConvertGrayScaleToRgb(binaryData));
+            binaryImage.Save(Resources.BinarizedImageName);
+        }
+
         public void Start()
         {
             Int32 width = ProcessBitmap.Width;
@@ -143,26 +191,9 @@ namespace MastaClasta
             var changeObjectClassTable = new Hashtable();
             var colorObjectClassTable = new Hashtable();
 
-            foreach (LightImageClaster lightImageClaster in ClasterObjects(objects, CalculateGoodCenters(objects, Constants.Attributes.Square)))
+            Random random = new Random();
 
-            {
-                changeObjectClassTable.Add(lightImageClaster.BasicImageClass, lightImageClaster.ResultImageClass);
-                
-                foreach (int ResultImageClass in changeObjectClassTable.Values)
-                {
-                    if (!colorObjectClassTable.ContainsKey(ResultImageClass))
-                    {
-                        var randomColorMap = new double[3];
-                        randomColorMap[0] = lightImageClaster.ColorMap[0] * GetRandomNumber(0.2, 1);
-                        randomColorMap[1] = lightImageClaster.ColorMap[1] * GetRandomNumber(0.2, 1);
-                        randomColorMap[2] = lightImageClaster.ColorMap[2] * GetRandomNumber(0.2, 1);
-                        colorObjectClassTable.Add(ResultImageClass, randomColorMap);
-                    }
-                }
-                
-            }
-
-
+            GetObjectClassTable(objects, changeObjectClassTable, colorObjectClassTable, random);
 
             var resultBitmap = new Bitmap(width, height, pixelFormat);
 
@@ -171,9 +202,30 @@ namespace MastaClasta
             resultBitmap.Save(Resources.ResultImageName);
         }
 
-        public double GetRandomNumber(double minimum, double maximum)
+        private void GetObjectClassTable(List<LightImageClaster> objects, Hashtable changeObjectClassTable, Hashtable colorObjectClassTable, Random random)
         {
-            Random random = new Random();
+            foreach (LightImageClaster lightImageClaster in ClasterObjects(objects, CalculateGoodCenters(objects, Constants.Attributes.Square)))
+            {
+                changeObjectClassTable.Add(lightImageClaster.BasicImageClass, lightImageClaster.ResultImageClass);
+
+                foreach (int ResultImageClass in changeObjectClassTable.Values)
+                {
+                    if (!colorObjectClassTable.ContainsKey(ResultImageClass))
+                    {
+                        var randomColorMap = new double[3];
+                        randomColorMap[0] = lightImageClaster.ColorMap[0] * GetRandomNumber(50, 150, random);
+                        randomColorMap[1] = lightImageClaster.ColorMap[1] * GetRandomNumber(50, 150, random);
+                        randomColorMap[2] = lightImageClaster.ColorMap[2] * GetRandomNumber(50, 150, random);
+                        colorObjectClassTable.Add(ResultImageClass, randomColorMap);
+                    }
+                }
+
+            }
+        }
+
+        public double GetRandomNumber(double minimum, double maximum, Random random)
+        {
+            
             return random.NextDouble() * (maximum - minimum) + minimum;
         }
 
@@ -194,16 +246,21 @@ namespace MastaClasta
                     continue;
                 }
 
-                if (changeObjectClassTable.ContainsKey((Int32)byteOffset))
-                {
-                    rgbValues[i] = Convert.ToByte(((double[])colorObjectClassTable[(Int32)byteOffset])[0]);
-                    rgbValues[i+1] = Convert.ToByte(((double[])colorObjectClassTable[(Int32)byteOffset])[1]);
-                    rgbValues[i+2] = Convert.ToByte(((double[])colorObjectClassTable[(Int32)byteOffset])[2]);
-                }
+                SetRgbData(changeObjectClassTable, colorObjectClassTable, rgbValues, i, byteOffset);
 
             }
 
             return rgbValues;
+        }
+
+        private static void SetRgbData(Hashtable changeObjectClassTable, Hashtable colorObjectClassTable, byte[] rgbValues, Int32 i, byte byteOffset)
+        {
+            if (changeObjectClassTable.ContainsKey((Int32)byteOffset))
+            {
+                rgbValues[i] = Convert.ToByte(((double[])colorObjectClassTable[(Int32)byteOffset])[0]);
+                rgbValues[i + 1] = Convert.ToByte(((double[])colorObjectClassTable[(Int32)byteOffset])[1]);
+                rgbValues[i + 2] = Convert.ToByte(((double[])colorObjectClassTable[(Int32)byteOffset])[2]);
+            }
         }
 
         private Byte[] ColorObjects(Byte[] imageData, Hashtable changeObjectClassTable, Int32 size)
@@ -420,12 +477,20 @@ namespace MastaClasta
             return result;
         }
 
-
         private IEnumerable<ImageClaster> CalculateMetricsForObjects(Byte[] data, Byte[] colorMap, Int32 width, Int32 height)
         {
 
             Dictionary<Byte, ImageClaster> objects = new Dictionary<Byte, ImageClaster>();
 
+            CalculateGeometricMetrics(data, colorMap, width, height, objects);
+
+            CalculateMoments(data, width, height, objects);
+
+            return objects.Values;
+        }
+
+        private static void CalculateGeometricMetrics(Byte[] data, Byte[] colorMap, Int32 width, Int32 height, Dictionary<Byte, ImageClaster> objects)
+        {
             for (Int32 offsetY = 0; offsetY < height; offsetY++)
             {
                 for (Int32 offsetX = 0; offsetX < width; offsetX++)
@@ -438,7 +503,7 @@ namespace MastaClasta
 
                     if (!objects.ContainsKey(objectClass))
                     {
-                        objects.Add(objectClass, new ImageClaster {ImageClass = objectClass});
+                        objects.Add(objectClass, new ImageClaster { ImageClass = objectClass });
                     }
 
                     Byte[] colorByte = new Byte[3];
@@ -464,26 +529,28 @@ namespace MastaClasta
                     }
                 }
             }
+        }
 
+        private static void CalculateMoments(Byte[] data, Int32 width, Int32 height, Dictionary<Byte, ImageClaster> objects)
+        {
             for (Int32 offsetY = 0; offsetY < height; offsetY++)
             {
                 for (Int32 offsetX = 0; offsetX < width; offsetX++)
                 {
-                    int byteOffset = offsetY*width + offsetX;
+                    int byteOffset = offsetY * width + offsetX;
                     byte objectClass = data[byteOffset];
 
                     if (objectClass == 0)
                         continue;
 
-                    objects[objectClass].Moment11 += (offsetX - objects[objectClass].MassCenterX)*
+                    objects[objectClass].Moment11 += (offsetX - objects[objectClass].MassCenterX) *
                                                      (offsetY - objects[objectClass].MassCenterY);
-                    objects[objectClass].Moment20 += (offsetX - objects[objectClass].MassCenterX)*
+                    objects[objectClass].Moment20 += (offsetX - objects[objectClass].MassCenterX) *
                                                      (offsetX - objects[objectClass].MassCenterX);
-                    objects[objectClass].Moment02 += (offsetY - objects[objectClass].MassCenterY)*
+                    objects[objectClass].Moment02 += (offsetY - objects[objectClass].MassCenterY) *
                                                      (offsetY - objects[objectClass].MassCenterY);
                 }
             }
-            return objects.Values;
         }
 
         private Byte[] IterativeScan(Byte[] data, Int32 width, Int32 height)
@@ -555,47 +622,23 @@ namespace MastaClasta
             {
                 case Constants.Attributes.Compactness:
                 {
-                    maxObject =
-                        lightImageClasters.First(
-                            t =>
-                                Math.Abs(t.Compactness - lightImageClasters.Max(v => v.Compactness)) < Constants.Epsilon);
-                    minObject =
-                        lightImageClasters.First(
-                            t =>
-                                Math.Abs(t.Compactness - lightImageClasters.Min(v => v.Compactness)) < Constants.Epsilon);
-                    delta = maxObject.Compactness - minObject.Compactness;
-
-                    border = minObject.Compactness;
+                    CalculateCenterParametersByCompactness(lightImageClasters, out maxObject, out minObject, out delta, out border);
 
                     break;
                 }
                 case Constants.Attributes.Elongation:
                 {
-                    maxObject =
-                        lightImageClasters.First(
-                            t => Math.Abs(t.Elongation - lightImageClasters.Max(v => v.Elongation)) < Constants.Epsilon);
-                    minObject =
-                        lightImageClasters.First(
-                            t => Math.Abs(t.Elongation - lightImageClasters.Min(v => v.Elongation)) < Constants.Epsilon);
-                    delta = maxObject.Elongation - minObject.Elongation;
-
-                    border = minObject.Elongation;
+                    CalculateCenterParametersByElongation(lightImageClasters, out maxObject, out minObject, out delta, out border);
                     break;
                 }
                 case Constants.Attributes.Perimeter:
                 {
-                    maxObject = lightImageClasters.First(t => (Math.Abs(t.Perimeter - lightImageClasters.Max(v => v.Perimeter)) < Constants.Epsilon));
-                    minObject = lightImageClasters.First(t => (Math.Abs(t.Perimeter - lightImageClasters.Min(v => v.Perimeter)) < Constants.Epsilon));
-                    delta = maxObject.Perimeter - minObject.Perimeter;
-                    border = minObject.Perimeter;
+                    CalculateCenterParametersByPerimeter(lightImageClasters, out maxObject, out minObject, out delta, out border);
                     break;
                 }
                 case Constants.Attributes.Square:
                 {
-                    maxObject = lightImageClasters.First(t => (Math.Abs(t.Square - lightImageClasters.Max(v => v.Square)) < Constants.Epsilon));
-                    minObject = lightImageClasters.First(t => (Math.Abs(t.Square - lightImageClasters.Min(v => v.Square)) < Constants.Epsilon));
-                    delta = maxObject.Square - minObject.Square;
-                    border = minObject.Square;
+                    CalculateCenterParametersBySquare(lightImageClasters, out maxObject, out minObject, out delta, out border);
                     break;
                 }
                 default:
@@ -624,54 +667,121 @@ namespace MastaClasta
                        
                     case Constants.Attributes.Square:
                     {
-                        calculatedCenters.Add(
-                            lightImageClasters.First(
-                                s =>
-                                    Math.Abs(s.Square -
-                                             lightImageClasters.Where(t => t.Square > modBorder).Min(v => v.Square)) <
-                                    Constants.Epsilon));
-                        border += delta;
+                        border = AddCenterBySquare(lightImageClasters, delta, border, calculatedCenters, modBorder);
                         break;
                     }
                     case Constants.Attributes.Perimeter:
                     {
-                        calculatedCenters.Add(
-                            lightImageClasters.First(
-                                s =>
-                                    Math.Abs(s.Perimeter -
-                                             lightImageClasters.Where(t => t.Perimeter > modBorder)
-                                                 .Min(v => v.Perimeter)) < Constants.Epsilon));
-                        border += delta;
+                        border = AddCenterByPerimeter(lightImageClasters, delta, border, calculatedCenters, modBorder);
                         break;
                     }
                     case Constants.Attributes.Compactness:
                     {
-                        calculatedCenters.Add(
-                            lightImageClasters.First(
-                                s =>
-                                    Math.Abs(s.Compactness -
-                                             lightImageClasters.Where(t => t.Compactness > modBorder)
-                                                 .Min(v => v.Compactness)) < Constants.Epsilon));
-                        border += delta;
+                        border = AddCenterByCompactness(lightImageClasters, delta, border, calculatedCenters, modBorder);
                         break;
                     }
                     case Constants.Attributes.Elongation:
                     {
-                        calculatedCenters.Add(
-                            lightImageClasters.First(
-                                s =>
-                                    Math.Abs(s.Elongation -
-                                             lightImageClasters.Where(t => t.Elongation > modBorder)
-                                                 .Min(v => v.Elongation)) < Constants.Epsilon));
-                        border += delta;
+                        border = AddCenterByElongation(lightImageClasters, delta, border, calculatedCenters, modBorder);
                         break;
                     }
                     default:
                         throw new ArgumentOutOfRangeException("attribute");
                 }
             }
-            var lol = 2;
             return calculatedCenters;
+        }
+
+        private static double AddCenterByElongation(IList<LightImageClaster> lightImageClasters, Double delta, Double border, List<LightImageClaster> calculatedCenters, double modBorder)
+        {
+            calculatedCenters.Add(
+                lightImageClasters.First(
+                    s =>
+                        Math.Abs(s.Elongation -
+                                 lightImageClasters.Where(t => t.Elongation > modBorder)
+                                     .Min(v => v.Elongation)) < Constants.Epsilon));
+            border += delta;
+            return border;
+        }
+
+        private static double AddCenterByCompactness(IList<LightImageClaster> lightImageClasters, Double delta, Double border, List<LightImageClaster> calculatedCenters, double modBorder)
+        {
+            calculatedCenters.Add(
+                lightImageClasters.First(
+                    s =>
+                        Math.Abs(s.Compactness -
+                                 lightImageClasters.Where(t => t.Compactness > modBorder)
+                                     .Min(v => v.Compactness)) < Constants.Epsilon));
+            border += delta;
+            return border;
+        }
+
+        private static double AddCenterByPerimeter(IList<LightImageClaster> lightImageClasters, Double delta, Double border, List<LightImageClaster> calculatedCenters, double modBorder)
+        {
+            calculatedCenters.Add(
+                lightImageClasters.First(
+                    s =>
+                        Math.Abs(s.Perimeter -
+                                 lightImageClasters.Where(t => t.Perimeter > modBorder)
+                                     .Min(v => v.Perimeter)) < Constants.Epsilon));
+            border += delta;
+            return border;
+        }
+
+        private static double AddCenterBySquare(IList<LightImageClaster> lightImageClasters, Double delta, Double border, List<LightImageClaster> calculatedCenters, double modBorder)
+        {
+            calculatedCenters.Add(
+                lightImageClasters.First(
+                    s =>
+                        Math.Abs(s.Square -
+                                 lightImageClasters.Where(t => t.Square > modBorder).Min(v => v.Square)) <
+                        Constants.Epsilon));
+            border += delta;
+            return border;
+        }
+
+        private static void CalculateCenterParametersBySquare(IList<LightImageClaster> lightImageClasters, out LightImageClaster maxObject, out LightImageClaster minObject, out Double delta, out Double border)
+        {
+            maxObject = lightImageClasters.First(t => (Math.Abs(t.Square - lightImageClasters.Max(v => v.Square)) < Constants.Epsilon));
+            minObject = lightImageClasters.First(t => (Math.Abs(t.Square - lightImageClasters.Min(v => v.Square)) < Constants.Epsilon));
+            delta = maxObject.Square - minObject.Square;
+            border = minObject.Square;
+        }
+
+        private static void CalculateCenterParametersByPerimeter(IList<LightImageClaster> lightImageClasters, out LightImageClaster maxObject, out LightImageClaster minObject, out Double delta, out Double border)
+        {
+            maxObject = lightImageClasters.First(t => (Math.Abs(t.Perimeter - lightImageClasters.Max(v => v.Perimeter)) < Constants.Epsilon));
+            minObject = lightImageClasters.First(t => (Math.Abs(t.Perimeter - lightImageClasters.Min(v => v.Perimeter)) < Constants.Epsilon));
+            delta = maxObject.Perimeter - minObject.Perimeter;
+            border = minObject.Perimeter;
+        }
+
+        private static void CalculateCenterParametersByElongation(IList<LightImageClaster> lightImageClasters, out LightImageClaster maxObject, out LightImageClaster minObject, out Double delta, out Double border)
+        {
+            maxObject =
+                lightImageClasters.First(
+                    t => Math.Abs(t.Elongation - lightImageClasters.Max(v => v.Elongation)) < Constants.Epsilon);
+            minObject =
+                lightImageClasters.First(
+                    t => Math.Abs(t.Elongation - lightImageClasters.Min(v => v.Elongation)) < Constants.Epsilon);
+            delta = maxObject.Elongation - minObject.Elongation;
+
+            border = minObject.Elongation;
+        }
+
+        private static void CalculateCenterParametersByCompactness(IList<LightImageClaster> lightImageClasters, out LightImageClaster maxObject, out LightImageClaster minObject, out Double delta, out Double border)
+        {
+            maxObject =
+                lightImageClasters.First(
+                    t =>
+                        Math.Abs(t.Compactness - lightImageClasters.Max(v => v.Compactness)) < Constants.Epsilon);
+            minObject =
+                lightImageClasters.First(
+                    t =>
+                        Math.Abs(t.Compactness - lightImageClasters.Min(v => v.Compactness)) < Constants.Epsilon);
+            delta = maxObject.Compactness - minObject.Compactness;
+
+            border = minObject.Compactness;
         }
 
         private void Normaliztion(ref List<LightImageClaster> objects)
@@ -680,12 +790,21 @@ namespace MastaClasta
             var maxCompactness = objects.Max(t => t.Compactness);
             var maxSquare = objects.Max(t => t.Square);
             var maxPerimeter = objects.Max(t => t.Perimeter);
+
+            var maxRColor = objects.Max(t => t.ColorMap[0]);
+            var maxGColor = objects.Max(t => t.ColorMap[1]);
+            var maxBColor = objects.Max(t => t.ColorMap[2]);
+
             objects.ForEach(t =>
             {
                 t.Compactness /= maxCompactness;
                 t.Elongation /= maxElongation;
                 t.Square /= maxSquare;
                 t.Perimeter /= maxPerimeter;
+
+                t.ColorMap[0] /= maxRColor;
+                t.ColorMap[1] /= maxGColor;
+                t.ColorMap[2] /= maxBColor;
             });
         }
         private LightImageClaster CalculateCenter(IEnumerable<LightImageClaster> objects)
@@ -696,20 +815,10 @@ namespace MastaClasta
 
             foreach (LightImageClaster lightImageClaster in lightImageClasters)
             {
-                countCenter.Compactness += lightImageClaster.Compactness;
-                countCenter.Elongation += lightImageClaster.Elongation;
-
-                countCenter.ColorMap[0] += lightImageClaster.ColorMap[0];
-                countCenter.ColorMap[1] += lightImageClaster.ColorMap[1];
-                countCenter.ColorMap[2] += lightImageClaster.ColorMap[2];
+                CalculateClasterParametersSum(countCenter, lightImageClaster);
             }
 
-            countCenter.Compactness /= lightImageClasters.Count;
-            countCenter.Elongation /= lightImageClasters.Count;
-
-            countCenter.ColorMap[0] /= lightImageClasters.Count;
-            countCenter.ColorMap[1] /= lightImageClasters.Count;
-            countCenter.ColorMap[2] /= lightImageClasters.Count;
+            CalculateClasterParametersAverage(lightImageClasters, countCenter);
 
 
             return
@@ -718,6 +827,26 @@ namespace MastaClasta
                         lightImageClaster => lightImageClaster.CalculateEuclideanDistance(countCenter))
                         .ToList()
                         .Min()) < Constants.Epsilon);
+        }
+
+        private static void CalculateClasterParametersAverage(IList<LightImageClaster> lightImageClasters, LightImageClaster countCenter)
+        {
+            countCenter.Compactness /= lightImageClasters.Count;
+            countCenter.Elongation /= lightImageClasters.Count;
+
+            countCenter.ColorMap[0] /= lightImageClasters.Count;
+            countCenter.ColorMap[1] /= lightImageClasters.Count;
+            countCenter.ColorMap[2] /= lightImageClasters.Count;
+        }
+
+        private static void CalculateClasterParametersSum(LightImageClaster countCenter, LightImageClaster lightImageClaster)
+        {
+            countCenter.Compactness += lightImageClaster.Compactness;
+            countCenter.Elongation += lightImageClaster.Elongation;
+
+            countCenter.ColorMap[0] += lightImageClaster.ColorMap[0];
+            countCenter.ColorMap[1] += lightImageClaster.ColorMap[1];
+            countCenter.ColorMap[2] += lightImageClaster.ColorMap[2];
         }
 
         private List<LightImageClaster> ClasterObjects(List<LightImageClaster> objects, List<LightImageClaster> centers)

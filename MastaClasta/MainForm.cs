@@ -67,5 +67,56 @@ namespace MastaClasta
         }
 
 
+        private void buttonTry_Click(object sender, EventArgs e)
+        {
+
+            _logic = new Logic
+            {
+                BinaryBorder = 10,
+                BlackBorder = trackBarBlack.Value,
+                WhiteBorder = trackBarWhite.Value,
+                GaussianBlurRadius = trackBarBlur.Value,
+                GaussianBlurWeight = trackBarBlur.Value,
+                ProcessBitmap = (Bitmap)sourcePictureBox.Image
+            };
+
+            _logic.Try();
+
+            resultPictureBox.SafetySetImageFromFile(Resources.ResultImageName);
+            pictureBoxGrayScale.SafetySetImageFromFile(Resources.GrayScaleImageName);
+            pictureBoxBlured.SafetySetImageFromFile(Resources.BluredImageName);
+            pictureBoxLeveled.SafetySetImageFromFile(Resources.LeveledImageName);
+            pictureBoxBinariezed.SafetySetImageFromFile(Resources.BinarizedImageName);
+
+        }
+
+        private void buttonStart_Click(object sender, EventArgs e)
+        {
+            _logic = new Logic
+            {
+                BinaryBorder = 10,
+                BlackBorder = trackBarBlack.Value,
+                WhiteBorder = trackBarWhite.Value,
+                GaussianBlurRadius = 3,
+                GaussianBlurWeight = 3,
+                NumberOfClasters = trackBarClustersNumber.Value,
+                ProcessBitmap = (Bitmap)sourcePictureBox.Image
+            };
+
+            _logic.Start();
+
+            resultPictureBox.SafetySetImageFromFile(Resources.ResultImageName);
+            pictureBoxGrayScale.SafetySetImageFromFile(Resources.GrayScaleImageName);
+            pictureBoxBlured.SafetySetImageFromFile(Resources.BluredImageName);
+            pictureBoxLeveled.SafetySetImageFromFile(Resources.LeveledImageName);
+            pictureBoxBinariezed.SafetySetImageFromFile(Resources.BinarizedImageName);
+        }
+
+        private void trackBarBlur_Scroll(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }

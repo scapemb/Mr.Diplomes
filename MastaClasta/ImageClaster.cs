@@ -111,18 +111,16 @@ namespace MastaClasta
         }
         public double CalculateEuclideanDistance(LightImageClaster other)
         {
-            var lol = 0.0;
+            var colorDistance = 0.0;
             
             for (int i = 0; i < 3; i++)
             {
-                lol += Math.Pow( ColorMap[i] - other.ColorMap[i], 2);
+                colorDistance += Math.Pow((ColorMap[i] - other.ColorMap[i]) / 255, 2);
             }
 
-           var heh =  Math.Pow( Elongation - other.Elongation, 2) +
-                          Math.Pow( Square - other.Square, 2) + 
-                         lol;
-
-           return heh;
+            return  Math.Pow( Elongation - other.Elongation, 2) +
+                          Math.Pow( Square - other.Square, 2) +
+                         (colorDistance);
         }
         public static bool operator ==(LightImageClaster thisClaster, LightImageClaster otherClaster)
         {
