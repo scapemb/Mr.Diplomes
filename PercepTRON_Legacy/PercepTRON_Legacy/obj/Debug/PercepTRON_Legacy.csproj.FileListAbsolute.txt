@@ -1,0 +1,18 @@
+c:\users\пожиган\documents\visual studio 2013\Projects\PercepTRON_Legacy\PercepTRON_Legacy\bin\Debug\PercepTRON_Legacy.exe.config
+C:\Users\Пожиган\documents\visual studio 2013\Projects\PercepTRON_Legacy\PercepTRON_Legacy\bin\Debug\PercepTRON_Legacy.exe
+C:\Users\Пожиган\documents\visual studio 2013\Projects\PercepTRON_Legacy\PercepTRON_Legacy\bin\Debug\PercepTRON_Legacy.pdb
+C:\Users\Пожиган\documents\visual studio 2013\Projects\PercepTRON_Legacy\PercepTRON_Legacy\obj\Debug\PercepTRON_Legacy.csprojResolveAssemblyReference.cache
+C:\Users\Пожиган\documents\visual studio 2013\Projects\PercepTRON_Legacy\PercepTRON_Legacy\obj\Debug\PercepTRON_Legacy.Properties.Resources.resources
+C:\Users\Пожиган\documents\visual studio 2013\Projects\PercepTRON_Legacy\PercepTRON_Legacy\obj\Debug\PercepTRON_Legacy.csproj.GenerateResource.Cache
+C:\Users\Пожиган\documents\visual studio 2013\Projects\PercepTRON_Legacy\PercepTRON_Legacy\obj\Debug\PercepTRON_Legacy.exe
+C:\Users\Пожиган\documents\visual studio 2013\Projects\PercepTRON_Legacy\PercepTRON_Legacy\obj\Debug\PercepTRON_Legacy.pdb
+C:\Users\Пожиган\documents\visual studio 2013\Projects\PercepTRON_Legacy\PercepTRON_Legacy\obj\Debug\PercepTRON_Legacy.Form1.resources
+D:\БГУИР\Диплом\PercepTRON_Legacy\PercepTRON_Legacy\bin\Debug\PercepTRON_Legacy.exe.config
+D:\БГУИР\Диплом\PercepTRON_Legacy\PercepTRON_Legacy\obj\Debug\PercepTRON_Legacy.exe
+D:\БГУИР\Диплом\PercepTRON_Legacy\PercepTRON_Legacy\obj\Debug\PercepTRON_Legacy.pdb
+D:\БГУИР\Диплом\PercepTRON_Legacy\PercepTRON_Legacy\obj\Debug\PercepTRON_Legacy.csprojResolveAssemblyReference.cache
+D:\БГУИР\Диплом\PercepTRON_Legacy\PercepTRON_Legacy\obj\Debug\PercepTRON_Legacy.Form1.resources
+D:\БГУИР\Диплом\PercepTRON_Legacy\PercepTRON_Legacy\obj\Debug\PercepTRON_Legacy.Properties.Resources.resources
+D:\БГУИР\Диплом\PercepTRON_Legacy\PercepTRON_Legacy\obj\Debug\PercepTRON_Legacy.csproj.GenerateResource.Cache
+D:\БГУИР\Диплом\PercepTRON_Legacy\PercepTRON_Legacy\bin\Debug\PercepTRON_Legacy.exe
+D:\БГУИР\Диплом\PercepTRON_Legacy\PercepTRON_Legacy\bin\Debug\PercepTRON_Legacy.pdb

@@ -20,3 +20,14 @@ e:\Книги\Уч. материалы и прочая хрень\_ЦОСиИ\s0
 e:\Книги\Уч. материалы и прочая хрень\_ЦОСиИ\s02\mine\MastaClasta\MastaClasta\obj\Debug\MastaClasta.Properties.Resources.resources
 e:\Книги\Уч. материалы и прочая хрень\_ЦОСиИ\s02\mine\MastaClasta\MastaClasta\obj\Debug\MastaClasta.Resources.resources
 e:\Книги\Уч. материалы и прочая хрень\_ЦОСиИ\s02\mine\MastaClasta\MastaClasta\obj\Debug\MastaClasta.csproj.GenerateResource.Cache
+C:\Users\Eugene\Documents\Mr.Diplomes\MastaClasta\bin\Debug\MastaClasta.exe.config
+C:\Users\Eugene\Documents\Mr.Diplomes\MastaClasta\obj\Debug\MastaClasta.exe
+C:\Users\Eugene\Documents\Mr.Diplomes\MastaClasta\obj\Debug\MastaClasta.pdb
+C:\Users\Eugene\Documents\Mr.Diplomes\MastaClasta\bin\Debug\MastaClasta.exe
+C:\Users\Eugene\Documents\Mr.Diplomes\MastaClasta\bin\Debug\MastaClasta.pdb
+C:\Users\Eugene\Documents\Mr.Diplomes\MastaClasta\obj\Debug\MastaClasta.csprojResolveAssemblyReference.cache
+C:\Users\Eugene\Documents\Mr.Diplomes\MastaClasta\obj\Debug\MastaClasta.MainForm.resources
+C:\Users\Eugene\Documents\Mr.Diplomes\MastaClasta\obj\Debug\MastaClasta.OptionsForm.resources
+C:\Users\Eugene\Documents\Mr.Diplomes\MastaClasta\obj\Debug\MastaClasta.Properties.Resources.resources
+C:\Users\Eugene\Documents\Mr.Diplomes\MastaClasta\obj\Debug\MastaClasta.Resources.resources
+C:\Users\Eugene\Documents\Mr.Diplomes\MastaClasta\obj\Debug\MastaClasta.csproj.GenerateResource.Cache

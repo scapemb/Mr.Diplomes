@@ -186,7 +186,7 @@ namespace MastaClasta
             var objects = new List<LightImageClaster>();
             objects.AddRange(fullObjects.Select(im => im.ToLightImageClaster()));
             DeleteBadClasters(ref objects);
-            Normaliztion(ref objects);
+            Normalization(ref objects);
 
             var changeObjectClassTable = new Hashtable();
             var colorObjectClassTable = new Hashtable();
@@ -204,6 +204,8 @@ namespace MastaClasta
 
         private void GetObjectClassTable(List<LightImageClaster> objects, Hashtable changeObjectClassTable, Hashtable colorObjectClassTable, Random random)
         {
+             List<LightImageClaster> lol = CalculateGoodCenters(objects, Constants.Attributes.Square);
+
             foreach (LightImageClaster lightImageClaster in ClasterObjects(objects, CalculateGoodCenters(objects, Constants.Attributes.Square)))
             {
                 changeObjectClassTable.Add(lightImageClaster.BasicImageClass, lightImageClaster.ResultImageClass);
@@ -393,42 +395,6 @@ namespace MastaClasta
             }
 
             return resultBuffer;
-        }
-
-        private Byte[] CutRange(Byte[] image, Double reducePercent = 0.0)
-        {
-            Int32 borderMin = 0, borderMax = Byte.MaxValue;
-
-            if (Math.Abs(reducePercent) < Constants.Epsilon)
-            {
-                return CorrectBrightnessRange(image, borderMin, borderMax);
-            }
-
-            var histogram = new Double[Byte.MaxValue + 1];
-
-            for (Int32 i = 0; i <= Byte.MaxValue; i++)
-            {
-                histogram[i] = 0.0;
-            }
-
-            foreach (Byte t in image)
-            {
-                histogram[t] += 1.0;
-            }
-            for (Int32 i = 0; i <= Byte.MaxValue; i++)
-            {
-                histogram[i] *= 100.0/image.Length;
-            }
-            //Looking for borders to reduce
-            for (Double low = 0.0; low < reducePercent;)
-            {
-                low += histogram[borderMin++];
-            }
-            for (Double high = 0.0; high < reducePercent;)
-            {
-                high += histogram[borderMax--];
-            }
-            return CorrectBrightnessRange(image, borderMin, borderMax);
         }
 
         private Byte[] Binarization(Byte[] data, Int32 border)
@@ -784,7 +750,7 @@ namespace MastaClasta
             border = minObject.Compactness;
         }
 
-        private void Normaliztion(ref List<LightImageClaster> objects)
+        private void Normalization(ref List<LightImageClaster> objects)
         {
             var maxElongation = objects.Max(t => t.Elongation);
             var maxCompactness = objects.Max(t => t.Compactness);

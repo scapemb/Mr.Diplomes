@@ -1,0 +1,9 @@
+D:\БГУИР\Диплом\PercepTRON_Legacy\PercepTRON_Legacy\bin\Debug\Perceptron.dll.config
+D:\БГУИР\Диплом\PercepTRON_Legacy\PercepTRON_Legacy\bin\Debug\Perceptron.dll
+D:\БГУИР\Диплом\PercepTRON_Legacy\PercepTRON_Legacy\bin\Debug\Perceptron.pdb
+D:\БГУИР\Диплом\PercepTRON_Legacy\PercepTRON_Legacy\obj\Debug\Perceptron.csprojResolveAssemblyReference.cache
+D:\БГУИР\Диплом\PercepTRON_Legacy\PercepTRON_Legacy\obj\Debug\PercepTRON_Legacy.Form1.resources
+D:\БГУИР\Диплом\PercepTRON_Legacy\PercepTRON_Legacy\obj\Debug\Perceptron.Properties.Resources.resources
+D:\БГУИР\Диплом\PercepTRON_Legacy\PercepTRON_Legacy\obj\Debug\Perceptron.csproj.GenerateResource.Cache
+D:\БГУИР\Диплом\PercepTRON_Legacy\PercepTRON_Legacy\obj\Debug\Perceptron.dll
+D:\БГУИР\Диплом\PercepTRON_Legacy\PercepTRON_Legacy\obj\Debug\Perceptron.pdb
