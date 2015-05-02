@@ -1,0 +1,1557 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" dslVersion="1.0.0.0" Id="99ca329a-afee-4af5-ab0d-bbe2280c3f6b" name="Perceptron_Teach" mode="DotNet" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction Id="4ec4fb70-5e19-4479-a318-9c51a7f70026" name="Perceptron_Teach" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification Id="a8c65fd0-d3b2-4196-a242-1e74183dbfd7" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="fab69396-20a4-4021-b3a7-6cc1c29634c0" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="c7c975e5-7b0f-4a59-af67-a02d60f42f62" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="e79d3df2-30a7-4c52-8d4e-05a3a04e13b1" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="b469a527-b789-4223-91ee-b03f036a9474" LastKnownName="MessageOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="67b86ae2-a762-4d7c-a89f-2ef4d8b9d499" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="a4ad1940-5415-4218-b3d9-ab4cfb5aa468" LastKnownName="ExecutionOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="2314e035-af0e-4f9d-84b0-f3f26ab0d749" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="909be2b8-a80e-46a1-b05d-5d5655f29baf" LastKnownName="OperandOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="a23f4b3f-e2f1-4976-9673-77971f47bc9f" LastKnownName="MessageOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="0e5c59ce-89a6-45a4-9e5c-3b8c68847038" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="5442358f-c694-49ed-8fb4-b7ef7cb083d1" LastKnownName="ExecutionOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="485ad345-a5f7-419a-96f6-ae0d1e3cdb39" LastKnownName="MessageOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="e2bb7599-390c-4cc4-8a22-b94de70ee27e" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="8887c31b-53fe-4e28-8cbe-0b9a005bfb65" LastKnownName="ExecutionOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="a5f0eba8-1451-4ef3-8009-e37e122ddbc0" LastKnownName="MessageOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="119a63c5-3e19-47ca-aec8-285476bc55cd" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="98678430-de16-49bf-929d-9c949d7bb02c" LastKnownName="ExecutionOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="bc8430c0-806e-4902-b694-e6336e10f347" LastKnownName="MessageOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="4533bddb-00af-4f9c-a498-e48589827c2b" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="4cdf4036-9bd9-424b-9e11-21295089a733" LastKnownName="ExecutionOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="6d0f0d0a-7246-4cbf-a404-28127e6c3c9a" LastKnownName="MessageOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="e9e09e4a-c974-49df-b406-8f0e0e686afe" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="f2de9552-e42f-4abe-9129-17bc5e0c5a71" LastKnownName="ExecutionOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="32c3d091-4610-46dc-ad1e-1d637741d2ea" LastKnownName="OperandOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="f5c9c6de-45f1-4cfe-88b3-9298e05e4a08" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="bfbb0242-0fb3-4afc-8e43-bdeb4806f873" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="0eca4957-daa4-4c50-a6ff-0df183db7496" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="7077d699-fe6c-4879-b74f-3f156fdd9223" LastKnownName="OperandOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="c7c975e5-7b0f-4a59-af67-a02d60f42f62" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="895401fa-6269-49b9-889c-09600f311aa0" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <lostFoundTarget Id="67bfc44a-c797-47bd-af4a-37d7e2e06366" name="LostFoundTarget" />
+          <messageOccurrenceSpecification Id="e79d3df2-30a7-4c52-8d4e-05a3a04e13b1" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="b469a527-b789-4223-91ee-b03f036a9474" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="7cfdb675-e75f-4238-9a82-16e96e6fc8ca" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="a4ad1940-5415-4218-b3d9-ab4cfb5aa468" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="67b86ae2-a762-4d7c-a89f-2ef4d8b9d499" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="8564fab3-609b-4ab6-adae-f0d3e6b0e456" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="6684aaad-4366-4597-817c-37763e765aba" LastKnownName="MessageOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="73934b60-2cbe-4e53-b8b4-a692bf2a4349" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="55c79dfc-7ea6-4cd9-92dd-dc91d2009e62" LastKnownName="ExecutionOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="a68102fb-31b0-4560-9619-9a6d1ce75d66" LastKnownName="MessageOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="ef408874-88b2-4c48-99ee-6941462cf6d3" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="cc36ccba-0713-46aa-aa3d-8de68a299ff5" LastKnownName="ExecutionOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="41cfa121-8fb2-4abc-a93e-ffeacaa95288" LastKnownName="MessageOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="46aa45f6-8e45-4d6d-bdb6-a356e4f5d0fd" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="21bc130e-3b6a-45d6-8d55-06a5bcef4b0e" LastKnownName="ExecutionOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="0fc10690-9988-4936-88d9-b525b2681a4c" LastKnownName="MessageOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="f6c8fca1-9d10-4d9e-8eca-77444e1c8690" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="a1478c74-e64c-482d-b724-2a00be1c1736" LastKnownName="ExecutionOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="67b86ae2-a762-4d7c-a89f-2ef4d8b9d499" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="dc1a5e15-ccee-4498-a95b-3cd6e2e8accf" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="8564fab3-609b-4ab6-adae-f0d3e6b0e456" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="6684aaad-4366-4597-817c-37763e765aba" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="3ae20b5d-5be9-4b4c-b10e-0fe24438aeeb" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="55c79dfc-7ea6-4cd9-92dd-dc91d2009e62" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="73934b60-2cbe-4e53-b8b4-a692bf2a4349" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="eff6eb6f-c771-4aa2-8050-15d1d68ba3b5" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="ab847a31-9347-44ef-8f6e-392ed858abfc" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="a5d41f0c-c60a-4f06-9ea4-6d62a0286673" LastKnownName="OperandOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="f1249d47-9c2b-4728-b293-52ed99c9ca5c" LastKnownName="MessageOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="f35471b9-5bf4-48b8-a9b0-913451567dde" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="fb6b885a-bb0d-4de5-b4df-27ef24337d9f" LastKnownName="ExecutionOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="804ec388-340b-48d3-a023-a38b96809831" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="fea9f837-065f-4269-9d79-411011f96e84" LastKnownName="OperandOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="73934b60-2cbe-4e53-b8b4-a692bf2a4349" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="d420218d-3b6e-47a3-9fb0-28e35ee4f1a9" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="eff6eb6f-c771-4aa2-8050-15d1d68ba3b5" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <combinedFragment Id="1df03d86-4f44-4265-9ea3-beefa7fc06b0" name="CombinedFragment1" interactionOperator="Loop" customInteractionOperator="Loop">
+            <coveredLifelines>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </coveredLifelines>
+            <operands>
+              <interactionOperand Id="56409a9f-81e6-4292-bd72-06cb01cfb7a3" name="InteractionOperand1">
+                <coveredLifelines>
+                  <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+                </coveredLifelines>
+                <fragments>
+                  <combinedFragment Id="c49ad06f-c2b6-410d-a823-e6fc3563c832" name="CombinedFragment1" interactionOperator="Loop" customInteractionOperator="Loop">
+                    <coveredLifelines>
+                      <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+                    </coveredLifelines>
+                    <operands>
+                      <interactionOperand Id="c0fa4428-7034-43f7-8338-4eb672da7047" name="InteractionOperand1">
+                        <coveredLifelines>
+                          <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+                        </coveredLifelines>
+                        <guard>
+                          <interactionConstraint Id="9e9b5d75-b628-4181-85fa-c5c8657a9d7a" guardText="for (int j = 0;j &lt; m; j++)">
+                            <maxInt>
+                              <literalString Id="c0efb1dd-6c80-4188-bdef-7ae84027c9cd" name="LiteralString1" />
+                            </maxInt>
+                            <minInt>
+                              <literalString Id="963b1777-bb44-458f-8e14-064e21574347" name="LiteralString2" />
+                            </minInt>
+                          </interactionConstraint>
+                        </guard>
+                        <operandOccurrenceSpecifications>
+                          <operandOccurrenceSpecificationMoniker Id="a5d41f0c-c60a-4f06-9ea4-6d62a0286673" LastKnownName="OperandOccurrenceSpecification" />
+                          <operandOccurrenceSpecificationMoniker Id="804ec388-340b-48d3-a023-a38b96809831" LastKnownName="OperandOccurrenceSpecification" />
+                        </operandOccurrenceSpecifications>
+                      </interactionOperand>
+                    </operands>
+                  </combinedFragment>
+                </fragments>
+                <guard>
+                  <interactionConstraint Id="0eb3b541-c6ba-4f75-8b59-1f489e2ca2ad" guardText="for (int i = 0;i &lt; n; i++)">
+                    <maxInt>
+                      <literalString Id="bb9b13da-9ae6-4712-83e7-9082c43d8050" name="LiteralString1" />
+                    </maxInt>
+                    <minInt>
+                      <literalString Id="77e2dbaf-8c85-40a4-87fd-23f5cca8547d" name="LiteralString2" />
+                    </minInt>
+                  </interactionConstraint>
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker Id="ab847a31-9347-44ef-8f6e-392ed858abfc" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="fea9f837-065f-4269-9d79-411011f96e84" LastKnownName="OperandOccurrenceSpecification" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+            </operands>
+          </combinedFragment>
+          <operandOccurrenceSpecification Id="ab847a31-9347-44ef-8f6e-392ed858abfc" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="a5d41f0c-c60a-4f06-9ea4-6d62a0286673" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="f1249d47-9c2b-4728-b293-52ed99c9ca5c" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="0237637c-e0d0-4728-a9ba-2d731a3244bf" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="fb6b885a-bb0d-4de5-b4df-27ef24337d9f" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="f35471b9-5bf4-48b8-a9b0-913451567dde" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="58638d42-94a0-44d9-bd37-0e4866011695" LastKnownName="MessageOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="f35471b9-5bf4-48b8-a9b0-913451567dde" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="3b396394-e490-4643-b02c-af09780a65c3" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="58638d42-94a0-44d9-bd37-0e4866011695" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="fb6b885a-bb0d-4de5-b4df-27ef24337d9f" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="6ca34684-f14e-44fe-83a3-2fe1b8066958" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="804ec388-340b-48d3-a023-a38b96809831" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="fea9f837-065f-4269-9d79-411011f96e84" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="55c79dfc-7ea6-4cd9-92dd-dc91d2009e62" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="fc106271-638b-4f87-8228-1ba37ee3e136" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="a68102fb-31b0-4560-9619-9a6d1ce75d66" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="473a307d-90dc-49b3-b12d-0dad21aed31f" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="cc36ccba-0713-46aa-aa3d-8de68a299ff5" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="ef408874-88b2-4c48-99ee-6941462cf6d3" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="a792ccd9-01ec-41fd-9b92-c04a5976e55e" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="3dcea978-41ba-4a04-b1c8-f94b4dd18cb6" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="9d99e1e3-911e-4656-82ea-8c100ac464cf" LastKnownName="OperandOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="fac6c222-eb8e-4556-9729-b3dd57f5f700" LastKnownName="MessageOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="860bc8e0-8b1f-4d46-b1de-2f0b8f876903" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="28a5fb81-317e-4630-a42a-db5f94bcd8ce" LastKnownName="ExecutionOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="0e40be8e-8eb7-48b9-b5e7-8ed34495c73b" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="af63b489-8d7a-4098-9126-ce4076bb9115" LastKnownName="OperandOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="ef408874-88b2-4c48-99ee-6941462cf6d3" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="af180dd5-e52a-42c5-a64c-065877512b08" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="a792ccd9-01ec-41fd-9b92-c04a5976e55e" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <combinedFragment Id="cbf76f32-154e-4959-a4da-e0d686ae0324" name="CombinedFragment2" interactionOperator="Loop" customInteractionOperator="Loop">
+            <coveredLifelines>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </coveredLifelines>
+            <operands>
+              <interactionOperand Id="5c9ee9ac-3ae5-4cd9-87ba-fa65258f191f" name="InteractionOperand1">
+                <coveredLifelines>
+                  <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+                </coveredLifelines>
+                <fragments>
+                  <combinedFragment Id="80378bcb-e7d1-42c4-a012-d24530c73cc8" name="CombinedFragment1" interactionOperator="Loop" customInteractionOperator="Loop">
+                    <coveredLifelines>
+                      <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+                    </coveredLifelines>
+                    <operands>
+                      <interactionOperand Id="967dbcc9-48e7-4605-9e15-31e9968bace6" name="InteractionOperand1">
+                        <coveredLifelines>
+                          <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+                        </coveredLifelines>
+                        <guard>
+                          <interactionConstraint Id="836f9616-3e30-47da-8b01-4aff41b8a80f" guardText="for (int j = 0;j &lt; m; j++)">
+                            <maxInt>
+                              <literalString Id="fa8c4a94-e3ad-4897-bb75-da94c3a3f4ae" name="LiteralString1" />
+                            </maxInt>
+                            <minInt>
+                              <literalString Id="6da8eff0-ef18-4d07-b022-a2f632b2c523" name="LiteralString2" />
+                            </minInt>
+                          </interactionConstraint>
+                        </guard>
+                        <operandOccurrenceSpecifications>
+                          <operandOccurrenceSpecificationMoniker Id="9d99e1e3-911e-4656-82ea-8c100ac464cf" LastKnownName="OperandOccurrenceSpecification" />
+                          <operandOccurrenceSpecificationMoniker Id="0e40be8e-8eb7-48b9-b5e7-8ed34495c73b" LastKnownName="OperandOccurrenceSpecification" />
+                        </operandOccurrenceSpecifications>
+                      </interactionOperand>
+                    </operands>
+                  </combinedFragment>
+                </fragments>
+                <guard>
+                  <interactionConstraint Id="9eb64f19-4efe-4baf-b5dd-0305e0eb364a" guardText="for (int i = 0;i &lt; n; i++)">
+                    <maxInt>
+                      <literalString Id="e59bf544-443f-4e73-ae8d-e425a3e310c4" name="LiteralString1" />
+                    </maxInt>
+                    <minInt>
+                      <literalString Id="baf9c789-dbce-450b-9d33-67fce0c9fcfc" name="LiteralString2" />
+                    </minInt>
+                  </interactionConstraint>
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker Id="3dcea978-41ba-4a04-b1c8-f94b4dd18cb6" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="af63b489-8d7a-4098-9126-ce4076bb9115" LastKnownName="OperandOccurrenceSpecification" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+            </operands>
+          </combinedFragment>
+          <operandOccurrenceSpecification Id="3dcea978-41ba-4a04-b1c8-f94b4dd18cb6" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="9d99e1e3-911e-4656-82ea-8c100ac464cf" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="fac6c222-eb8e-4556-9729-b3dd57f5f700" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="9d07dbe1-811d-42ef-a06e-64b553431513" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="28a5fb81-317e-4630-a42a-db5f94bcd8ce" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="860bc8e0-8b1f-4d46-b1de-2f0b8f876903" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="ba77420b-fd04-4c50-bd1d-b25dafce013c" LastKnownName="MessageOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="860bc8e0-8b1f-4d46-b1de-2f0b8f876903" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="3f2ddb04-78ba-470d-9cf3-7ecad75028bc" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="ba77420b-fd04-4c50-bd1d-b25dafce013c" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="28a5fb81-317e-4630-a42a-db5f94bcd8ce" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="7b6dd208-9385-4267-a728-840c545d972d" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="0e40be8e-8eb7-48b9-b5e7-8ed34495c73b" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="af63b489-8d7a-4098-9126-ce4076bb9115" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="cc36ccba-0713-46aa-aa3d-8de68a299ff5" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="06a77510-082d-4633-8057-6ebdc1f22b7c" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="41cfa121-8fb2-4abc-a93e-ffeacaa95288" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="08f8fccc-d864-4f89-a4f5-d3c9a7f62ce7" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="21bc130e-3b6a-45d6-8d55-06a5bcef4b0e" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="46aa45f6-8e45-4d6d-bdb6-a356e4f5d0fd" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="7824e7ed-af13-4beb-aeee-6ec13584486f" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="4bcaca83-409c-40a8-b316-56eed5982fee" LastKnownName="OperandOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="63ef1fd9-df28-41b1-9f47-81e34a3d1753" LastKnownName="MessageOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="bff284a8-9f93-4273-aa6c-204a2d6e0e05" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="99c8f503-30b8-453b-8898-41700abfd6e9" LastKnownName="ExecutionOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="c7a561d6-d63d-4430-8851-4b633127ea5c" LastKnownName="OperandOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="46aa45f6-8e45-4d6d-bdb6-a356e4f5d0fd" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="fd4e0f5b-8f35-4450-bc99-01bbe51c1691" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="7824e7ed-af13-4beb-aeee-6ec13584486f" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <combinedFragment Id="1c58eed8-c693-49f2-a0c9-0e86e8305326" name="CombinedFragment3" interactionOperator="Loop" customInteractionOperator="Loop">
+            <coveredLifelines>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </coveredLifelines>
+            <operands>
+              <interactionOperand Id="527c6132-00e7-4ea6-92ac-33e2f8dd3512" name="InteractionOperand1">
+                <coveredLifelines>
+                  <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+                </coveredLifelines>
+                <guard>
+                  <interactionConstraint Id="f2b6e22e-908c-43f9-9cb9-8449abff4b53" guardText="for (int i = 0;i &lt; layer.Length; i++)">
+                    <maxInt>
+                      <literalString Id="ddbbf7de-3d88-4240-865e-be42a5d1f922" name="LiteralString1" />
+                    </maxInt>
+                    <minInt>
+                      <literalString Id="b3cf9e2f-b184-4ba5-aa81-f048f479ef9e" name="LiteralString2" />
+                    </minInt>
+                  </interactionConstraint>
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker Id="4bcaca83-409c-40a8-b316-56eed5982fee" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="c7a561d6-d63d-4430-8851-4b633127ea5c" LastKnownName="OperandOccurrenceSpecification" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+            </operands>
+          </combinedFragment>
+          <operandOccurrenceSpecification Id="4bcaca83-409c-40a8-b316-56eed5982fee" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="63ef1fd9-df28-41b1-9f47-81e34a3d1753" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="fac96b2f-bac1-4c33-9875-221118731c28" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="99c8f503-30b8-453b-8898-41700abfd6e9" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="bff284a8-9f93-4273-aa6c-204a2d6e0e05" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="cce4b5d1-e5c5-4e6c-80f4-f45d0fdcc22d" LastKnownName="MessageOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="bff284a8-9f93-4273-aa6c-204a2d6e0e05" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="96765c31-4fe6-414c-959e-9a2db0b19a00" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="cce4b5d1-e5c5-4e6c-80f4-f45d0fdcc22d" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="99c8f503-30b8-453b-8898-41700abfd6e9" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="9533a613-18f7-4a8c-a652-40345749f008" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="c7a561d6-d63d-4430-8851-4b633127ea5c" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="21bc130e-3b6a-45d6-8d55-06a5bcef4b0e" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="924f8bc8-3cf1-4431-afc5-b43b8b0e6206" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="0fc10690-9988-4936-88d9-b525b2681a4c" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="513e65ba-ea55-44bd-8d76-5fd4817d33a5" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="a1478c74-e64c-482d-b724-2a00be1c1736" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="f6c8fca1-9d10-4d9e-8eca-77444e1c8690" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="d8bbdadc-bb76-44f1-a52b-e01ae721646f" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="c057f612-900b-47c7-9bff-96c85e3a30f2" LastKnownName="OperandOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="036030d4-ee4a-4503-9738-3fe0fbf322a3" LastKnownName="MessageOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="438c8371-a814-4ff5-8261-58044d4077d2" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="b0d10e0c-bf89-4c73-95e9-6d00d2aa0d9a" LastKnownName="ExecutionOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="d01c8256-5809-4ef0-810d-08b961da6ba3" LastKnownName="OperandOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="f6c8fca1-9d10-4d9e-8eca-77444e1c8690" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="163382e0-3447-4242-8e27-028e795064e8" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="d8bbdadc-bb76-44f1-a52b-e01ae721646f" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <combinedFragment Id="c385f0eb-6fef-4517-b7ea-b94bfa05fd5e" name="CombinedFragment4" interactionOperator="Loop" customInteractionOperator="Loop">
+            <coveredLifelines>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </coveredLifelines>
+            <operands>
+              <interactionOperand Id="1d8dcbe7-e2de-45a8-883f-ad73c50b9173" name="InteractionOperand1">
+                <coveredLifelines>
+                  <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+                </coveredLifelines>
+                <guard>
+                  <interactionConstraint Id="37a28f0c-3242-4c2d-8cd7-5985b511fa3a" guardText="for (int i = 0;i &lt; layer.Length; i++)">
+                    <maxInt>
+                      <literalString Id="25ec2228-a2ca-4329-acfa-0e0df8012934" name="LiteralString1" />
+                    </maxInt>
+                    <minInt>
+                      <literalString Id="6e6c753c-e7c4-4287-a8a7-143d9e099786" name="LiteralString2" />
+                    </minInt>
+                  </interactionConstraint>
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker Id="c057f612-900b-47c7-9bff-96c85e3a30f2" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="d01c8256-5809-4ef0-810d-08b961da6ba3" LastKnownName="OperandOccurrenceSpecification" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+            </operands>
+          </combinedFragment>
+          <operandOccurrenceSpecification Id="c057f612-900b-47c7-9bff-96c85e3a30f2" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="036030d4-ee4a-4503-9738-3fe0fbf322a3" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="9ca75aef-ec18-4478-a0ab-59e3a26f43c9" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="b0d10e0c-bf89-4c73-95e9-6d00d2aa0d9a" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="438c8371-a814-4ff5-8261-58044d4077d2" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="1e52eab3-b707-43a5-8ccd-6dd6b06bc530" LastKnownName="MessageOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="438c8371-a814-4ff5-8261-58044d4077d2" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="e7ee095c-86bd-448a-b88d-dbc3ba5eb2d6" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="1e52eab3-b707-43a5-8ccd-6dd6b06bc530" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="b0d10e0c-bf89-4c73-95e9-6d00d2aa0d9a" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="3a0c95f3-f019-4145-bf1c-3a8974246082" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="d01c8256-5809-4ef0-810d-08b961da6ba3" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="a1478c74-e64c-482d-b724-2a00be1c1736" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="4251fc9e-9d26-4ed6-a9ac-0ab2e7d5d5a9" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="a4ad1940-5415-4218-b3d9-ab4cfb5aa468" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="296fe1f7-b9fa-4a5b-aceb-5ded3eeba9e7" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <combinedFragment Id="50bf1e72-8efa-41f0-92f6-7e5b4db71167" name="CombinedFragment5" interactionOperator="Loop" customInteractionOperator="Loop">
+            <coveredLifelines>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </coveredLifelines>
+            <operands>
+              <interactionOperand Id="54280c22-67f8-4b93-9c4b-e337fedd1e79" name="InteractionOperand1">
+                <coveredLifelines>
+                  <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+                </coveredLifelines>
+                <fragments>
+                  <combinedFragment Id="8341b2e3-7f0d-47a9-b0c7-cc93d3ae12a1" name="CombinedFragment1" interactionOperator="Loop" customInteractionOperator="Loop">
+                    <coveredLifelines>
+                      <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+                    </coveredLifelines>
+                    <operands>
+                      <interactionOperand Id="983eb65b-b6f0-4d9c-a7c7-ea9c37a5b47e" name="InteractionOperand1">
+                        <coveredLifelines>
+                          <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+                        </coveredLifelines>
+                        <fragments>
+                          <combinedFragment Id="9779d01e-2fcd-4fcb-bc7f-df9d91f389de" name="CombinedFragment1" interactionOperator="Loop" customInteractionOperator="Loop">
+                            <coveredLifelines>
+                              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+                            </coveredLifelines>
+                            <operands>
+                              <interactionOperand Id="67331edc-8d4c-41f4-b346-0e7451f8c3ac" name="InteractionOperand1">
+                                <coveredLifelines>
+                                  <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+                                </coveredLifelines>
+                                <guard>
+                                  <interactionConstraint Id="cce7501b-7c4e-4935-b71d-c8ef81717600" guardText="for (int j = 0;j &lt; _h; j++)">
+                                    <maxInt>
+                                      <literalString Id="e4571af4-882c-49ce-9489-b83fb9a68bd7" name="LiteralString1" />
+                                    </maxInt>
+                                    <minInt>
+                                      <literalString Id="537f8372-3a07-4a96-8727-5799c9313daa" name="LiteralString2" />
+                                    </minInt>
+                                  </interactionConstraint>
+                                </guard>
+                                <operandOccurrenceSpecifications>
+                                  <operandOccurrenceSpecificationMoniker Id="5a610947-ab37-4f96-8ce6-de03fba0a37f" LastKnownName="OperandOccurrenceSpecification" />
+                                  <operandOccurrenceSpecificationMoniker Id="322b3518-13c2-4069-ba1b-fc179a8eac51" LastKnownName="OperandOccurrenceSpecification" />
+                                </operandOccurrenceSpecifications>
+                              </interactionOperand>
+                            </operands>
+                          </combinedFragment>
+                          <combinedFragment Id="b7a7d552-4a9e-41d7-8211-aca1278d1859" name="CombinedFragment2" interactionOperator="Loop" customInteractionOperator="Loop">
+                            <coveredLifelines>
+                              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+                            </coveredLifelines>
+                            <operands>
+                              <interactionOperand Id="733af9ba-9b65-448e-9862-11044d76cb85" name="InteractionOperand1">
+                                <coveredLifelines>
+                                  <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+                                </coveredLifelines>
+                                <guard>
+                                  <interactionConstraint Id="e9f285e7-a938-4641-ab5b-c2db14153fee" guardText="for (int k = 0;k &lt; _m; k++)">
+                                    <maxInt>
+                                      <literalString Id="78c40bce-6c80-4e62-8a91-c376565d4c68" name="LiteralString1" />
+                                    </maxInt>
+                                    <minInt>
+                                      <literalString Id="a2b286a3-7dbc-45ac-9a48-35f892a13c02" name="LiteralString2" />
+                                    </minInt>
+                                  </interactionConstraint>
+                                </guard>
+                                <operandOccurrenceSpecifications>
+                                  <operandOccurrenceSpecificationMoniker Id="013cef09-a533-4910-8d0e-2400dd52d971" LastKnownName="OperandOccurrenceSpecification" />
+                                  <operandOccurrenceSpecificationMoniker Id="d295c757-9ddf-43c3-80e5-4cf3058912c6" LastKnownName="OperandOccurrenceSpecification" />
+                                </operandOccurrenceSpecifications>
+                              </interactionOperand>
+                            </operands>
+                          </combinedFragment>
+                          <combinedFragment Id="5572de48-4c63-4f45-843f-a0f4de70de9f" name="CombinedFragment3" interactionOperator="Opt" customInteractionOperator="If">
+                            <coveredLifelines>
+                              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+                            </coveredLifelines>
+                            <operands>
+                              <interactionOperand Id="b7b9fe04-27e5-4da6-8ab4-d43b563e5875" name="InteractionOperand1">
+                                <coveredLifelines>
+                                  <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+                                </coveredLifelines>
+                                <guard>
+                                  <interactionConstraint Id="8ab276c2-d8cf-4703-bf0e-6d1fcd6328c0" guardText="if (!isContinue)" />
+                                </guard>
+                                <operandOccurrenceSpecifications>
+                                  <operandOccurrenceSpecificationMoniker Id="32c3d091-4610-46dc-ad1e-1d637741d2ea" LastKnownName="OperandOccurrenceSpecification" />
+                                  <operandOccurrenceSpecificationMoniker Id="bfbb0242-0fb3-4afc-8e43-bdeb4806f873" LastKnownName="OperandOccurrenceSpecification" />
+                                </operandOccurrenceSpecifications>
+                              </interactionOperand>
+                            </operands>
+                          </combinedFragment>
+                        </fragments>
+                        <guard>
+                          <interactionConstraint Id="394b9ae4-2108-420b-bb83-61d006c64e0e" guardText="for (int pattern = 0;pattern &lt; _m; pattern++)">
+                            <maxInt>
+                              <literalString Id="27b97990-bf0e-4113-aa36-0093dcb7c3e3" name="LiteralString1" />
+                            </maxInt>
+                            <minInt>
+                              <literalString Id="8745b1d1-9c67-4a5c-a849-184e1fe783ab" name="LiteralString2" />
+                            </minInt>
+                          </interactionConstraint>
+                        </guard>
+                        <operandOccurrenceSpecifications>
+                          <operandOccurrenceSpecificationMoniker Id="909be2b8-a80e-46a1-b05d-5d5655f29baf" LastKnownName="OperandOccurrenceSpecification" />
+                          <operandOccurrenceSpecificationMoniker Id="0eca4957-daa4-4c50-a6ff-0df183db7496" LastKnownName="OperandOccurrenceSpecification" />
+                        </operandOccurrenceSpecifications>
+                      </interactionOperand>
+                    </operands>
+                  </combinedFragment>
+                </fragments>
+                <guard>
+                  <interactionConstraint Id="6f0a4aaa-37e2-452f-93b5-cd031d294809" guardText="do (true)">
+                    <maxInt>
+                      <literalString Id="8590d9b1-310e-4cba-ab42-473ffe7d3527" name="LiteralString1" />
+                    </maxInt>
+                    <minInt>
+                      <literalString Id="ee065544-405e-40e1-aa8e-3159ce1e6782" name="LiteralString2" />
+                    </minInt>
+                  </interactionConstraint>
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker Id="2314e035-af0e-4f9d-84b0-f3f26ab0d749" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="7077d699-fe6c-4879-b74f-3f156fdd9223" LastKnownName="OperandOccurrenceSpecification" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+            </operands>
+          </combinedFragment>
+          <operandOccurrenceSpecification Id="2314e035-af0e-4f9d-84b0-f3f26ab0d749" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="909be2b8-a80e-46a1-b05d-5d5655f29baf" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="a23f4b3f-e2f1-4976-9673-77971f47bc9f" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="1b055b47-55c9-44c5-a709-86dbf3abc881" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="5442358f-c694-49ed-8fb4-b7ef7cb083d1" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="0e5c59ce-89a6-45a4-9e5c-3b8c68847038" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="d4178b2a-648b-4c25-9827-02b9a99a3a41" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="5a610947-ab37-4f96-8ce6-de03fba0a37f" LastKnownName="OperandOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="1504bc63-11a5-4e7c-ac6a-f23b2a6f57e5" LastKnownName="MessageOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="d79e1d21-ca7e-440d-ba77-87d90b18a02d" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="073a63f5-e5ff-44be-921d-f0ee0f33aa42" LastKnownName="ExecutionOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="322b3518-13c2-4069-ba1b-fc179a8eac51" LastKnownName="OperandOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="0e5c59ce-89a6-45a4-9e5c-3b8c68847038" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="4dc208eb-abd6-47a1-bfaa-032ba64d446d" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="d4178b2a-648b-4c25-9827-02b9a99a3a41" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="5a610947-ab37-4f96-8ce6-de03fba0a37f" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="1504bc63-11a5-4e7c-ac6a-f23b2a6f57e5" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="e49b4982-5455-441c-891b-830cccee4028" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="073a63f5-e5ff-44be-921d-f0ee0f33aa42" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="d79e1d21-ca7e-440d-ba77-87d90b18a02d" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="d79a3a26-ffcb-4148-b74e-5dc44b30fd03" LastKnownName="MessageOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="d79e1d21-ca7e-440d-ba77-87d90b18a02d" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="299ecb2a-1653-4779-8e0e-cc725e5ac888" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="d79a3a26-ffcb-4148-b74e-5dc44b30fd03" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="073a63f5-e5ff-44be-921d-f0ee0f33aa42" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="3c1d9938-04b5-4193-a842-26a61f3da06a" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="322b3518-13c2-4069-ba1b-fc179a8eac51" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="5442358f-c694-49ed-8fb4-b7ef7cb083d1" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="1d67e2e2-f69f-4b79-9ff2-fe36be29fb9b" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="485ad345-a5f7-419a-96f6-ae0d1e3cdb39" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="a0180dc0-5160-4c16-bd9d-38b31f17883a" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="8887c31b-53fe-4e28-8cbe-0b9a005bfb65" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="e2bb7599-390c-4cc4-8a22-b94de70ee27e" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="aa0ef70c-d13e-43bb-afdf-e55cf7166618" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="013cef09-a533-4910-8d0e-2400dd52d971" LastKnownName="OperandOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="8a1915fb-ae3a-4959-a54e-ce2c181552b6" LastKnownName="MessageOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="1a51ca92-a1dd-4bd6-84ba-c7ee1b30b186" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="e1311eec-40aa-4aa3-b9e6-cc1578d075c6" LastKnownName="ExecutionOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="d295c757-9ddf-43c3-80e5-4cf3058912c6" LastKnownName="OperandOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="e2bb7599-390c-4cc4-8a22-b94de70ee27e" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="6efe93fa-b3f8-466c-aa91-f19f01ec55f3" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="aa0ef70c-d13e-43bb-afdf-e55cf7166618" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="013cef09-a533-4910-8d0e-2400dd52d971" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="8a1915fb-ae3a-4959-a54e-ce2c181552b6" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="c3aef8f2-72ff-4f7d-a24a-80741b7f66fa" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="e1311eec-40aa-4aa3-b9e6-cc1578d075c6" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="1a51ca92-a1dd-4bd6-84ba-c7ee1b30b186" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="54f1d601-2274-4085-9168-320e40e37f76" LastKnownName="MessageOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="1a51ca92-a1dd-4bd6-84ba-c7ee1b30b186" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="3f0018be-9c69-466c-a8cd-fe60b4df32fa" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="54f1d601-2274-4085-9168-320e40e37f76" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="e1311eec-40aa-4aa3-b9e6-cc1578d075c6" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="09a34ff0-6e09-4c67-a9f7-0ad1eca3f3ca" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="d295c757-9ddf-43c3-80e5-4cf3058912c6" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="8887c31b-53fe-4e28-8cbe-0b9a005bfb65" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="ce62d51c-b9a1-486a-a8c0-5728a26e81e1" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="a5f0eba8-1451-4ef3-8009-e37e122ddbc0" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="93192070-6291-4b04-889f-3b1b61e4504e" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="98678430-de16-49bf-929d-9c949d7bb02c" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="119a63c5-3e19-47ca-aec8-285476bc55cd" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="df61c29d-d733-4490-b80a-b89e1f712f8d" LastKnownName="MessageOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="119a63c5-3e19-47ca-aec8-285476bc55cd" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="e3c78e0d-2d9f-4805-bbdc-24b177b25fea" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="df61c29d-d733-4490-b80a-b89e1f712f8d" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="98678430-de16-49bf-929d-9c949d7bb02c" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="5a26f561-fe9a-47df-80f6-c6da8e974972" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="bc8430c0-806e-4902-b694-e6336e10f347" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="4653ddb4-eb38-4e36-bac8-e132742ce1ba" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="4cdf4036-9bd9-424b-9e11-21295089a733" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="4533bddb-00af-4f9c-a498-e48589827c2b" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="c6f605c8-f643-41dd-b8f7-34c31c364af9" LastKnownName="MessageOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="4533bddb-00af-4f9c-a498-e48589827c2b" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="34310727-2164-4740-bd8d-f7b7b970e95d" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="c6f605c8-f643-41dd-b8f7-34c31c364af9" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="4cdf4036-9bd9-424b-9e11-21295089a733" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="4b601303-17ad-4c14-9330-c3a22bd96d18" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="6d0f0d0a-7246-4cbf-a404-28127e6c3c9a" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="31b04e1a-7a40-4ab5-a115-2d353fd27825" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="f2de9552-e42f-4abe-9129-17bc5e0c5a71" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="e9e09e4a-c974-49df-b406-8f0e0e686afe" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="a7c1c8cc-f670-4be6-8d92-7c6dfcdd2c37" LastKnownName="MessageOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="e9e09e4a-c974-49df-b406-8f0e0e686afe" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="3853a1d0-2066-462a-a16d-a8fffa5f6068" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="a7c1c8cc-f670-4be6-8d92-7c6dfcdd2c37" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="f2de9552-e42f-4abe-9129-17bc5e0c5a71" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="c12057d9-90f2-4eba-9e59-524648a168bd" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="32c3d091-4610-46dc-ad1e-1d637741d2ea" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <lostFoundTarget Id="efc38a9e-da34-4250-a785-7b7edbc9caf0" name="LostFoundTarget" />
+          <messageOccurrenceSpecification Id="f5c9c6de-45f1-4cfe-88b3-9298e05e4a08" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="bfbb0242-0fb3-4afc-8e43-bdeb4806f873" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="0eca4957-daa4-4c50-a6ff-0df183db7496" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="7077d699-fe6c-4879-b74f-3f156fdd9223" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="fab69396-20a4-4021-b3a7-6cc1c29634c0" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="5c0fb49e-b84a-48d4-b913-a09122057082" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" LastKnownName="this : Perceptron" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline Id="5ef5ec43-ca63-46cc-9421-fb1cc3f3eb3a" name="this : Perceptron" isActor="false" lifelineDisplayName="this : Perceptron" referencedInstance="(Assembly=$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri) Namespace=PercepTRON_Legacy Type=Perceptron ObjectInstance=&quot;Object instance 1&quot;)" referencedType="PercepTRON_Legacy‎.Perceptron">
+            <referencesInternal>
+              <reference Id="786069e2-74b7-4019-a19b-fcd0532785d4" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=PercepTRON_Legacy)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&amp;quot; Namespace=PercepTRON_Legacy Type=Perceptron)&quot;)" tag="DGQL" />
+              <reference Id="1b20c67c-26f6-4f06-ba06-4d8132f4e748" handle="(Assembly=&quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&quot; Namespace=PercepTRON_Legacy Type=Perceptron)" tag="DGML" />
+            </referencesInternal>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="c7c975e5-7b0f-4a59-af67-a02d60f42f62" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="fab69396-20a4-4021-b3a7-6cc1c29634c0" LastKnownName="ExecutionOccurrenceSpecification" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message Id="2c62269e-5f75-4d28-8472-37c82f42653e" name="Teach" messageKind="Found" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="156df5ea-5930-47aa-841b-469421f98af4" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=PercepTRON_Legacy)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&amp;quot; Namespace=PercepTRON_Legacy Type=Perceptron)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&amp;quot; Namespace=PercepTRON_Legacy Type=Perceptron Member=Teach)&quot;)" tag="DGQL" />
+              <reference Id="d9348479-a4e8-40a9-81cc-751d76d5e565" handle="(Assembly=&quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&quot; Namespace=PercepTRON_Legacy Type=Perceptron Member=Teach)" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <lostFoundTargetMoniker Id="67bfc44a-c797-47bd-af4a-37d7e2e06366" LastKnownName="LostFoundTarget" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="e79d3df2-30a7-4c52-8d4e-05a3a04e13b1" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="d7d8302b-edc3-4bc3-a6ea-01780ecfeb86" name="InitRandomly" messageKind="Complete" messageSort="SynchCall" createSelfMessage="true" signatureText="InitRandomly()">
+            <referencesInternal>
+              <reference Id="1b471943-56c2-4097-852a-4f0319dd68ce" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=PercepTRON_Legacy)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&amp;quot; Namespace=PercepTRON_Legacy Type=Perceptron)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&amp;quot; Namespace=PercepTRON_Legacy Type=Perceptron Member=InitRandomly)&quot;)" tag="DGQL" />
+              <reference Id="77bf0428-2a2c-4b94-ae96-6c234e1ebeb6" handle="(Assembly=&quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&quot; Namespace=PercepTRON_Legacy Type=Perceptron Member=InitRandomly)" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="b469a527-b789-4223-91ee-b03f036a9474" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="8564fab3-609b-4ab6-adae-f0d3e6b0e456" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="9672dc9e-7e07-45f3-a57a-b197927f7a67" name="InitRandomly" messageKind="Complete" messageSort="SynchCall" createSelfMessage="true" signatureText="InitRandomly(_v, _n, _h)">
+            <referencesInternal>
+              <reference Id="43505d81-e692-4102-a7a2-e65a1ad8464b" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=PercepTRON_Legacy)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&amp;quot; Namespace=PercepTRON_Legacy Type=Perceptron)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&amp;quot; Namespace=PercepTRON_Legacy Type=Perceptron Member=(Name=InitRandomly OverloadingParameters=[(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&amp;quot; Namespace=System Type=(Name=Double ArrayRank=2 ParentType=Double)),(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&amp;quot; Namespace=System Type=Int32),(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&amp;quot; Namespace=System Type=Int32)]))&quot;)" tag="DGQL" />
+              <reference Id="b1f31adf-f2cb-4581-a402-bcaf8643b669" handle="(Assembly=&quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&quot; Namespace=PercepTRON_Legacy Type=Perceptron Member=(Name=InitRandomly OverloadingParameters=[(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&quot; Namespace=System Type=(Name=Double ArrayRank=2 ParentType=Double)),(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&quot; Namespace=System Type=Int32),(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&quot; Namespace=System Type=Int32)]))" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="6684aaad-4366-4597-817c-37763e765aba" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="eff6eb6f-c771-4aa2-8050-15d1d68ba3b5" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="63e1625e-2ae1-4ba0-b040-7fccddb53a03" name="GetRandomMinusPlusOne" messageKind="Complete" messageSort="SynchCall" createSelfMessage="true" signatureText="GetRandomMinusPlusOne()">
+            <referencesInternal>
+              <reference Id="3789dc17-7735-4497-bb1b-b1d8dd197f15" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=PercepTRON_Legacy)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&amp;quot; Namespace=PercepTRON_Legacy Type=Perceptron)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&amp;quot; Namespace=PercepTRON_Legacy Type=Perceptron Member=GetRandomMinusPlusOne)&quot;)" tag="DGQL" />
+              <reference Id="3c996b35-4d54-4ad2-bfeb-ac117d78d4af" handle="(Assembly=&quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&quot; Namespace=PercepTRON_Legacy Type=Perceptron Member=GetRandomMinusPlusOne)" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="f1249d47-9c2b-4728-b293-52ed99c9ca5c" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="58638d42-94a0-44d9-bd37-0e4866011695" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="fcd3f404-dc78-4727-b261-2061c7a84cfe" name="InitRandomly" messageKind="Complete" messageSort="SynchCall" createSelfMessage="true" signatureText="InitRandomly(_w, _h, _m)">
+            <referencesInternal>
+              <reference Id="0d8a61b3-f818-4b22-acd1-d4e9c50919d2" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=PercepTRON_Legacy)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&amp;quot; Namespace=PercepTRON_Legacy Type=Perceptron)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&amp;quot; Namespace=PercepTRON_Legacy Type=Perceptron Member=(Name=InitRandomly OverloadingParameters=[(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&amp;quot; Namespace=System Type=(Name=Double ArrayRank=2 ParentType=Double)),(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&amp;quot; Namespace=System Type=Int32),(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&amp;quot; Namespace=System Type=Int32)]))&quot;)" tag="DGQL" />
+              <reference Id="d0e29942-557e-491a-b66a-798d36c956ef" handle="(Assembly=&quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&quot; Namespace=PercepTRON_Legacy Type=Perceptron Member=(Name=InitRandomly OverloadingParameters=[(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&quot; Namespace=System Type=(Name=Double ArrayRank=2 ParentType=Double)),(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&quot; Namespace=System Type=Int32),(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&quot; Namespace=System Type=Int32)]))" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="a68102fb-31b0-4560-9619-9a6d1ce75d66" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="a792ccd9-01ec-41fd-9b92-c04a5976e55e" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="9223d3b4-22c3-4c5c-97d0-c4d996d595ce" name="GetRandomMinusPlusOne" messageKind="Complete" messageSort="SynchCall" createSelfMessage="true" signatureText="GetRandomMinusPlusOne()">
+            <referencesInternal>
+              <reference Id="201c730b-2d65-43c4-ac87-5d38dd1e6930" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=PercepTRON_Legacy)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&amp;quot; Namespace=PercepTRON_Legacy Type=Perceptron)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&amp;quot; Namespace=PercepTRON_Legacy Type=Perceptron Member=GetRandomMinusPlusOne)&quot;)" tag="DGQL" />
+              <reference Id="f2a2265f-4b04-4e90-8227-c052b7421686" handle="(Assembly=&quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&quot; Namespace=PercepTRON_Legacy Type=Perceptron Member=GetRandomMinusPlusOne)" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="fac6c222-eb8e-4556-9729-b3dd57f5f700" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="ba77420b-fd04-4c50-bd1d-b25dafce013c" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="7915580c-e45b-4dc1-b31f-3d68628f387c" name="InitRandomly" messageKind="Complete" messageSort="SynchCall" createSelfMessage="true" signatureText="InitRandomly(_q)">
+            <referencesInternal>
+              <reference Id="01ac8660-9030-4efc-950d-65e074af2c17" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=PercepTRON_Legacy)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&amp;quot; Namespace=PercepTRON_Legacy Type=Perceptron)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&amp;quot; Namespace=PercepTRON_Legacy Type=Perceptron Member=(Name=InitRandomly OverloadingParameters=[(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&amp;quot; Namespace=System Type=(Name=Double ArrayRank=1 ParentType=Double))]))&quot;)" tag="DGQL" />
+              <reference Id="7e666fdd-dab2-43c4-85f1-985b0a70df5e" handle="(Assembly=&quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&quot; Namespace=PercepTRON_Legacy Type=Perceptron Member=(Name=InitRandomly OverloadingParameters=[(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&quot; Namespace=System Type=(Name=Double ArrayRank=1 ParentType=Double))]))" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="41cfa121-8fb2-4abc-a93e-ffeacaa95288" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="7824e7ed-af13-4beb-aeee-6ec13584486f" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="ff5dc51f-48d6-400f-abf5-80f0d6536da4" name="GetRandomMinusPlusOne" messageKind="Complete" messageSort="SynchCall" createSelfMessage="true" signatureText="GetRandomMinusPlusOne()">
+            <referencesInternal>
+              <reference Id="73030523-4497-43ac-b378-9c22d6e30210" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=PercepTRON_Legacy)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&amp;quot; Namespace=PercepTRON_Legacy Type=Perceptron)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&amp;quot; Namespace=PercepTRON_Legacy Type=Perceptron Member=GetRandomMinusPlusOne)&quot;)" tag="DGQL" />
+              <reference Id="cab4edbb-fde2-4c65-abcd-186a8eed3a7f" handle="(Assembly=&quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&quot; Namespace=PercepTRON_Legacy Type=Perceptron Member=GetRandomMinusPlusOne)" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="63ef1fd9-df28-41b1-9f47-81e34a3d1753" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="cce4b5d1-e5c5-4e6c-80f4-f45d0fdcc22d" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="4ace119d-882f-4064-bb47-7dfe71f8f133" name="InitRandomly" messageKind="Complete" messageSort="SynchCall" createSelfMessage="true" signatureText="InitRandomly(_t)">
+            <referencesInternal>
+              <reference Id="d88c6fa3-cd9d-432c-9875-edcb30aa620d" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=PercepTRON_Legacy)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&amp;quot; Namespace=PercepTRON_Legacy Type=Perceptron)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&amp;quot; Namespace=PercepTRON_Legacy Type=Perceptron Member=(Name=InitRandomly OverloadingParameters=[(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&amp;quot; Namespace=System Type=(Name=Double ArrayRank=1 ParentType=Double))]))&quot;)" tag="DGQL" />
+              <reference Id="a487c495-a1d4-4b24-ac25-15bb9fe7396c" handle="(Assembly=&quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&quot; Namespace=PercepTRON_Legacy Type=Perceptron Member=(Name=InitRandomly OverloadingParameters=[(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&quot; Namespace=System Type=(Name=Double ArrayRank=1 ParentType=Double))]))" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="0fc10690-9988-4936-88d9-b525b2681a4c" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="d8bbdadc-bb76-44f1-a52b-e01ae721646f" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="2feacdae-79de-411d-b622-af1817137e0d" name="GetRandomMinusPlusOne" messageKind="Complete" messageSort="SynchCall" createSelfMessage="true" signatureText="GetRandomMinusPlusOne()">
+            <referencesInternal>
+              <reference Id="71f033ee-8c9d-4cdd-a93c-21cdf7ee0312" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=PercepTRON_Legacy)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&amp;quot; Namespace=PercepTRON_Legacy Type=Perceptron)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&amp;quot; Namespace=PercepTRON_Legacy Type=Perceptron Member=GetRandomMinusPlusOne)&quot;)" tag="DGQL" />
+              <reference Id="39822ad9-77a7-448c-b33e-5a69ee258a8e" handle="(Assembly=&quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&quot; Namespace=PercepTRON_Legacy Type=Perceptron Member=GetRandomMinusPlusOne)" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="036030d4-ee4a-4503-9738-3fe0fbf322a3" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="1e52eab3-b707-43a5-8ccd-6dd6b06bc530" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="f4acab2d-ddd1-46b2-b308-1c52de6c4abd" name="InputToHiddenNeurons" messageKind="Complete" messageSort="SynchCall" createSelfMessage="true" signatureText="InputToHiddenNeurons(x)">
+            <referencesInternal>
+              <reference Id="a3544838-5bbc-4354-80c7-24fb48924b2f" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=PercepTRON_Legacy)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&amp;quot; Namespace=PercepTRON_Legacy Type=Perceptron)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&amp;quot; Namespace=PercepTRON_Legacy Type=Perceptron Member=(Name=InputToHiddenNeurons OverloadingParameters=[(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&amp;quot; Namespace=System Type=(Name=Int32 ArrayRank=2 ParentType=Int32))]))&quot;)" tag="DGQL" />
+              <reference Id="a85ad17b-33e6-4f8b-b1eb-c81d36c7ef89" handle="(Assembly=&quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&quot; Namespace=PercepTRON_Legacy Type=Perceptron Member=(Name=InputToHiddenNeurons OverloadingParameters=[(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&quot; Namespace=System Type=(Name=Int32 ArrayRank=2 ParentType=Int32))]))" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="a23f4b3f-e2f1-4976-9673-77971f47bc9f" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="d4178b2a-648b-4c25-9827-02b9a99a3a41" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="ed91f0b6-73a7-4c14-9008-b8b959608f45" name="Fun" messageKind="Complete" messageSort="SynchCall" createSelfMessage="true" signatureText="Fun(q)">
+            <referencesInternal>
+              <reference Id="86638a2d-ed91-4cd2-ade9-467760f8f57d" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=PercepTRON_Legacy)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&amp;quot; Namespace=PercepTRON_Legacy Type=Perceptron)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&amp;quot; Namespace=PercepTRON_Legacy Type=Perceptron Member=(Name=Fun OverloadingParameters=[(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&amp;quot; Namespace=System Type=Double)]))&quot;)" tag="DGQL" />
+              <reference Id="72fbc06a-7c03-4d36-a01d-6e5bb0a695ae" handle="(Assembly=&quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&quot; Namespace=PercepTRON_Legacy Type=Perceptron Member=(Name=Fun OverloadingParameters=[(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&quot; Namespace=System Type=Double)]))" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="1504bc63-11a5-4e7c-ac6a-f23b2a6f57e5" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="d79a3a26-ffcb-4148-b74e-5dc44b30fd03" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="60da57d9-a229-477a-97f3-affd091d2696" name="HiddenToOutputNeurons" messageKind="Complete" messageSort="SynchCall" createSelfMessage="true" signatureText="HiddenToOutputNeurons()">
+            <referencesInternal>
+              <reference Id="6e3f21b3-f795-4431-bfbf-089dbf27d47e" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=PercepTRON_Legacy)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&amp;quot; Namespace=PercepTRON_Legacy Type=Perceptron)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&amp;quot; Namespace=PercepTRON_Legacy Type=Perceptron Member=HiddenToOutputNeurons)&quot;)" tag="DGQL" />
+              <reference Id="d86a8d30-4b1d-4918-90e0-2df89f1e46ca" handle="(Assembly=&quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&quot; Namespace=PercepTRON_Legacy Type=Perceptron Member=HiddenToOutputNeurons)" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="485ad345-a5f7-419a-96f6-ae0d1e3cdb39" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="aa0ef70c-d13e-43bb-afdf-e55cf7166618" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="2e38bbcc-629b-4741-9969-54a43355d0ad" name="Fun" messageKind="Complete" messageSort="SynchCall" createSelfMessage="true" signatureText="Fun(t)">
+            <referencesInternal>
+              <reference Id="702f0106-7790-40fd-a808-54eacbb58cce" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=PercepTRON_Legacy)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&amp;quot; Namespace=PercepTRON_Legacy Type=Perceptron)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&amp;quot; Namespace=PercepTRON_Legacy Type=Perceptron Member=(Name=Fun OverloadingParameters=[(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&amp;quot; Namespace=System Type=Double)]))&quot;)" tag="DGQL" />
+              <reference Id="d7e59dbd-fb95-4eff-8eae-0a95b303cf2d" handle="(Assembly=&quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&quot; Namespace=PercepTRON_Legacy Type=Perceptron Member=(Name=Fun OverloadingParameters=[(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&quot; Namespace=System Type=Double)]))" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="8a1915fb-ae3a-4959-a54e-ce2c181552b6" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="54f1d601-2274-4085-9168-320e40e37f76" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="a43bce07-7920-4dad-b713-2c86394a05c8" name="KNeuronError" messageKind="Complete" messageSort="SynchCall" createSelfMessage="true" signatureText="KNeuronError(pattern)">
+            <referencesInternal>
+              <reference Id="dfe0d392-1d93-4549-8412-963ddcc19c24" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=PercepTRON_Legacy)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&amp;quot; Namespace=PercepTRON_Legacy Type=Perceptron)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&amp;quot; Namespace=PercepTRON_Legacy Type=Perceptron Member=(Name=KNeuronError OverloadingParameters=[(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&amp;quot; Namespace=System Type=Int32)]))&quot;)" tag="DGQL" />
+              <reference Id="2de70fae-1a1a-4b5e-8aab-a17432301a24" handle="(Assembly=&quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&quot; Namespace=PercepTRON_Legacy Type=Perceptron Member=(Name=KNeuronError OverloadingParameters=[(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&quot; Namespace=System Type=Int32)]))" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="a5f0eba8-1451-4ef3-8009-e37e122ddbc0" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="df61c29d-d733-4490-b80a-b89e1f712f8d" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="c012f5dd-fb7f-4d93-9b5e-05fda6428203" name="HiddenNeuronError" messageKind="Complete" messageSort="SynchCall" createSelfMessage="true" signatureText="HiddenNeuronError()">
+            <referencesInternal>
+              <reference Id="68f20d24-cb01-4bed-9cc0-262684431fca" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=PercepTRON_Legacy)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&amp;quot; Namespace=PercepTRON_Legacy Type=Perceptron)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&amp;quot; Namespace=PercepTRON_Legacy Type=Perceptron Member=HiddenNeuronError)&quot;)" tag="DGQL" />
+              <reference Id="bb5ce182-cd62-403b-a9e9-1a338416a86e" handle="(Assembly=&quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&quot; Namespace=PercepTRON_Legacy Type=Perceptron Member=HiddenNeuronError)" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="bc8430c0-806e-4902-b694-e6336e10f347" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="c6f605c8-f643-41dd-b8f7-34c31c364af9" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="0219a496-bcee-45fd-b541-91a0527f5920" name="LearningCorrection" messageKind="Complete" messageSort="SynchCall" createSelfMessage="true" signatureText="LearningCorrection(x)">
+            <referencesInternal>
+              <reference Id="9cd70501-baec-4e83-8dd1-d96089b574b4" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=PercepTRON_Legacy)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&amp;quot; Namespace=PercepTRON_Legacy Type=Perceptron)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&amp;quot; Namespace=PercepTRON_Legacy Type=Perceptron Member=(Name=LearningCorrection OverloadingParameters=[(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&amp;quot; Namespace=System Type=(Name=Int32 ArrayRank=2 ParentType=Int32))]))&quot;)" tag="DGQL" />
+              <reference Id="e5c7c4fe-ef62-4549-a0ec-307b3555bcf6" handle="(Assembly=&quot;$(55b8aaf7-7ba0-46e2-b99f-35a9c8e802ff.OutputPathUri)&quot; Namespace=PercepTRON_Legacy Type=Perceptron Member=(Name=LearningCorrection OverloadingParameters=[(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&quot; Namespace=System Type=(Name=Int32 ArrayRank=2 ParentType=Int32))]))" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="6d0f0d0a-7246-4cbf-a404-28127e6c3c9a" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="a7c1c8cc-f670-4be6-8d92-7c6dfcdd2c37" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="ffeb3424-977c-4c94-81a6-09ea613b3bff" name="Return" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="f5c9c6de-45f1-4cfe-88b3-9298e05e4a08" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="efc38a9e-da34-4250-a785-7b7edbc9caf0" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="895401fa-6269-49b9-889c-09600f311aa0" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="5c0fb49e-b84a-48d4-b913-a09122057082" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="dc1a5e15-ccee-4498-a95b-3cd6e2e8accf" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="296fe1f7-b9fa-4a5b-aceb-5ded3eeba9e7" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="d420218d-3b6e-47a3-9fb0-28e35ee4f1a9" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="fc106271-638b-4f87-8228-1ba37ee3e136" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="3b396394-e490-4643-b02c-af09780a65c3" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="6ca34684-f14e-44fe-83a3-2fe1b8066958" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="af180dd5-e52a-42c5-a64c-065877512b08" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="06a77510-082d-4633-8057-6ebdc1f22b7c" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="3f2ddb04-78ba-470d-9cf3-7ecad75028bc" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="7b6dd208-9385-4267-a728-840c545d972d" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="fd4e0f5b-8f35-4450-bc99-01bbe51c1691" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="924f8bc8-3cf1-4431-afc5-b43b8b0e6206" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="96765c31-4fe6-414c-959e-9a2db0b19a00" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="9533a613-18f7-4a8c-a652-40345749f008" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="163382e0-3447-4242-8e27-028e795064e8" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="4251fc9e-9d26-4ed6-a9ac-0ab2e7d5d5a9" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="e7ee095c-86bd-448a-b88d-dbc3ba5eb2d6" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="3a0c95f3-f019-4145-bf1c-3a8974246082" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="4dc208eb-abd6-47a1-bfaa-032ba64d446d" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="1d67e2e2-f69f-4b79-9ff2-fe36be29fb9b" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="299ecb2a-1653-4779-8e0e-cc725e5ac888" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="3c1d9938-04b5-4193-a842-26a61f3da06a" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="6efe93fa-b3f8-466c-aa91-f19f01ec55f3" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="ce62d51c-b9a1-486a-a8c0-5728a26e81e1" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="3f0018be-9c69-466c-a8cd-fe60b4df32fa" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="09a34ff0-6e09-4c67-a9f7-0ad1eca3f3ca" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="e3c78e0d-2d9f-4805-bbdc-24b177b25fea" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="5a26f561-fe9a-47df-80f6-c6da8e974972" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="34310727-2164-4740-bd8d-f7b7b970e95d" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="4b601303-17ad-4c14-9330-c3a22bd96d18" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="3853a1d0-2066-462a-a16d-a8fffa5f6068" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="c12057d9-90f2-4eba-9e59-524648a168bd" name="ExecutionEvent" />
+    </packageHasNamedElement>
+  </packagedElements>
+</SequenceDesignerModel>

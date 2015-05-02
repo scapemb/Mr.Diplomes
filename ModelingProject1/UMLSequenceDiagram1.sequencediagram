@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="db2898f8-1ffd-4a3c-98db-fe72a572b623" name="Sequence1" linkedPackageId="35e86808-df8a-460c-8921-7bf4b06a527d" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="0bc9d404-b829-4257-8c40-7ed241deb909">
+      <profileInstance Id="45552def-9c71-4cf8-8bf6-9c2f865dc279" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="e5a45cdb-da65-40ed-be0d-5cfe9a852809">
+      <profileInstance Id="5ad499d7-951a-415c-80c6-7d89a1143c9e" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="a46a2005-2f92-4ac3-a8f1-02a543fd0772">
+      <profileInstance Id="281b670b-b017-4e75-9599-2505a4dddf32" name="CSharpProfile">
+        <elementDefinition Id="c201a797-9feb-44db-b462-bb991b69a02b" />
+      </profileInstance>
+      <elementDefinition Id="7ffec518-2229-406a-999f-691f2531eafc" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <package Id="35e86808-df8a-460c-8921-7bf4b06a527d" name="ModelingProject1">
+    <elementDefinition Id="d907e721-fc89-4922-87bf-b390e5438188" />
+  </package>
+</SequenceDesignerModel>

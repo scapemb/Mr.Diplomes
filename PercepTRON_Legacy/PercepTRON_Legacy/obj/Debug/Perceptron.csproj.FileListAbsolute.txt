@@ -7,3 +7,11 @@ D:\БГУИР\Диплом\PercepTRON_Legacy\PercepTRON_Legacy\obj\Debug\Percept
 D:\БГУИР\Диплом\PercepTRON_Legacy\PercepTRON_Legacy\obj\Debug\Perceptron.csproj.GenerateResource.Cache
 D:\БГУИР\Диплом\PercepTRON_Legacy\PercepTRON_Legacy\obj\Debug\Perceptron.dll
 D:\БГУИР\Диплом\PercepTRON_Legacy\PercepTRON_Legacy\obj\Debug\Perceptron.pdb
+C:\Users\Eugene\Documents\Mr.Diplomes\PercepTRON_Legacy\PercepTRON_Legacy\obj\Debug\Perceptron.csprojResolveAssemblyReference.cache
+C:\Users\Eugene\Documents\Mr.Diplomes\PercepTRON_Legacy\PercepTRON_Legacy\obj\Debug\Perceptron.Properties.Resources.resources
+C:\Users\Eugene\Documents\Mr.Diplomes\PercepTRON_Legacy\PercepTRON_Legacy\obj\Debug\Perceptron.csproj.GenerateResource.Cache
+C:\Users\Eugene\Documents\Mr.Diplomes\PercepTRON_Legacy\PercepTRON_Legacy\obj\Debug\Perceptron.dll
+C:\Users\Eugene\Documents\Mr.Diplomes\PercepTRON_Legacy\PercepTRON_Legacy\bin\Debug\Perceptron.dll.config
+C:\Users\Eugene\Documents\Mr.Diplomes\PercepTRON_Legacy\PercepTRON_Legacy\bin\Debug\Perceptron.dll
+C:\Users\Eugene\Documents\Mr.Diplomes\PercepTRON_Legacy\PercepTRON_Legacy\bin\Debug\Perceptron.pdb
+C:\Users\Eugene\Documents\Mr.Diplomes\PercepTRON_Legacy\PercepTRON_Legacy\obj\Debug\Perceptron.pdb

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 12.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/ReverseEngineeringLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Журнал создания кода/преобразования текста">
+  <MessageClass Name="Message" Label="Сообщение" Option="Показывать информационные сообщения" />
+  <MessageClass Name="Warning" Label="Предупреждение" Option="Показывать предупреждения" />
+  <MessageClass Name="Error" Label="Ошибка" Option="Показывать ошибки" />
+  <MessageClass Name="Property" Label="Свойство" Option="Показывать метаданные" />
+  <MessageClass Name="Diagnostic" Label="Сообщение" Option="Показывать диагностические сообщения" />
+  <Message Timestamp="2015-04-28T20:35:09" Importance="High" Text="Реконструирование запущено." />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;Integer&quot; -  (PrimitiveType)" />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::MastaClasta&quot; -  (Package)" />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Medium" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::MastaClasta::ImageClaster&quot; -  (Class)" />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::MastaClasta::ImageClaster::BAverageColor&quot; -  (Property)" />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::MastaClasta::ImageClaster::BColorSum&quot; -  (Property)" />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::MastaClasta::ImageClaster::Compactness&quot; -  (Property)" />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::MastaClasta::ImageClaster::Elongation&quot; -  (Property)" />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::MastaClasta::ImageClaster::GAverageColor&quot; -  (Property)" />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::MastaClasta::ImageClaster::GColorSum&quot; -  (Property)" />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::MastaClasta::ImageClaster::ImageClass&quot; -  (Property)" />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::MastaClasta::ImageClaster::ImageClaster&quot; -  (Operation)" />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::MastaClasta::ImageClaster::MassCenterX&quot; -  (Property)" />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::MastaClasta::ImageClaster::MassCenterY&quot; -  (Property)" />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::MastaClasta::ImageClaster::MassX&quot; -  (Property)" />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::MastaClasta::ImageClaster::MassY&quot; -  (Property)" />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::MastaClasta::ImageClaster::Moment02&quot; -  (Property)" />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::MastaClasta::ImageClaster::Moment11&quot; -  (Property)" />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::MastaClasta::ImageClaster::Moment20&quot; -  (Property)" />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::MastaClasta::ImageClaster::Perimeter&quot; -  (Property)" />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::MastaClasta::ImageClaster::RAverageColor&quot; -  (Property)" />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::MastaClasta::ImageClaster::RColorSum&quot; -  (Property)" />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::MastaClasta::ImageClaster::ResultImageClass&quot; -  (Property)" />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::MastaClasta::ImageClaster::Square&quot; -  (Property)" />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::MastaClasta::ImageClaster::ToLightImageClaster&quot; -  (Operation)" />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::MastaClasta::ImageClaster::ToString&quot; -  (Operation)" />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::MastaClasta::LightImageClaster&quot; -  (Class)   (реконструирован частично - определение не обновлено) " />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::System&quot; -  (Package)" />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject1::System::Double&quot; -  (Class)   (реконструирован частично - определение не обновлено) " />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;String&quot; -  (PrimitiveType)" />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Отношение реконструировано в модели UML: ModelingProject1::MastaClasta::ImageClaster в ModelingProject1::System::Double (Association)" />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Отношение реконструировано в модели UML: ModelingProject1::MastaClasta::ImageClaster в ModelingProject1::System::Double (Association)" />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Отношение реконструировано в модели UML: ModelingProject1::MastaClasta::ImageClaster в ModelingProject1::System::Double (Association)" />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Отношение реконструировано в модели UML: ModelingProject1::MastaClasta::ImageClaster в ModelingProject1::System::Double (Association)" />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Отношение реконструировано в модели UML: ModelingProject1::MastaClasta::ImageClaster в ModelingProject1::System::Double (Association)" />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Отношение реконструировано в модели UML: ModelingProject1::MastaClasta::ImageClaster в ModelingProject1::System::Double (Association)" />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Отношение реконструировано в модели UML: ModelingProject1::MastaClasta::ImageClaster в ModelingProject1::System::Double (Association)" />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Отношение реконструировано в модели UML: ModelingProject1::MastaClasta::ImageClaster в ModelingProject1::System::Double (Association)" />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Отношение реконструировано в модели UML: ModelingProject1::MastaClasta::ImageClaster в ModelingProject1::System::Double (Association)" />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Отношение реконструировано в модели UML: ModelingProject1::MastaClasta::ImageClaster в ModelingProject1::System::Double (Association)" />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Отношение реконструировано в модели UML: ModelingProject1::MastaClasta::ImageClaster в ModelingProject1::System::Double (Association)" />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="Diagnostic" Text="Отношение реконструировано в модели UML: ModelingProject1::MastaClasta::ImageClaster в ModelingProject1::System::Double (Association)" />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="High" Text="Полностью реконструировано (1) типов." />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="High" Text="Частично реконструировано (2) типов.  Эти типы не были включены в исходный выбор, поэтому их полные определения не реконструированы.  Данная пустая операция лишь проверила наличие этих типов в модели UML, поскольку они необходимы для полного описания других элементов." />
+  <Message Timestamp="2015-04-28T20:35:11" Importance="High" Text="Операция реконструирования завершена; ошибок: (0), предупреждений: (0)." />
+</Log>

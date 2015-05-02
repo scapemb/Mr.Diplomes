@@ -5,7 +5,6 @@ namespace PercepTRON_Legacy
 {
     public class Perceptron
     {
-        private readonly int _nSqrt;
         private readonly int _m;
         private readonly int _n;
         private readonly int _h;
@@ -24,23 +23,22 @@ namespace PercepTRON_Legacy
         private readonly Random _random = new Random(DateTime.Now.Millisecond);
 
 
-        private readonly List<int[,]> _listPatterns;
+        private readonly List<int[]> _listPatterns;
 
         public Perceptron()
         {
 
         }
 
-        public Perceptron(List<int[,]> listPatterns, int nSqrt, double alpha, double beta, int timeOut, double error)
+        public Perceptron(List<int[]> listPatterns, int m, double alpha, double beta, int timeOut, double error)
         {
             _timeOut = timeOut;
             _error = error;
             _alpha = alpha;
             _beta = beta;
             _listPatterns = listPatterns;
-            _m = _listPatterns.Count;
-            _nSqrt = nSqrt;
-            _n = _nSqrt * _nSqrt;
+            _m = m;
+            _n = _listPatterns[0].Length;
             _h = _n / 2;
 
             /*
@@ -92,10 +90,10 @@ namespace PercepTRON_Legacy
             do
             {
                 Steps++;
-                
+
                 for (int pattern = 0; pattern < _m; pattern++)
                 {
-                    int[,] x = _listPatterns[pattern];
+                    int[] x = _listPatterns[pattern];
 
                     // 2.1 пропускание входного вектора через скрытый слой
                     for (int j = 0; j < _h; j++)
@@ -103,7 +101,7 @@ namespace PercepTRON_Legacy
                         double q = _q[j];
                         for (int i = 0; i < _n; i++)
                         {
-                            q += _v[i, j] * x[i / _nSqrt, i % _nSqrt];
+                            q += _v[i, j] * x[i];
                         }
                         _g[j] = Fun(q);
                     }
@@ -163,7 +161,7 @@ namespace PercepTRON_Legacy
                     // 2.15
                     for (int i = 0; i < _n; i++)
                         for (int j = 0; j < _h; j++)
-                            _v[i, j] += _beta * _g[j] * (1 - _g[j]) * _e[j] * x[i / _nSqrt, i % _nSqrt];
+                            _v[i, j] += _beta * _g[j] * (1 - _g[j]) * _e[j] * x[i];
 
                     // 2.16
                     for (int j = 0; j < _h; j++)
@@ -185,9 +183,9 @@ namespace PercepTRON_Legacy
             return 1.0 / (1.0 + Math.Exp(-x));
         }
 
-        public virtual double[] Recognize(int[,] patternNoised)
+        public virtual double[] Recognize(int[] patternNoised)
         {
-            int[,] x = patternNoised;
+            int[] x = patternNoised;
 
             // 2.1 пропускание входного вектора через скрытый слой
             for (int j = 0; j < _h; j++)
@@ -195,7 +193,7 @@ namespace PercepTRON_Legacy
                 double q = _q[j];
                 for (int i = 0; i < _n; i++)
                 {
-                    q += _v[i, j] * x[i / _nSqrt, i % _nSqrt];
+                    q += _v[i, j] * x[i];
                 }
                 _g[j] = Fun(q);
             }

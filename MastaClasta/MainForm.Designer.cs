@@ -35,6 +35,8 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
+            this.buttonStart = new System.Windows.Forms.Button();
+            this.trackBarClustersNumber = new System.Windows.Forms.TrackBar();
             this.buttonTry = new System.Windows.Forms.Button();
             this.trackBarBlur = new System.Windows.Forms.TrackBar();
             this.trackBarBlack = new System.Windows.Forms.TrackBar();
@@ -46,8 +48,8 @@
             this.pictureBoxBlured = new System.Windows.Forms.PictureBox();
             this.pictureBoxLeveled = new System.Windows.Forms.PictureBox();
             this.pictureBoxBinariezed = new System.Windows.Forms.PictureBox();
-            this.trackBarClustersNumber = new System.Windows.Forms.TrackBar();
-            this.buttonStart = new System.Windows.Forms.Button();
+            this.teachNeural = new System.Windows.Forms.Button();
+            this.recognizeNeuron = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -57,6 +59,7 @@
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarClustersNumber)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarBlur)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarBlack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarWhite)).BeginInit();
@@ -67,7 +70,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBlured)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLeveled)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBinariezed)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarClustersNumber)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -125,8 +127,8 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.tableLayoutPanel1);
-            this.splitContainer1.Size = new System.Drawing.Size(1110, 476);
-            this.splitContainer1.SplitterDistance = 305;
+            this.splitContainer1.Size = new System.Drawing.Size(1110, 570);
+            this.splitContainer1.SplitterDistance = 387;
             this.splitContainer1.TabIndex = 1;
             // 
             // splitContainer2
@@ -137,6 +139,8 @@
             // 
             // splitContainer2.Panel1
             // 
+            this.splitContainer2.Panel1.Controls.Add(this.recognizeNeuron);
+            this.splitContainer2.Panel1.Controls.Add(this.teachNeural);
             this.splitContainer2.Panel1.Controls.Add(this.buttonStart);
             this.splitContainer2.Panel1.Controls.Add(this.trackBarClustersNumber);
             this.splitContainer2.Panel1.Controls.Add(this.buttonTry);
@@ -148,13 +152,32 @@
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.resultPictureBox);
-            this.splitContainer2.Size = new System.Drawing.Size(1110, 305);
+            this.splitContainer2.Size = new System.Drawing.Size(1110, 387);
             this.splitContainer2.SplitterDistance = 530;
             this.splitContainer2.TabIndex = 0;
             // 
+            // buttonStart
+            // 
+            this.buttonStart.Cursor = System.Windows.Forms.Cursors.Default;
+            this.buttonStart.Location = new System.Drawing.Point(452, 333);
+            this.buttonStart.Name = "buttonStart";
+            this.buttonStart.Size = new System.Drawing.Size(75, 23);
+            this.buttonStart.TabIndex = 4;
+            this.buttonStart.Text = "Start";
+            this.buttonStart.UseVisualStyleBackColor = true;
+            this.buttonStart.Click += new System.EventHandler(this.buttonStart_Click);
+            // 
+            // trackBarClustersNumber
+            // 
+            this.trackBarClustersNumber.LargeChange = 1;
+            this.trackBarClustersNumber.Location = new System.Drawing.Point(320, 311);
+            this.trackBarClustersNumber.Name = "trackBarClustersNumber";
+            this.trackBarClustersNumber.Size = new System.Drawing.Size(92, 45);
+            this.trackBarClustersNumber.TabIndex = 3;
+            // 
             // buttonTry
             // 
-            this.buttonTry.Location = new System.Drawing.Point(452, 279);
+            this.buttonTry.Location = new System.Drawing.Point(452, 305);
             this.buttonTry.Name = "buttonTry";
             this.buttonTry.Size = new System.Drawing.Size(75, 23);
             this.buttonTry.TabIndex = 2;
@@ -165,7 +188,7 @@
             // trackBarBlur
             // 
             this.trackBarBlur.LargeChange = 3;
-            this.trackBarBlur.Location = new System.Drawing.Point(224, 257);
+            this.trackBarBlur.Location = new System.Drawing.Point(224, 311);
             this.trackBarBlur.Maximum = 21;
             this.trackBarBlur.Name = "trackBarBlur";
             this.trackBarBlur.Size = new System.Drawing.Size(90, 45);
@@ -175,7 +198,7 @@
             // trackBarBlack
             // 
             this.trackBarBlack.LargeChange = 10;
-            this.trackBarBlack.Location = new System.Drawing.Point(115, 257);
+            this.trackBarBlack.Location = new System.Drawing.Point(115, 312);
             this.trackBarBlack.Maximum = 255;
             this.trackBarBlack.Name = "trackBarBlack";
             this.trackBarBlack.Size = new System.Drawing.Size(103, 45);
@@ -184,18 +207,18 @@
             // trackBarWhite
             // 
             this.trackBarWhite.LargeChange = 10;
-            this.trackBarWhite.Location = new System.Drawing.Point(0, 258);
+            this.trackBarWhite.Location = new System.Drawing.Point(3, 312);
             this.trackBarWhite.Maximum = 255;
             this.trackBarWhite.Name = "trackBarWhite";
-            this.trackBarWhite.Size = new System.Drawing.Size(109, 45);
+            this.trackBarWhite.Size = new System.Drawing.Size(106, 45);
             this.trackBarWhite.TabIndex = 1;
             // 
             // sourcePictureBox
             // 
-            this.sourcePictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sourcePictureBox.Dock = System.Windows.Forms.DockStyle.Top;
             this.sourcePictureBox.Location = new System.Drawing.Point(0, 0);
             this.sourcePictureBox.Name = "sourcePictureBox";
-            this.sourcePictureBox.Size = new System.Drawing.Size(530, 305);
+            this.sourcePictureBox.Size = new System.Drawing.Size(530, 306);
             this.sourcePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.sourcePictureBox.TabIndex = 0;
             this.sourcePictureBox.TabStop = false;
@@ -205,7 +228,7 @@
             this.resultPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.resultPictureBox.Location = new System.Drawing.Point(0, 0);
             this.resultPictureBox.Name = "resultPictureBox";
-            this.resultPictureBox.Size = new System.Drawing.Size(576, 305);
+            this.resultPictureBox.Size = new System.Drawing.Size(576, 387);
             this.resultPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.resultPictureBox.TabIndex = 1;
             this.resultPictureBox.TabStop = false;
@@ -226,7 +249,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1110, 167);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1110, 179);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // pictureBoxGrayScale
@@ -234,7 +257,7 @@
             this.pictureBoxGrayScale.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBoxGrayScale.Location = new System.Drawing.Point(3, 3);
             this.pictureBoxGrayScale.Name = "pictureBoxGrayScale";
-            this.pictureBoxGrayScale.Size = new System.Drawing.Size(271, 161);
+            this.pictureBoxGrayScale.Size = new System.Drawing.Size(271, 173);
             this.pictureBoxGrayScale.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxGrayScale.TabIndex = 0;
             this.pictureBoxGrayScale.TabStop = false;
@@ -244,7 +267,7 @@
             this.pictureBoxBlured.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBoxBlured.Location = new System.Drawing.Point(280, 3);
             this.pictureBoxBlured.Name = "pictureBoxBlured";
-            this.pictureBoxBlured.Size = new System.Drawing.Size(271, 161);
+            this.pictureBoxBlured.Size = new System.Drawing.Size(271, 173);
             this.pictureBoxBlured.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxBlured.TabIndex = 1;
             this.pictureBoxBlured.TabStop = false;
@@ -254,7 +277,7 @@
             this.pictureBoxLeveled.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBoxLeveled.Location = new System.Drawing.Point(557, 3);
             this.pictureBoxLeveled.Name = "pictureBoxLeveled";
-            this.pictureBoxLeveled.Size = new System.Drawing.Size(271, 161);
+            this.pictureBoxLeveled.Size = new System.Drawing.Size(271, 173);
             this.pictureBoxLeveled.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxLeveled.TabIndex = 1;
             this.pictureBoxLeveled.TabStop = false;
@@ -264,35 +287,36 @@
             this.pictureBoxBinariezed.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBoxBinariezed.Location = new System.Drawing.Point(834, 3);
             this.pictureBoxBinariezed.Name = "pictureBoxBinariezed";
-            this.pictureBoxBinariezed.Size = new System.Drawing.Size(273, 161);
+            this.pictureBoxBinariezed.Size = new System.Drawing.Size(273, 173);
             this.pictureBoxBinariezed.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxBinariezed.TabIndex = 1;
             this.pictureBoxBinariezed.TabStop = false;
             // 
-            // trackBarClustersNumber
+            // teachNeural
             // 
-            this.trackBarClustersNumber.LargeChange = 1;
-            this.trackBarClustersNumber.Location = new System.Drawing.Point(320, 257);
-            this.trackBarClustersNumber.Name = "trackBarClustersNumber";
-            this.trackBarClustersNumber.Size = new System.Drawing.Size(92, 45);
-            this.trackBarClustersNumber.TabIndex = 3;
+            this.teachNeural.Location = new System.Drawing.Point(372, 361);
+            this.teachNeural.Name = "teachNeural";
+            this.teachNeural.Size = new System.Drawing.Size(75, 23);
+            this.teachNeural.TabIndex = 5;
+            this.teachNeural.Text = "Teach";
+            this.teachNeural.UseVisualStyleBackColor = true;
+            this.teachNeural.Click += new System.EventHandler(this.teachNeural_Click);
             // 
-            // buttonStart
+            // recognizeNeuron
             // 
-            this.buttonStart.Cursor = System.Windows.Forms.Cursors.No;
-            this.buttonStart.Location = new System.Drawing.Point(452, 250);
-            this.buttonStart.Name = "buttonStart";
-            this.buttonStart.Size = new System.Drawing.Size(75, 23);
-            this.buttonStart.TabIndex = 4;
-            this.buttonStart.Text = "Start";
-            this.buttonStart.UseVisualStyleBackColor = true;
-            this.buttonStart.Click += new System.EventHandler(this.buttonStart_Click);
+            this.recognizeNeuron.Location = new System.Drawing.Point(452, 361);
+            this.recognizeNeuron.Name = "recognizeNeuron";
+            this.recognizeNeuron.Size = new System.Drawing.Size(75, 23);
+            this.recognizeNeuron.TabIndex = 6;
+            this.recognizeNeuron.Text = "Recognize";
+            this.recognizeNeuron.UseVisualStyleBackColor = true;
+            this.recognizeNeuron.Click += new System.EventHandler(this.recognizeNeuron_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1110, 500);
+            this.ClientSize = new System.Drawing.Size(1110, 594);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -309,6 +333,7 @@
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarClustersNumber)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarBlur)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarBlack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarWhite)).EndInit();
@@ -319,7 +344,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBlured)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLeveled)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBinariezed)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarClustersNumber)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -347,6 +371,8 @@
         private System.Windows.Forms.Button buttonTry;
         private System.Windows.Forms.Button buttonStart;
         private System.Windows.Forms.TrackBar trackBarClustersNumber;
+        private System.Windows.Forms.Button teachNeural;
+        private System.Windows.Forms.Button recognizeNeuron;
 
     }
 }

@@ -31,3 +31,5 @@ C:\Users\Eugene\Documents\Mr.Diplomes\MastaClasta\obj\Debug\MastaClasta.OptionsF
 C:\Users\Eugene\Documents\Mr.Diplomes\MastaClasta\obj\Debug\MastaClasta.Properties.Resources.resources
 C:\Users\Eugene\Documents\Mr.Diplomes\MastaClasta\obj\Debug\MastaClasta.Resources.resources
 C:\Users\Eugene\Documents\Mr.Diplomes\MastaClasta\obj\Debug\MastaClasta.csproj.GenerateResource.Cache
+C:\Users\Eugene\Documents\Mr.Diplomes\MastaClasta\bin\Debug\Perceptron.dll
+C:\Users\Eugene\Documents\Mr.Diplomes\MastaClasta\bin\Debug\Perceptron.pdb

@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MastaClasta", "MastaClasta\MastaClasta.csproj", "{6A897425-9116-4422-8B56-8C45436A6AE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Perceptron", "D:\БГУИР\Диплом\PercepTRON_Legacy\PercepTRON_Legacy\Perceptron.csproj", "{55B8AAF7-7BA0-46E2-B99F-35A9C8E802FF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Perceptron", "PercepTRON_Legacy\PercepTRON_Legacy\Perceptron.csproj", "{55B8AAF7-7BA0-46E2-B99F-35A9C8E802FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

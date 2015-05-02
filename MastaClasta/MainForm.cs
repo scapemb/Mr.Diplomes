@@ -117,6 +117,35 @@ namespace MastaClasta
 
         }
 
+        private void teachNeural_Click(object sender, EventArgs e)
+        {
+            _logic = new Logic
+            {
+                BinaryBorder = 10,
+                BlackBorder = trackBarBlack.Value,
+                WhiteBorder = trackBarWhite.Value,
+                GaussianBlurRadius = trackBarBlur.Value,
+                GaussianBlurWeight = trackBarBlur.Value,
+                NumberOfClasters = trackBarClustersNumber.Value,
+                ProcessBitmap = (Bitmap)sourcePictureBox.Image
+            };
+
+            _logic.NeuralTeach();
+
+            resultPictureBox.SafetySetImageFromFile(Resources.ResultImageName);
+            pictureBoxGrayScale.SafetySetImageFromFile(Resources.GrayScaleImageName);
+            pictureBoxBlured.SafetySetImageFromFile(Resources.BluredImageName);
+            pictureBoxLeveled.SafetySetImageFromFile(Resources.LeveledImageName);
+            pictureBoxBinariezed.SafetySetImageFromFile(Resources.BinarizedImageName);
+        }
+
+        private void recognizeNeuron_Click(object sender, EventArgs e)
+        {
+            _logic.ProcessBitmap = (Bitmap)sourcePictureBox.Image;
+
+            _logic.NeuralRecognize();
+        }
+
 
     }
 }

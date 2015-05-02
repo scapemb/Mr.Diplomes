@@ -6,6 +6,7 @@ using System.Drawing.Imaging;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
+using PercepTRON_Legacy;
 
 namespace MastaClasta
 {
@@ -16,10 +17,11 @@ namespace MastaClasta
         public Int32 BlackBorder { set; get; }
         public Int32 WhiteBorder { set; get; }
         public Int32 NumberOfClasters { set; get; }
-
         public Int32 GaussianBlurRadius { set; get; }
         public Int32 GaussianBlurWeight { set; get; }
         public Int32 BinaryBorder { set; get; }
+
+        public PercepTRON_Legacy.Perceptron mPerceptron;
 
         private Byte[] GetRgbValuesFromBmp(Bitmap bitmap)
         {
@@ -202,6 +204,188 @@ namespace MastaClasta
             resultBitmap.Save(Resources.ResultImageName);
         }
 
+
+
+        public void NeuralTeach()
+        {
+            Int32 width = ProcessBitmap.Width;
+            Int32 height = ProcessBitmap.Height;
+            PixelFormat pixelFormat = ProcessBitmap.PixelFormat;
+
+            if (pixelFormat != PixelFormat.Format24bppRgb)
+            {
+                MessageBox.Show(Properties.Resources.Logic_Start_Error,
+                    String.Format("Your image has {0}. It must be {1}", pixelFormat, PixelFormat.Format24bppRgb));
+                return;
+            }
+
+            var grayScaleBitmap = new Bitmap(width, height, pixelFormat);
+            var colorMap = GetRgbValuesFromBmp(ProcessBitmap);
+            var grayScaleData = ConvertRgbToGrayScale(GetRgbValuesFromBmp(ProcessBitmap));
+
+            SetRgbValuesToBmp(ref grayScaleBitmap,
+                ConvertGrayScaleToRgb(grayScaleData));
+            grayScaleBitmap.Save(Resources.GrayScaleImageName);
+
+            Bitmap bluredBitmap = new Bitmap(width, height, pixelFormat);
+            if (GaussianBlurRadius > 0)
+            {
+                SetRgbValuesToBmp(ref bluredBitmap,
+                    ConvertGrayScaleToRgb(ConvolutionFilter(grayScaleData, height, width,
+                        MatrixCalculator.Calculate(GaussianBlurRadius, GaussianBlurWeight))));
+            }
+            else
+            {
+                bluredBitmap = grayScaleBitmap;
+            }
+
+            bluredBitmap.Save(Resources.BluredImageName);
+
+
+            SetRgbValuesToBmp(ref bluredBitmap,
+                ConvertGrayScaleToRgb(CorrectBrightnessRange(
+                    ConvertRgbToGrayScale(GetRgbValuesFromBmp(bluredBitmap)), BlackBorder, WhiteBorder)));
+            bluredBitmap.Save(Resources.LeveledImageName);
+
+            byte[] binaryData = Binarization(ConvertRgbToGrayScale(GetRgbValuesFromBmp(bluredBitmap)), BinaryBorder);
+
+            var binaryImage = new Bitmap(width, height, pixelFormat);
+            SetRgbValuesToBmp(ref binaryImage, ConvertGrayScaleToRgb(binaryData));
+            binaryImage.Save(Resources.BinarizedImageName);
+
+            byte[] regions = IterativeScan(binaryData, width, height);
+
+            IEnumerable<ImageClaster> fullObjects = CalculateMetricsForObjects(regions, colorMap, width, height);
+
+
+            var objects = new List<LightImageClaster>();
+            objects.AddRange(fullObjects.Select(im => im.ToLightImageClaster()));
+            DeleteBadClasters(ref objects);
+            Normalization(ref objects);
+
+
+            List<int[]> NeuronsForTeach = new List<int[]>();
+
+            foreach (LightImageClaster claster in objects )
+            {
+                NeuronsForTeach.Add(ObjectToNeurons(claster));
+            }
+
+            mPerceptron = new PercepTRON_Legacy.Perceptron(
+                NeuronsForTeach,
+                NumberOfClasters,
+                0.1,
+                0.1,
+                100000,
+                0.001
+                );
+
+            mPerceptron.Teach();
+
+        }
+
+        private int[] ObjectToNeurons(LightImageClaster claster)
+        {
+            List<int> neurons = new List<int>();
+
+            neurons.AddRange( IntToNeuronsArray(Convert.ToInt32( claster.Perimeter * 100) ) );
+            neurons.AddRange(IntToNeuronsArray(Convert.ToInt32(claster.Square * 100)));
+            neurons.AddRange(IntToNeuronsArray(Convert.ToInt32(claster.Elongation * 100)));
+            neurons.AddRange(IntToNeuronsArray(Convert.ToInt32(claster.Compactness * 100)));
+
+            neurons.AddRange(IntToNeuronsArray(Convert.ToInt32(claster.ColorMap[0] * 100)));
+            neurons.AddRange(IntToNeuronsArray(Convert.ToInt32(claster.ColorMap[1] * 100)));
+            neurons.AddRange(IntToNeuronsArray(Convert.ToInt32(claster.ColorMap[2] * 100)));
+
+            return neurons.ToArray();
+        }
+
+        private int[] IntToNeuronsArray(int value)
+        {
+            BitArray b = new BitArray(new int[] { value });
+            bool[] bits = new bool[b.Count];
+            b.CopyTo(bits, 0);
+            return  bits.Select(bit => (int)(bit ? 1 : -1)).ToArray();
+        }
+
+        public void NeuralRecognize()
+        {
+            Int32 width = ProcessBitmap.Width;
+            Int32 height = ProcessBitmap.Height;
+            PixelFormat pixelFormat = ProcessBitmap.PixelFormat;
+
+            if (pixelFormat != PixelFormat.Format24bppRgb)
+            {
+                MessageBox.Show(Properties.Resources.Logic_Start_Error,
+                    String.Format("Your image has {0}. It must be {1}", pixelFormat, PixelFormat.Format24bppRgb));
+                return;
+            }
+
+            var grayScaleBitmap = new Bitmap(width, height, pixelFormat);
+            var colorMap = GetRgbValuesFromBmp(ProcessBitmap);
+            var grayScaleData = ConvertRgbToGrayScale(GetRgbValuesFromBmp(ProcessBitmap));
+
+            SetRgbValuesToBmp(ref grayScaleBitmap,
+                ConvertGrayScaleToRgb(grayScaleData));
+            grayScaleBitmap.Save(Resources.GrayScaleImageName);
+
+            Bitmap bluredBitmap = new Bitmap(width, height, pixelFormat);
+            if (GaussianBlurRadius > 0)
+            {
+                SetRgbValuesToBmp(ref bluredBitmap,
+                    ConvertGrayScaleToRgb(ConvolutionFilter(grayScaleData, height, width,
+                        MatrixCalculator.Calculate(GaussianBlurRadius, GaussianBlurWeight))));
+            }
+            else
+            {
+                bluredBitmap = grayScaleBitmap;
+            }
+
+            bluredBitmap.Save(Resources.BluredImageName);
+
+
+            SetRgbValuesToBmp(ref bluredBitmap,
+                ConvertGrayScaleToRgb(CorrectBrightnessRange(
+                    ConvertRgbToGrayScale(GetRgbValuesFromBmp(bluredBitmap)), BlackBorder, WhiteBorder)));
+            bluredBitmap.Save(Resources.LeveledImageName);
+
+            byte[] binaryData = Binarization(ConvertRgbToGrayScale(GetRgbValuesFromBmp(bluredBitmap)), BinaryBorder);
+
+            var binaryImage = new Bitmap(width, height, pixelFormat);
+            SetRgbValuesToBmp(ref binaryImage, ConvertGrayScaleToRgb(binaryData));
+            binaryImage.Save(Resources.BinarizedImageName);
+
+            byte[] regions = IterativeScan(binaryData, width, height);
+
+            IEnumerable<ImageClaster> fullObjects = CalculateMetricsForObjects(regions, colorMap, width, height);
+
+
+            var objects = new List<LightImageClaster>();
+            objects.AddRange(fullObjects.Select(im => im.ToLightImageClaster()));
+            DeleteBadClasters(ref objects);
+            Normalization(ref objects);
+
+
+            List<int[]> NeuronsForRecognize= new List<int[]>();
+
+            foreach (LightImageClaster claster in objects)
+            {
+                NeuronsForRecognize.Add(ObjectToNeurons(claster));
+            }
+
+            var recognized = new List<double[]>();
+
+            foreach (int[] objectToRecognize in NeuronsForRecognize)
+            {
+                var mad = objectToRecognize;
+                double[] lol = new double[mad.Length];
+                mPerceptron.Recognize(mad).CopyTo(lol, 0);
+                recognized.Add(lol);
+            }
+
+            var i = 0;
+        }
+
         private void GetObjectClassTable(List<LightImageClaster> objects, Hashtable changeObjectClassTable, Hashtable colorObjectClassTable, Random random)
         {
              List<LightImageClaster> lol = CalculateGoodCenters(objects, Constants.Attributes.Square);
@@ -282,7 +466,6 @@ namespace MastaClasta
 
             return imageData;
         }
-
 
         private Byte[] ConvolutionFilter(Byte[] sourceData,int height, int width, Double[,] filterMatrix, Double factor = 1)
         {
@@ -773,6 +956,7 @@ namespace MastaClasta
                 t.ColorMap[2] /= maxBColor;
             });
         }
+    
         private LightImageClaster CalculateCenter(IEnumerable<LightImageClaster> objects)
         {
             IList<LightImageClaster> lightImageClasters = objects as IList<LightImageClaster> ?? objects.ToList();
