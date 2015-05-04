@@ -1,0 +1,2918 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="44dbfaa4-78da-434a-bc4e-8d30969eea2f"
+  name="PercepTRON_Legacy"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="e2dfa071-08bf-43cc-a8ea-e4c0272c99fd"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DPercepTRON_Legacy"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="9070424c-cfb4-4a8e-8158-a75748a4649f"
+        name="Perceptron"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="661d3f00-00f2-4174-8bfc-80621315a3d1"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="75b168b5-544b-404b-8452-a21717dcdf82"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cf26205e-5a03-42a8-886d-fa23208755a9">
+                <propertyInstance
+                  Id="7b34951c-33bb-4193-840a-62442f69f64d"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3aed287f-a6c6-4d62-b9f1-835a81d07395">
+                <propertyInstance
+                  Id="e1886f5a-376f-44a7-9f5c-0402e21bb438"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b2955d18-de30-4d21-a6db-672f4f1b4c50">
+                <propertyInstance
+                  Id="c2538362-0188-4d71-92c6-f7bd781da2ae"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4b91f138-23c6-4710-866c-a0933e6ac2ed">
+                <propertyInstance
+                  Id="10eec415-dcd0-4c6c-a8fd-8d03182ba56d"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a76a5593-5a9a-4888-967b-91800f798262">
+                <propertyInstance
+                  Id="e11b239e-2f4e-4911-86a5-3c3c894f8694"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="b319843b-1f7f-4552-bcd9-c200e92099f1"
+            name="Steps"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="00f8c65c-eb19-438d-b682-257c69c0f068"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3DSteps"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="42d8dbf7-d455-474a-baa0-dbea8e570d90"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1c4e54e8-76b8-4c40-911d-a74a95fac891">
+                    <propertyInstance
+                      Id="1a7ac3af-f301-4e9c-b7e3-7e6187693254"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2e5e5837-65fd-4318-8251-09c350e170ce">
+                    <propertyInstance
+                      Id="2552e7eb-0fba-41fb-8902-0d587ac949a3"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a58d8256-9aae-4540-a8cb-c6036afdb83c">
+                    <propertyInstance
+                      Id="fddf7a38-f647-461c-b3a8-b5bd19e77420"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7334c5a1-0853-40a1-91f3-011d0af4ec18">
+                    <propertyInstance
+                      Id="6d7dfcbb-d996-4e37-946a-2821c3b07974"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7ba7bd59-f49b-4ea9-bd82-d5dbea0bc3c7">
+                    <propertyInstance
+                      Id="8e46ac2f-2d80-4a02-a65c-8d52b42eaef2"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5e2dadf7-ddb0-4c16-b0a2-dd950a2fddf9">
+                    <propertyInstance
+                      Id="2f2342e3-cf1d-4352-972b-1f87700b9466"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="23f002d3-8f84-4fc3-8cb9-572efe82d735">
+                    <propertyInstance
+                      Id="92b905ce-3284-430c-8002-cb0867711e56"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject2.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8738e751-0ff2-4c6e-bf67-0893e24a25e9"
+            name="_m"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="37646582-dcd6-42de-adc0-416f7276d542"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D_m"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0688e9c2-1ada-4885-b1c2-9a8fc6e262ea"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1f3ab0c2-b52e-4fab-aa8d-be0b02564bfd">
+                    <propertyInstance
+                      Id="e35dfbee-f8ec-4078-8b22-aaca27797dda"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a35f6c00-6992-484c-9af1-eeb0c8fec688">
+                    <propertyInstance
+                      Id="f36ed06d-57e9-4c86-bd4a-2744641d72fb"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d1fefeac-7b86-40cf-9772-9580ebd19658">
+                    <propertyInstance
+                      Id="ae695959-20d0-43c3-94d3-1608d5135218"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="587e151d-d9d5-40d2-8d51-5134925b5dc1">
+                    <propertyInstance
+                      Id="d4e8e770-d6f4-4865-8eae-782a6ed503a9"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bb7f93f5-2c78-46e5-81a0-8089df2e4bb9">
+                    <propertyInstance
+                      Id="76f10721-b9ed-4d8e-a09a-04dec8290136"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject2.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a512a7fb-292e-4ea6-929e-559d2a3e6649"
+            name="_n"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="3f323cfe-d7f6-4793-870d-ad19cb9a0c51"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D_n"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ab290b70-e969-4088-a2be-fa9bd5a9c198"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b5cbf82c-f9fc-4bb9-be7f-f7776930c0f1">
+                    <propertyInstance
+                      Id="97414c7c-2391-4475-82b3-e7d2eabc76f0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="87f2e30d-1577-49bc-bbe2-3185e0b72478">
+                    <propertyInstance
+                      Id="9b4fb1e1-3fa9-4d55-80ab-178656a06e45"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="147d3533-cb2e-4386-afb1-18388afc2ae5">
+                    <propertyInstance
+                      Id="614ddb5e-614e-4b5a-a367-3d6f784776ae"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="596c56b0-3fe9-41c7-b541-a8fa7a5b0abb">
+                    <propertyInstance
+                      Id="aab3d2c0-ebfb-4bd1-8f3e-16c5552ed824"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cc05a7be-1d8d-4612-b66c-772803792466">
+                    <propertyInstance
+                      Id="888855a9-9870-4fda-861a-2919ced5e7df"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject2.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="df5fc7c0-99d8-4eb8-8d95-e0ec6e4c1381"
+            name="_h"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="f0d67abf-0738-4f11-b64e-e6f112eb687c"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D_h"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fbef5454-12fa-4c99-bd84-c4839d455ef9"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9329b29a-3eb6-48a0-a875-c37fbf994237">
+                    <propertyInstance
+                      Id="fc5e6334-6dd1-4c82-87a9-a6a5bb4b1d6b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e9c2ab35-e63a-4a30-9c78-927ee8e3a85e">
+                    <propertyInstance
+                      Id="2da568ab-029f-4033-b404-0d76a3035207"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c9d89598-c676-4275-b74b-9b588649e05a">
+                    <propertyInstance
+                      Id="70713351-d2d6-49a9-b2c5-a5249fa3496a"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f207a3bd-68ba-4ca9-a6e7-bb278f35034c">
+                    <propertyInstance
+                      Id="dba74a70-5d85-4933-94f8-f54d1a983717"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ac17040d-dea3-4b27-bb68-f78b97ace04c">
+                    <propertyInstance
+                      Id="5039688d-0a87-4383-913d-8a97ff6d094c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject2.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="3bab2cda-fb29-4a10-9e46-3d36f73d0456"
+            name="_v"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isOrdered="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="fba428f9-4011-4f74-8c70-0a899a15633b"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D_v"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="35e8e40f-6c76-4e96-803e-04f540a99f73"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ea2f9c9-b226-4287-a5a5-3c8f9fdd767a">
+                    <propertyInstance
+                      Id="ed7c296e-dcbd-41e2-8037-fd04e4ab74a9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="acb5a521-fafb-443e-aeaa-f6b4680f045e">
+                    <propertyInstance
+                      Id="a6b568dd-b574-4775-af32-586ace0c9f0b"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1bf09322-77c2-4373-83d4-ec997b6a8f64">
+                    <propertyInstance
+                      Id="15a8e3c5-ef4e-422e-9c1b-2380ffecb06a"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fd866a6d-007f-4468-9886-8f53b131e2b1">
+                    <propertyInstance
+                      Id="f9e7b05e-ce17-4c51-9e2e-cd19f4e4184c"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="900ae448-14f2-485c-9572-e8740067f076">
+                    <propertyInstance
+                      Id="3429d1c3-9b27-41a2-9b91-15043f4ac021"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <lowerValueInternal>
+              <literalString
+                Id="ec452f80-1549-4f1c-a2ba-903018f158ba"
+                name="Lower"
+                value="*" />
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString
+                Id="a0c69025-cc7c-4efc-a0e9-d7f8567878b7"
+                name="Upper"
+                value="*" />
+            </upperValueInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="1cae4c0f-f516-485d-8935-c2a1af11c61b"
+                LastKnownName="Double"
+                LastKnownLocation="Package1_1704.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="363acde6-db03-47b4-a8f7-2decc0d1a9c0"
+            name="_w"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isOrdered="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="dc92d28d-57e3-4a2a-8db7-4d509739fda5"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D_w"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="cd5a480b-2d66-4f8b-941b-39a6fc6b4d79"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6367230d-4180-4cb9-84f3-d5d6ce45a100">
+                    <propertyInstance
+                      Id="09c7b968-9735-44aa-816e-831b3160dd69"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="291b22d4-8142-4397-9936-f747c056aff6">
+                    <propertyInstance
+                      Id="f9087f4b-7067-485e-9b0e-43376be0e89b"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="700f9131-e633-482d-a9df-9d81ff2d804e">
+                    <propertyInstance
+                      Id="b8d35a38-bfd9-4380-acad-43d28b927cf4"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5cb9a10f-29eb-4608-b5d2-432387c7325f">
+                    <propertyInstance
+                      Id="2a5fa3fd-5c6d-41e3-b94e-97819fc6bfff"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6e305c2f-3657-44e6-98ac-2a6245e06494">
+                    <propertyInstance
+                      Id="3de6ac46-f0e4-49d9-9848-72bc8495cad5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <lowerValueInternal>
+              <literalString
+                Id="318dfd4f-ee40-4fa1-89cf-e61245140149"
+                name="Lower"
+                value="*" />
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString
+                Id="7d04fa52-05b1-4713-81b2-5fd1cf252701"
+                name="Upper"
+                value="*" />
+            </upperValueInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="1cae4c0f-f516-485d-8935-c2a1af11c61b"
+                LastKnownName="Double"
+                LastKnownLocation="Package1_1704.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e40944d6-2b56-43b5-a9a3-ae265b7734df"
+            name="_q"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isOrdered="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="31a01980-d59f-4aea-98df-5b9ad1bdcc43"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D_q"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="07ed4fa9-cded-4f35-b5c8-c4e0055317c5"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="54240ba0-242e-4112-b366-d4e4cff3dc8d">
+                    <propertyInstance
+                      Id="79ab04e3-fc3c-46b6-9543-ba8049e013b3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7868ef1a-9eac-4fae-ba47-3214b647a8af">
+                    <propertyInstance
+                      Id="4f5c626f-a7da-4cf4-bf26-75df90978905"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e1f8eaaa-e309-4582-8204-fce0d77cd0e5">
+                    <propertyInstance
+                      Id="048a00c4-e37d-41ae-81d8-ca17a38aa713"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ceeff0db-aa50-4d89-b62a-d5f86711a310">
+                    <propertyInstance
+                      Id="83beb8b3-8be7-4d5f-83c4-bc5db846d513"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cd4f6239-3c0e-431b-a61b-2b9d765ff2c8">
+                    <propertyInstance
+                      Id="bfd5ae9a-4852-43ab-910b-f2e545855090"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <lowerValueInternal>
+              <literalString
+                Id="d65534c7-f5b6-4360-89a6-57f106996190"
+                name="Lower"
+                value="*" />
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString
+                Id="d56208ef-40be-4b43-80bf-14e8b6b6a48f"
+                name="Upper"
+                value="*" />
+            </upperValueInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="1cae4c0f-f516-485d-8935-c2a1af11c61b"
+                LastKnownName="Double"
+                LastKnownLocation="Package1_1704.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f1afff9a-0126-48a4-8bdf-7cb61d2d3c89"
+            name="_t"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isOrdered="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="3bb43213-bf34-499b-aa0f-d62111e886f5"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D_t"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8f41ff26-ab66-48bd-bfd6-f10991ec32fa"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="901bb0ad-094d-4d59-85f0-ba9cfd4e666b">
+                    <propertyInstance
+                      Id="84cb2827-0d7b-48ed-ac76-9f83a5effaf9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f6c618ed-6964-4e6b-b494-8598acb9201f">
+                    <propertyInstance
+                      Id="536e4ca2-ee8e-45e8-8d53-1cd340e25e21"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0a4d8432-4995-491a-bcd7-2768d0c52fb9">
+                    <propertyInstance
+                      Id="a82f7c16-f2c5-4eda-9f84-5fd4c3b447d8"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="37ebc433-db5a-4390-b6d1-b84bc4dfe6d1">
+                    <propertyInstance
+                      Id="f99a8bb6-70dd-4492-a486-2031ea031c9c"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f6c61f2c-ed5a-46d2-aa0b-d979bc0798ed">
+                    <propertyInstance
+                      Id="82bff9ce-41a3-4ff2-8fdd-f3c486d8e7d2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <lowerValueInternal>
+              <literalString
+                Id="b7720c9d-c6b1-4b14-bea0-8335eef0f66e"
+                name="Lower"
+                value="*" />
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString
+                Id="7cec8ef6-a816-4a80-9599-2d4b34f1c8f1"
+                name="Upper"
+                value="*" />
+            </upperValueInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="1cae4c0f-f516-485d-8935-c2a1af11c61b"
+                LastKnownName="Double"
+                LastKnownLocation="Package1_1704.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1cc01b43-ec52-4ae6-bd48-16961bd63c6b"
+            name="_g"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isOrdered="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="f893a27b-722e-4ec3-a0f6-25e495c088ba"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D_g"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c2dcf3ce-718c-4239-8d93-3066d85cdeb6"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a2a77ff3-5530-41d7-9ea1-ca4402fcc586">
+                    <propertyInstance
+                      Id="bfbf2919-4038-451c-99f7-7495cebb2692"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6114bb9c-6580-446b-abcc-05fb8698536b">
+                    <propertyInstance
+                      Id="c7668a0f-df4b-4d43-a5a3-839bb060d470"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4fa30283-93c7-478f-a1b2-73725ad2df05">
+                    <propertyInstance
+                      Id="5961e1ec-ec75-4884-b41a-cdee4ad892e9"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="76baddd9-250b-45e3-8f93-7aabdf50dc12">
+                    <propertyInstance
+                      Id="8b03e428-cc81-43fc-8e23-4b5b823fb00a"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3d414342-7001-4766-904e-0a7625c51e85">
+                    <propertyInstance
+                      Id="bc62d9ae-4c27-4b8e-aee4-571a32abaf8e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <lowerValueInternal>
+              <literalString
+                Id="85e328ff-53fb-4890-aa6e-5393c545b9e1"
+                name="Lower"
+                value="*" />
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString
+                Id="b7ad8a9e-9a5a-425d-a9ec-3ae1527449aa"
+                name="Upper"
+                value="*" />
+            </upperValueInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="1cae4c0f-f516-485d-8935-c2a1af11c61b"
+                LastKnownName="Double"
+                LastKnownLocation="Package1_1704.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="19b2fc5c-26c2-49cb-a9aa-195703cdf515"
+            name="_y"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isOrdered="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="6866b71d-3c54-4083-ba86-66a9738a2af9"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D_y"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a0156075-32db-4843-ba9a-30bb65ce2f62"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="36122148-c41b-4536-b442-78a69cfec35b">
+                    <propertyInstance
+                      Id="96a0b506-864e-41f2-bf0c-08c8d05f1ad9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2af9844a-e12e-4301-915c-8bf9c69dfb93">
+                    <propertyInstance
+                      Id="5035b0ac-6551-4b1d-bd77-62a13fad4ed6"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2a2d5cd1-a2aa-4ad8-a17e-db671ce5f011">
+                    <propertyInstance
+                      Id="8af26551-c074-4ded-ab8b-427fb85ed821"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7a605d18-5741-40b6-8c11-76c57a09018b">
+                    <propertyInstance
+                      Id="36d58d0c-9438-428c-9e90-9481823df829"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8acd5fb7-7a1f-4e71-a595-59f7e012bd34">
+                    <propertyInstance
+                      Id="ce146bd2-e496-4456-82fd-6b1e254e15bc"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <lowerValueInternal>
+              <literalString
+                Id="dd7de6db-7479-4c29-886b-bf17df41b60d"
+                name="Lower"
+                value="*" />
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString
+                Id="86445749-2050-42f7-bab6-86891237f7f6"
+                name="Upper"
+                value="*" />
+            </upperValueInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="1cae4c0f-f516-485d-8935-c2a1af11c61b"
+                LastKnownName="Double"
+                LastKnownLocation="Package1_1704.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="62d32bf7-c85f-4980-a91e-8c7b8b6e2899"
+            name="_e"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isOrdered="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="728f5e22-9558-4a41-8ef3-807b073473d0"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D_e"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4b7b9969-b596-43e3-9df9-07c04f812339"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="db3df739-6622-4c40-af34-25d4abcae166">
+                    <propertyInstance
+                      Id="19e4d1ed-d0cf-4b8d-a78d-af853a9618ef"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6becf36a-5cf3-4107-987e-3dce94716feb">
+                    <propertyInstance
+                      Id="07b41462-f542-47ae-8248-5095faa7e84b"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f044262e-d0cc-4fc9-ad9b-b7fd99256863">
+                    <propertyInstance
+                      Id="f7217eb5-e1a9-40e8-908d-fc89777b18c2"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cc5ea9f2-87c7-45ae-a428-8a3f1f36a4f9">
+                    <propertyInstance
+                      Id="228fb8c0-2bab-4c39-8b23-6730964f2ab2"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1435d000-f38a-4899-baf8-6f9b2e8ea119">
+                    <propertyInstance
+                      Id="b01e0729-7bdd-4725-a65e-db2a69fbfaca"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <lowerValueInternal>
+              <literalString
+                Id="2d1e8e85-baf1-4fbc-a169-0738a4384fc4"
+                name="Lower"
+                value="*" />
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString
+                Id="dfe35b00-4b6e-4ce7-adc0-730969378948"
+                name="Upper"
+                value="*" />
+            </upperValueInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="1cae4c0f-f516-485d-8935-c2a1af11c61b"
+                LastKnownName="Double"
+                LastKnownLocation="Package1_1704.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="92a3d6b7-aafa-4f20-a18b-210848ef5ade"
+            name="_d"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isOrdered="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="5537bf2f-642d-46dd-a73f-48823fe919a9"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D_d"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="195e61d2-2a6a-4987-a303-c282d3c02521"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6fa19f0-a0e5-4393-b757-de0b2856908e">
+                    <propertyInstance
+                      Id="3386e48f-5f8c-4b25-b8ef-150bcbe79fad"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="17f58d18-83df-4ce0-ab43-1087d671d6cc">
+                    <propertyInstance
+                      Id="39deff71-b620-486c-8305-22b385544628"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="277b3ebb-17c8-4946-82ca-7ddc7bb0a555">
+                    <propertyInstance
+                      Id="ed1d45f0-5e0c-4c83-85be-2c8e77b038a8"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8fcb8d69-e5a1-437b-b02d-4be0da47370a">
+                    <propertyInstance
+                      Id="97215af1-7efc-4c90-8180-ff8b69ae0e00"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2dbbc887-453c-4e69-b18b-4fe0a5976448">
+                    <propertyInstance
+                      Id="54ab1651-7989-4d9c-b665-225a474543e1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <lowerValueInternal>
+              <literalString
+                Id="b9f50dbf-d29a-4038-a37d-261c26ad0a66"
+                name="Lower"
+                value="*" />
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString
+                Id="1d2727de-5b28-4b43-8d3b-adb2c8f4d04c"
+                name="Upper"
+                value="*" />
+            </upperValueInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="1cae4c0f-f516-485d-8935-c2a1af11c61b"
+                LastKnownName="Double"
+                LastKnownLocation="Package1_1704.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="83004016-837c-41b2-ad41-9d7ea261ad04"
+            name="_alpha"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="8715f159-f575-4e3f-8620-cae19b45a276"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D_alpha"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2866473a-5569-4331-9eb0-67b7ba200214"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9a50a6b1-63ee-41f0-b186-44a7aefbb199">
+                    <propertyInstance
+                      Id="91b1711c-5b6e-4222-a58b-285959e0becb"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aa08ada7-8b76-46d2-81b9-3d5048ded9df">
+                    <propertyInstance
+                      Id="00fedfb7-93aa-4220-95a0-4070cc9a0bed"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0e6c1ee4-be30-48d0-ad44-8d49917624bc">
+                    <propertyInstance
+                      Id="91ab1446-a10b-414b-b228-dfa8a9a303db"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9d25e9d7-bc1c-40c9-8b92-53a6ffb71663">
+                    <propertyInstance
+                      Id="17f126e9-0d42-4c46-ab57-136eaa1ac334"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5a27c4c8-8bd2-4c66-96f3-a44509f7ecc6">
+                    <propertyInstance
+                      Id="dc85f504-0ba1-49c5-8f6a-bde7a97fd7b4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="1cae4c0f-f516-485d-8935-c2a1af11c61b"
+                LastKnownName="Double"
+                LastKnownLocation="Package1_1704.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8efef38a-2eb7-48f2-898b-1362c1657970"
+            name="_beta"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="4ccfc4f8-b0aa-4556-b74a-33ae5e7340a4"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D_beta"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="064c8bd1-9c10-4069-b465-bed792b40134"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7f652671-4f90-4fa6-a459-b5d765640401">
+                    <propertyInstance
+                      Id="6baab7ec-ecba-47bd-bf41-50b177fb4807"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fde9c071-9ae2-4073-88fb-a93a7d0b2df7">
+                    <propertyInstance
+                      Id="097f5f2b-12f6-4451-9559-a55bb99e5b7d"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="671532e6-97e4-402a-8ab1-3ac6a77af8dd">
+                    <propertyInstance
+                      Id="f1c7db1e-21c8-4bc5-96c4-e571cde7ae6f"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="13ff37eb-0387-4f8b-be32-8d2e03b0cbe8">
+                    <propertyInstance
+                      Id="393c14be-719b-4b3f-8de0-42914f63d882"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e493a505-c233-402c-aa31-7df96a81873f">
+                    <propertyInstance
+                      Id="37532971-deca-4044-bdc3-356508da410a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="1cae4c0f-f516-485d-8935-c2a1af11c61b"
+                LastKnownName="Double"
+                LastKnownLocation="Package1_1704.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="78bc7177-10b0-4d5e-b44b-9b99ced36ab9"
+            name="_timeOut"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="f2bc1b3c-f396-4e31-8135-1a374c3c72a2"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D_timeOut"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7c83afaa-23af-4c14-b066-22a0bda03fc8"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2997756e-e690-4fe0-832e-a4c2a5071ebe">
+                    <propertyInstance
+                      Id="0376f4d6-bc5a-446a-b268-57b11ff66883"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b16b4bef-8e0b-4dc2-b188-75924502e9f6">
+                    <propertyInstance
+                      Id="49d29d19-5864-4502-be08-a6997f92529b"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="760c2d78-ec93-4f65-b9d5-78621ec0e6c8">
+                    <propertyInstance
+                      Id="c06174f3-de01-4a9a-b9ca-f1e6cac42e2a"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="30af5933-c8ae-4012-a663-92757b9d6c2f">
+                    <propertyInstance
+                      Id="96d32fb6-5874-43dc-8b6b-40f2e668da68"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f236a891-fe4b-40fd-b641-dff0649cb10f">
+                    <propertyInstance
+                      Id="8b9f4944-4d1b-4261-b509-9ba3597b5dbf"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject2.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="15aff7db-2ffd-471e-9076-d3f6a5833191"
+            name="_error"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="f6052e33-8763-4d51-b803-26d079f898f1"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D_error"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="58b4522c-a399-45a2-93f6-2228da617b73"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4b3e25c1-7b1d-46b4-a7d6-67203a53851c">
+                    <propertyInstance
+                      Id="aef10d37-c4ae-4fb6-beba-5422e666b7c4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3e2d4b23-3ea4-4744-ad96-5a89726b7aa1">
+                    <propertyInstance
+                      Id="4d272c10-0e13-40ea-a10e-8fb542d60459"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="897ac759-fc51-4b88-8fb1-a7bd43df7fad">
+                    <propertyInstance
+                      Id="aa827888-df54-4488-88bc-9cdd5d73cfdc"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="39b089dc-1ad2-44b7-a826-4e813f0142a4">
+                    <propertyInstance
+                      Id="7d46164e-20ad-4d36-9304-d30c30493f9b"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9a7d44d2-d5fd-46d1-aaef-0bffa3c5892c">
+                    <propertyInstance
+                      Id="64c8a573-1f27-4621-ae1f-862535d002ad"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="1cae4c0f-f516-485d-8935-c2a1af11c61b"
+                LastKnownName="Double"
+                LastKnownLocation="Package1_1704.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="135f7087-9260-4e08-84a6-545f28723c33"
+            name="_random"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="9104d4e4-ac3b-472d-b432-2be4e15f0161"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D_random"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="69a9b216-e305-47c1-898a-569e2247cc19"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="88d6e3c9-57c4-48fd-8ee2-70019d53c0ff">
+                    <propertyInstance
+                      Id="a284a8ef-7e40-483a-b2f1-1e1887be6e78"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2c412abe-b0db-4cc8-af03-fc54790e299f">
+                    <propertyInstance
+                      Id="9981296b-fb6c-4794-9201-7db01c6bc57b"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="538b4619-43de-499c-be10-11498437c1e6">
+                    <propertyInstance
+                      Id="1e71f6a2-bb4a-4e0c-8230-bb13e64e51f1"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3068fede-9403-4966-8759-5e06979d1de5">
+                    <propertyInstance
+                      Id="531d9fed-b111-498b-b031-aa769775130b"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8f01636c-8b8c-4a1b-a91a-c7c469c7ee17">
+                    <propertyInstance
+                      Id="a01dcff5-37eb-4668-805a-44054a805a7c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="27a02e8a-ab9f-4222-b532-ae8c3a2300f8"
+                LastKnownName="Random"
+                LastKnownLocation="Package1_1704.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a503b0ac-4530-47b2-aaab-9ae7ef0d84f6"
+            name="_listPatterns"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="7ab3d419-c92f-4d9c-9396-02f3f54b67f2"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D_listPatterns"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c2dac861-d5c4-44bd-b935-4eb8bfee5d8c"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b6a284c8-fe1b-43d8-bcda-d8c48737cae5">
+                    <propertyInstance
+                      Id="9f9797f8-db19-44fe-8528-aa2116abf0df"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dfa4e4ee-37bf-4fe3-a286-cf4d7ab765a3">
+                    <propertyInstance
+                      Id="87a66215-b59c-4cf8-a062-c37a3b9bc62e"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="23b69cec-8bdf-4665-9f72-1fc2ed12ec27">
+                    <propertyInstance
+                      Id="6bbadefa-143c-4afa-954c-4c10a40a045c"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b967e54b-a2cc-47ac-8b20-be4c2491bdf4">
+                    <propertyInstance
+                      Id="4e70435d-52f1-4f36-b2fe-463b8a2d016b"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9c91ab21-9e14-4560-a2a8-268643290857">
+                    <propertyInstance
+                      Id="52edba95-3316-4d7c-957a-bc787a69d279"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="e0744433-7ac7-4640-bfa6-dd85df64c192"
+                LastKnownName="List&lt;Int32‎[]‎&gt;"
+                LastKnownLocation="Package4_1704.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="caa665b6-2941-4459-a41f-f5ac2a867302"
+            name="Perceptron"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="baadc956-f481-4d5a-a955-6ed1dbdf3f68"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0a6338fb-4e34-4cf2-8693-3d1bfe251258"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a7df25b6-e3fc-453c-b164-d33d5d31dee5">
+                    <propertyInstance
+                      Id="979202fb-8f20-4b6a-9e35-d16a91642a4a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="10790f60-1006-439b-9eb8-9d4bd7fd53c0">
+                    <propertyInstance
+                      Id="cb1a8f71-273b-4560-8b64-c84e10eb18d1"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ee7cab35-80de-4204-92bc-20081127d017">
+                    <propertyInstance
+                      Id="fb3f1118-4f54-4046-ae60-e25f41b728bf"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="87206c69-ce6e-4312-ad34-0b477b3f62e4">
+                    <propertyInstance
+                      Id="69422ccf-5506-4c56-b931-36274d622824"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ae003ced-7bb3-48bb-a7f2-4b689c1c16cc">
+                    <propertyInstance
+                      Id="a95ffebb-84f3-4919-899e-1679d3bf858b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8dd323fe-37b0-440d-b0d3-2b1e3a729a6e">
+                    <propertyInstance
+                      Id="c5f53738-523e-488a-8695-331ddcd860b8"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="36f751d7-6c37-45c2-bae2-4017141d52b4"
+            name="Perceptron"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ff60e617-e421-4fd0-a1dc-c8edcb194a2c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D1 ParentType%3DInt32))]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b4a6fb9f-8242-4abc-acd1-f5c28027098d"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b83b1a28-b208-4e6f-87c7-5eff1aca71a7">
+                    <propertyInstance
+                      Id="9a3b75ad-fba4-42ab-b37e-b338b91c349b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="99b50046-06b7-4bcf-adf6-69a912e7479c">
+                    <propertyInstance
+                      Id="9eb7b229-07f1-4ec7-a31f-32c57480cdf5"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="acc9137e-4d76-4784-90ad-f335fc7dd2d5">
+                    <propertyInstance
+                      Id="102fd455-4c30-4668-b614-776108866d33"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="02cf0fec-5ad0-47e5-9cdb-e30d8dbb4633">
+                    <propertyInstance
+                      Id="fc866dfe-3806-493b-a596-7ef1dc891814"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0a973397-e238-4d60-aae1-bcbbe66fbff8">
+                    <propertyInstance
+                      Id="aab05c3d-3cb2-46a2-8687-7abdc2b47aa9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="627f160f-c70c-4c3e-a5e4-13ce8ff2ef45">
+                    <propertyInstance
+                      Id="bf6ad64a-9a1b-4123-88ba-b8900c4c2437"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ed1e924b-8559-4e5d-89b9-1630e09c020c"
+                  name="listPatterns"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="ec7c9b4d-eb1d-4089-9cf5-218c3bb9f94b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D1 ParentType%3DInt32))]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)]) ParameterIdentifier%3DlistPatterns"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e0744433-7ac7-4640-bfa6-dd85df64c192"
+                      LastKnownName="List&lt;Int32‎[]‎&gt;"
+                      LastKnownLocation="Package4_1704.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ec2609f4-1b8c-4777-a3e7-f135b1d0d596"
+                  name="m"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="500e7c54-b78d-4713-a0ce-634ab6691464"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D1 ParentType%3DInt32))]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)]) ParameterIdentifier%3Dm"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject2.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f8390355-e43b-4fde-bc6c-9d0655ab1bc9"
+                  name="alpha"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5aa6bddf-60af-4242-994d-09935a884972"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D1 ParentType%3DInt32))]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)]) ParameterIdentifier%3Dalpha"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="1cae4c0f-f516-485d-8935-c2a1af11c61b"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_1704.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="81b611e1-c7a5-4f52-b037-ffa36e09825a"
+                  name="beta"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="b500cce6-352b-41d5-b965-b92bb723dfb9"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D1 ParentType%3DInt32))]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)]) ParameterIdentifier%3Dbeta"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="1cae4c0f-f516-485d-8935-c2a1af11c61b"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_1704.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6d55a953-f1b5-427f-b129-ab26383ef4ec"
+                  name="timeOut"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="ab5c280f-9899-4bcb-ba41-e94f9bd8855d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D1 ParentType%3DInt32))]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)]) ParameterIdentifier%3DtimeOut"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject2.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ff0c0a94-2f11-4a9b-9888-68f45fa24f27"
+                  name="error"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1b5a2c2b-cf44-49dc-a990-38afa29e4188"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D1 ParentType%3DInt32))]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)]) ParameterIdentifier%3Derror"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="1cae4c0f-f516-485d-8935-c2a1af11c61b"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_1704.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6a22b11d-cccb-4d2b-b7bd-cf8824a20c79"
+            name="InitRandomly"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="fdd8b862-a411-49ca-a763-be9420cb5153"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3DInitRandomly"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4b779246-e337-4c82-b351-8cfc9d1bae13"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d349e266-eb9d-4181-88dd-dc19c24ddbd4">
+                    <propertyInstance
+                      Id="63601ca9-e8b6-41ac-a120-3549e53c24ad"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cb489969-d403-48f0-adde-06c14dea68c3">
+                    <propertyInstance
+                      Id="27809501-face-4d18-8028-5b4219c717cf"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9cea61a9-c5bc-4e0c-811e-a16e2cd93d07">
+                    <propertyInstance
+                      Id="7e7412e2-96a6-4044-970c-7517c2b83fb7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d4ef6051-5730-477e-a8e4-9590d5616407">
+                    <propertyInstance
+                      Id="9efae4c9-29ac-4deb-a13d-b8a4eb5e01f6"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="98e1dcba-2ae3-41d7-83e7-e579b004b2b9">
+                    <propertyInstance
+                      Id="3c3a96fd-a9cb-4cb8-b6bd-96e5e92aa247"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e07ef60e-2373-4a25-86a3-397e244b0fb8">
+                    <propertyInstance
+                      Id="44615f1a-fd73-4ef7-8dcd-b8a3767d7a57"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="64317d0e-7f8b-4ffa-b357-d5f381bb0a86"
+            name="Teach"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="883ce4d7-a8dc-4bee-adfc-3ed1c241fb03"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3DTeach"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a1dea2a5-edb0-4543-9b02-55c71143225b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a194c520-c042-44b9-b164-1f10c50bba02">
+                    <propertyInstance
+                      Id="05407ce7-eccf-43a9-a467-54cbbff24f8c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="08fd39fe-90b0-4a1f-804e-f58ac8bdd697">
+                    <propertyInstance
+                      Id="5c47f44d-5c57-42d6-a98b-d3aa9487ebf7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="786e17d5-c8f2-4a79-bd8a-293697d61b1c">
+                    <propertyInstance
+                      Id="fdde0193-2620-4fab-b2d8-a336a0209c18"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="704048d2-46e1-4a91-b857-5bd4c8a54730">
+                    <propertyInstance
+                      Id="439b2ae2-9a15-49c8-bbba-72b38b07b45b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b93ded00-b420-41b6-b1a2-0548a65f026e">
+                    <propertyInstance
+                      Id="f8797f9e-0932-42c8-8585-27ebded52ceb"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0a054ed8-69eb-4320-9f93-7f23e53b35cf">
+                    <propertyInstance
+                      Id="b30f2a99-8fe8-48ca-aeac-994a9b176d4b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="3928afad-5c13-4a67-baa0-fb9fe8006070"
+            name="LearningCorrection"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ef8b1a41-ffdb-4fba-b912-367a3e1aeae3"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D(Name%3DLearningCorrection OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D1 ParentType%3DInt32))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8f24cd90-2658-4791-82ec-d547b71a6e5c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="46fddf65-57e9-4c8e-9531-052df8a04372">
+                    <propertyInstance
+                      Id="7c28a342-6d67-4276-b8db-9cce60a09c4b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="861ee98d-303f-4c97-ac9f-7ac918f4601e">
+                    <propertyInstance
+                      Id="76cbc288-4e4c-4fec-9fac-4db42c3d79ff"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ffb7d1e6-eedc-4948-9ddd-2eb7d3abefaf">
+                    <propertyInstance
+                      Id="eb585777-be34-400f-bcf6-c6e1417d0e0e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4d8e7a9b-eee5-4acf-873b-5af4fb3fb186">
+                    <propertyInstance
+                      Id="9f85af9f-bb96-44b7-ab67-7177f6002551"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="63cf4ea8-21ee-456c-b1ec-bb5ed643efdc">
+                    <propertyInstance
+                      Id="001c5c43-5f9f-49ac-a87d-bc52364bd375"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="064e3237-262c-421d-99f9-07cefd635e68">
+                    <propertyInstance
+                      Id="44f282e4-3c36-4399-904d-eff07b2d61ae"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="db39b9e3-4028-4b2d-919d-c0d1e89ef2c7"
+                  name="x"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="0b2a0c66-0391-4088-9219-23f39db7b116"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D(Name%3DLearningCorrection OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D1 ParentType%3DInt32))]) ParameterIdentifier%3Dx"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="f8625b33-a01b-4939-89de-294be8c6eca8"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="65e4c034-d87a-4ccf-a20b-30023cec34fd"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject2.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="69b456bd-af9e-4e11-bfa2-36887e464a3a"
+            name="HiddenNeuronError"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="aae51b02-339a-4e97-8675-4ad095ef47ea"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3DHiddenNeuronError"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="caaa83e5-1b64-4d4e-a842-b967d06cbfc4"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2dec8fcd-0472-4915-bb1b-2fb0568c8655">
+                    <propertyInstance
+                      Id="3822c1b7-aaf7-4ceb-bd9a-0ef0c089971d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ee008c5a-bc12-4a48-b24f-d40464262efd">
+                    <propertyInstance
+                      Id="becdf8c2-100a-40fe-bf17-4f61713194a8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6866448f-0032-46cc-98e8-589cfc9b5007">
+                    <propertyInstance
+                      Id="67c1a745-d6f1-48fb-a4b5-2f6afafa5905"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="11b0fe6f-8343-4d11-9c60-e9497993486d">
+                    <propertyInstance
+                      Id="afe41a71-e2d0-40b8-a4d2-799a138ab39b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d82dbd5b-42c6-442c-9604-11b3fede0cc5">
+                    <propertyInstance
+                      Id="636aad4e-e392-47b8-8669-b68e5c1d54d0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d0eae12f-242c-484e-b158-6a1a1173da6d">
+                    <propertyInstance
+                      Id="8530e281-d1c2-4f46-85e2-0b974044d2f9"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="98ee2044-c9ff-4dfa-be57-c9d4039e7d07"
+            name="KNeuronError"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1b51703c-e288-42bb-88bc-433f6d79c599"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D(Name%3DKNeuronError OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f2609666-942f-4144-a1be-d416d690c2d2"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="45d3729e-a30a-4581-ab80-8beca041112c">
+                    <propertyInstance
+                      Id="93f3f643-8ee2-42fa-a046-ca4f176c8ea4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e27d2a8a-6a01-4daf-949d-681db274a0cb">
+                    <propertyInstance
+                      Id="ed75a00f-12bf-4a4e-96db-aca4c0872265"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8dc60f63-da0d-403e-a4e0-585d5085ef0f">
+                    <propertyInstance
+                      Id="4a55b7ea-41bd-448a-b3fc-097e0f404b23"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="58e80260-ea10-4bd3-a560-042472ba8ea0">
+                    <propertyInstance
+                      Id="3b639f4c-8343-4cf9-8ac7-1277736508d0"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c3ac8300-c355-4fdd-944b-5d343faa761d">
+                    <propertyInstance
+                      Id="0df1317d-f3e3-4cf8-b40b-2f64f5af854a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="56498934-5dc8-4aae-8d88-320207e778c8">
+                    <propertyInstance
+                      Id="2db3e30f-7f55-4d79-b39d-2c59d54055f1"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a65eec02-ecd9-45ac-b021-76cf5f7048ab"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="1cae4c0f-f516-485d-8935-c2a1af11c61b"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_1704.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7d3da0e2-de52-4da3-ab22-061ac0b58ac9"
+                  name="pattern"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="558c48c7-de8f-4f0b-af6f-36178a7fd59d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D(Name%3DKNeuronError OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)]) ParameterIdentifier%3Dpattern"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject2.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cb4488e5-d383-4a6e-b8de-5cf64daa3ed4"
+                  name="maxError"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="246d2bdd-d0cf-4632-9dd2-efe850ac44df"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D(Name%3DKNeuronError OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)]) ParameterIdentifier%3DmaxError"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="1cae4c0f-f516-485d-8935-c2a1af11c61b"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_1704.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f97bb87e-0db5-47cd-abb0-a8f3bd71e568"
+            name="HiddenToOutputNeurons"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="84ec4d83-633d-4882-8bfd-9009b83eafe9"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3DHiddenToOutputNeurons"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2cec8af6-2c1a-4131-ba7c-f9f85682abb7"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="84a69aa7-266c-4a24-9fa7-33a14d9badc3">
+                    <propertyInstance
+                      Id="eacf480d-3a1e-4177-a78f-ed2c88bf7495"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dfb61cea-c640-4bc7-84c1-8da7a4ebe974">
+                    <propertyInstance
+                      Id="f30f7925-640f-4f41-90ea-58566bc81d46"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9223c846-91b3-4ac1-93b8-42d2d9dc76b2">
+                    <propertyInstance
+                      Id="c19094ae-8838-4354-9f9f-71817c7d02bc"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6a9a26f7-5981-427c-889e-210994dff372">
+                    <propertyInstance
+                      Id="ec4faa89-c70a-4c47-ba58-4edf8c7fea04"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="59139cd4-9e95-4446-a721-58f7d2d237c9">
+                    <propertyInstance
+                      Id="4a422440-4d1f-4200-bcfd-4fa8cbce871d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="56f238cc-1262-4f89-be0b-7a017e7d0613">
+                    <propertyInstance
+                      Id="495d2c0c-318a-4196-9601-5be74d688a0c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="503c1732-fc4d-4e04-b5ef-a8e135a2e1da"
+            name="InputToHiddenNeurons"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="8e315de3-9534-4131-9c12-4b5823ac14e3"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D(Name%3DInputToHiddenNeurons OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D1 ParentType%3DInt32))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="638360d0-9744-447b-80eb-a180934d94dc"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c524f507-fee1-404f-ba87-53e7b7d51804">
+                    <propertyInstance
+                      Id="ab5e68fb-999e-4d11-bfa6-8f6598a51e0e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b079d597-91a0-4e10-b2fc-ddb482135998">
+                    <propertyInstance
+                      Id="321d8e8c-44d2-4672-9d1f-ede2b984b637"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="29252a03-fd48-47a1-a6f9-bb22bcb156af">
+                    <propertyInstance
+                      Id="6d477396-5569-401f-9a1c-4760baf16f1a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6a312ce-70a4-45d6-ad82-b93d847c4309">
+                    <propertyInstance
+                      Id="d04574a9-6356-45fb-b32a-4e55886c1100"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7cec6223-21c0-4311-82c8-d03a6c85a781">
+                    <propertyInstance
+                      Id="dfc71ce5-53c9-406c-995e-69f0d5ab6e34"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7470704c-eddd-46ce-b8d3-fbbbfc609d40">
+                    <propertyInstance
+                      Id="7725e0d0-36d9-4cfd-93cc-68b506318119"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bc56de3f-1d07-4d21-b79b-7ab6565701cf"
+                  name="x"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="1e26176d-5199-4b77-be46-c2281c6258fd"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D(Name%3DInputToHiddenNeurons OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D1 ParentType%3DInt32))]) ParameterIdentifier%3Dx"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="175170d8-057b-4b70-8326-9c2f58d0e6c3"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="d128d8dc-9f71-4818-bec1-8d3bcab5d912"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject2.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="66e9244d-0485-4372-bb30-b1329cdae920"
+            name="Fun"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9a6f40e3-fe48-4d40-ac17-5872c2b25a9e"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D(Name%3DFun OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5b33039d-6ea4-4d67-8bbf-af2665e6b2ce"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7ce5f9eb-4921-4d49-addb-a72d7f3532d4">
+                    <propertyInstance
+                      Id="9e282488-5bd9-4ca8-9160-f0428733bee5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fe5a17a8-55c2-4aad-b3a1-09dd588fee42">
+                    <propertyInstance
+                      Id="ebdae6b6-a322-4a29-aa8a-37f1cda3e38c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e112454c-1cdb-4e79-89bd-e319c1fb498e">
+                    <propertyInstance
+                      Id="8a00874d-770c-40e8-b824-5904891d9e49"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="89d2288a-44ca-4f81-9ac6-5e530685ce52">
+                    <propertyInstance
+                      Id="147e4ce3-8584-44d0-adba-2358ff9988fa"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="18001b7a-f447-4753-ae31-76aaeff9a942">
+                    <propertyInstance
+                      Id="dcd63008-3f00-412d-b5c0-d8df4b27c52a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0b99bfdc-709e-41e1-b4ae-cd2717935bfc">
+                    <propertyInstance
+                      Id="5f7145d1-bfe3-4c68-bf3b-f7153b92d9c5"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5a6a4ab6-90b3-493c-8788-b787ca3d8678"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="1cae4c0f-f516-485d-8935-c2a1af11c61b"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_1704.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="83dbbccd-ffa8-4c61-98c6-3a04451d346f"
+                  name="x"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4a55de82-8f9d-4099-8cd9-f6f1d7028d18"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D(Name%3DFun OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)]) ParameterIdentifier%3Dx"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="1cae4c0f-f516-485d-8935-c2a1af11c61b"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_1704.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="7f026b9c-6ad5-4913-ba59-dcd2d31ab04d"
+            name="Recognize"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="54e98ebb-50f7-40ce-8662-f08328eb0999"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D(Name%3DRecognize OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D1 ParentType%3DInt32))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0b34ff02-4a00-4e69-b079-ff697c6ce71c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b4ff7591-34f7-4f7e-a46f-f97218e18235">
+                    <propertyInstance
+                      Id="c8af870a-571e-4413-9715-815a200b75b5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="65bccf9d-26ed-4dba-baf8-d505c52d2c40">
+                    <propertyInstance
+                      Id="1ab669d9-2fb4-4e96-88cb-fc9b4681fdd2"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9501d03f-1e68-4b5c-9710-0bb703bdae12">
+                    <propertyInstance
+                      Id="3a61f979-2a79-440c-a440-0a8e2a4fef7f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e68d364b-8ad3-4ee7-ae99-68a5d59aec11">
+                    <propertyInstance
+                      Id="a0d25fe9-492b-4890-ab76-e35220697176"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="11dbfe75-bfed-4203-b8d2-a8a04ab8573e">
+                    <propertyInstance
+                      Id="6f962671-1686-4b7c-b8e6-17ff096578b4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0fe90794-a408-4077-892c-aa51cce08b6a">
+                    <propertyInstance
+                      Id="72b15ece-0297-452a-988d-80c64993819c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d24f2d98-19dc-432a-a2ff-70677e62fbc9"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="dc20d987-fe58-41b1-9f80-b1d107c97b3c"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="14577cd9-27d8-4413-b7d4-298795d7aa75"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="1cae4c0f-f516-485d-8935-c2a1af11c61b"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_1704.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cbdc9ceb-7e81-4509-b83e-e0f57f4777f2"
+                  name="patternNoised"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="3cf32dbc-2bba-4666-a81a-b49f4db784fa"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D(Name%3DRecognize OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D1 ParentType%3DInt32))]) ParameterIdentifier%3DpatternNoised"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="98e1353e-f885-42f0-8894-a5c926205f87"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="240489af-cdef-43f6-a2bc-94ef9ce7cb46"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject2.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="76da0a36-99af-45cb-96ec-ae30f934869e"
+            name="CreateMatrix"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f18aa963-2cb5-4416-a9a8-561fb56568d2"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D(Name%3DCreateMatrix OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="81c81b3e-f482-4af1-bd69-467e53acf4f8"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1fa6a655-95db-4d1a-b037-7b85e5beccd7">
+                    <propertyInstance
+                      Id="990ada09-d367-4932-97cb-f2e62f09cda0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="650b0ac9-5cdb-4f2a-85c8-eafd867d8c87">
+                    <propertyInstance
+                      Id="240dbec7-7628-476b-a059-261afeeaf1e1"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1aafc37a-3fb7-4af8-8beb-6c4f7a34b12d">
+                    <propertyInstance
+                      Id="045cbf34-5a9c-46fd-a29c-1cdfebd6c735"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8714b427-d063-40ec-ad7c-300c7c07781c">
+                    <propertyInstance
+                      Id="2e5126dd-937f-4d8d-a32a-48789b54edf8"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0007299d-80b9-4a8f-9830-8ec4b94c247c">
+                    <propertyInstance
+                      Id="c98ed67d-702c-4a39-9c9b-74cc2bfc64ea"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1646c987-354f-44f5-b3fa-2af1de378f6e">
+                    <propertyInstance
+                      Id="f18f6291-a149-46b7-9339-6370ed6b8cb1"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="294c20ca-f75b-4dd2-aeb1-c2977b57ba56"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="977a1d8c-f46f-471a-ad28-29613378d63b"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="a3d85309-00c7-4a9e-bacd-25833a32b4b2"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="1cae4c0f-f516-485d-8935-c2a1af11c61b"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_1704.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="defcb933-5868-4317-8c85-61385978d94f"
+                  name="nParam"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="cfd019ab-a152-468e-80f2-80500b2394e2"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D(Name%3DCreateMatrix OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)]) ParameterIdentifier%3DnParam"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject2.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c8a2fb39-231b-4b81-a868-068cd1e0900e"
+                  name="mParam"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="0c73ee90-d345-44b9-8aa1-520d9c54cb15"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D(Name%3DCreateMatrix OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)]) ParameterIdentifier%3DmParam"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject2.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="893edb4e-9341-4cd5-b0e1-fecdff11a712"
+                  name="flagNotParam"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d84e3139-0765-4001-a931-c0e7c99be09b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D(Name%3DCreateMatrix OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble)]) ParameterIdentifier%3DflagNotParam"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="1cae4c0f-f516-485d-8935-c2a1af11c61b"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_1704.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6d1e0f05-dff2-4285-b950-91f0086e5e9d"
+            name="InitRandomly"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="8b55fc85-1ae4-4c6d-ad1f-a183fb72b198"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D(Name%3DInitRandomly OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D2 ParentType%3DDouble))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0881579e-778a-4205-b70b-bca128d03581"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="757d8176-1c2f-4e1e-b306-f76fdae549ec">
+                    <propertyInstance
+                      Id="d8103b28-ec20-40b5-8fbe-616770a06361"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="055c4e68-ddab-4b8b-8836-90d55f032db9">
+                    <propertyInstance
+                      Id="3fcacc7b-eeec-4dfb-81bc-e8a5c56cc85b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b6222ce1-bbe6-473d-9fd3-93c1e3b0cbdb">
+                    <propertyInstance
+                      Id="9ea9328a-fd74-4fef-baee-11e1cb869e4b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="58761292-7b97-43c2-a8f6-012a8d3770b8">
+                    <propertyInstance
+                      Id="d5511f2d-3f84-4f67-974e-a7107f81f9fc"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8e5062c3-dd59-4f6f-a64c-b6d669e7674c">
+                    <propertyInstance
+                      Id="c1107da1-8965-496b-9ed2-0a57ea2f15f9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9660be9c-87d0-4939-9e03-0ee33485e730">
+                    <propertyInstance
+                      Id="99268696-b285-4537-83bb-b084f3aaf0b2"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="26ff7db5-bfd7-44ce-8fbb-71a4af21a63b"
+                  name="layer"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="61f3ed60-f235-4bc7-aad4-6b61239ab92e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D(Name%3DInitRandomly OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D2 ParentType%3DDouble))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dlayer"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="7afd9e7e-b9f5-447a-83d6-9b7df72224e1"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="8d468fca-db7b-4aad-978d-0f0367f14d1e"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="1cae4c0f-f516-485d-8935-c2a1af11c61b"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_1704.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="eeb25b51-1eac-4d83-bc7f-f7fdddbccd9e"
+                  name="n"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4b6dc837-02a9-49c1-a5d4-1c39f28947d9"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D(Name%3DInitRandomly OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D2 ParentType%3DDouble))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dn"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject2.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="88540c5a-ecee-4c08-ae91-3b5bec2f8c81"
+                  name="m"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="52928b7c-80af-44fa-8383-66791e94d8d7"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D(Name%3DInitRandomly OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D2 ParentType%3DDouble))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dm"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject2.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9fd83cbb-c920-43c5-9113-af78831a54c6"
+            name="InitRandomly"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="feb03bb8-6690-47f1-9661-feb6208dc29c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D(Name%3DInitRandomly OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="94e51c10-e438-4911-8d26-1ac718be714d"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cce3c93b-3c46-4356-ace4-f4d641ef978c">
+                    <propertyInstance
+                      Id="9f7b615d-b22b-4133-9ecd-8d7f8814cabd"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0dffee95-6d30-4d87-b433-a29169eddb09">
+                    <propertyInstance
+                      Id="19927931-cc76-469f-8aa7-15d9c518e7a4"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3cea6a31-4b00-4ded-ad00-16944b24b82a">
+                    <propertyInstance
+                      Id="7a5578ed-4711-4425-827b-c7964ad8f71c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="00259a86-56de-44a4-b4df-89553f47ca78">
+                    <propertyInstance
+                      Id="03b898fe-e1e1-4ecd-813a-f61a2dd772ca"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3a768077-b4c6-43c1-999f-861851b4e9be">
+                    <propertyInstance
+                      Id="ab73037d-282b-4d46-bf58-6ccc06597312"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e774e13a-8113-4201-8aff-9e48e65ce9ec">
+                    <propertyInstance
+                      Id="d423c203-ebeb-4e0c-adcf-ecd1440c1dd2"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="32662a59-6676-4f40-9fbb-660ef01d12a4"
+                  name="layer"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="ae2fc334-5821-4dcd-81df-dd0470ded22d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3D(Name%3DInitRandomly OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble))]) ParameterIdentifier%3Dlayer"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="bc467bb3-9591-4ac0-8bd1-f34fec831bff"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="bff51ff2-8a2b-48b0-ab4d-f427ef2f8c03"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="1cae4c0f-f516-485d-8935-c2a1af11c61b"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_1704.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="eb8e18a9-1ad5-4ad2-883d-6945e5daabc6"
+            name="GetRandomMinusPlusOne"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="5ff67786-ce47-4b70-8334-20494ec4de2f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FEugene%2FDocuments%2FMr.Diplomes%2FPercepTRON_Legacy%2FPercepTRON_Legacy%2Fbin%2FDebug%2FPerceptron.dll Namespace%3DPercepTRON_Legacy Type%3DPerceptron Member%3DGetRandomMinusPlusOne"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7ee5987a-fb00-44cf-8cff-93736f6ba46a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3a3cbc52-312d-458d-8a0f-89ee20940612">
+                    <propertyInstance
+                      Id="2fb5cc61-d439-478e-bf77-ee007e055e91"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="631d13b2-f0e7-447a-a482-6336934817fc">
+                    <propertyInstance
+                      Id="f6b42c4d-9ef9-4b28-a099-7a1d5737d18e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f0f8c3c4-b687-4592-9751-ec528846e812">
+                    <propertyInstance
+                      Id="1a874b61-eace-40ed-9aa2-bd91884f4268"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0b5ecc63-905c-41b6-931c-eb8420792718">
+                    <propertyInstance
+                      Id="20c845db-4704-4542-a8bd-e06bc4fa233c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="03f6cbc1-8a43-4343-8dfb-7dec77209a4b">
+                    <propertyInstance
+                      Id="688fb27b-6858-434a-9b05-f3d7284eef70"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ddbc8420-bcc5-4b5d-9279-275b8b27b027">
+                    <propertyInstance
+                      Id="785a3c48-30c2-45bf-9943-955a4d145b52"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="188a4d3f-d5c7-485c-bacf-3920c62cf146"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="1cae4c0f-f516-485d-8935-c2a1af11c61b"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_1704.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

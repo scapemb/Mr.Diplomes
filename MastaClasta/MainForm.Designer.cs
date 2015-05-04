@@ -35,6 +35,11 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
+            this.groupBoxRecognizeType = new System.Windows.Forms.GroupBox();
+            this.radioButtonNeural = new System.Windows.Forms.RadioButton();
+            this.radioButtonClasters = new System.Windows.Forms.RadioButton();
+            this.buttonRecognizeNeural = new System.Windows.Forms.Button();
+            this.buttonTeachNeural = new System.Windows.Forms.Button();
             this.buttonStart = new System.Windows.Forms.Button();
             this.trackBarClustersNumber = new System.Windows.Forms.TrackBar();
             this.buttonTry = new System.Windows.Forms.Button();
@@ -48,8 +53,14 @@
             this.pictureBoxBlured = new System.Windows.Forms.PictureBox();
             this.pictureBoxLeveled = new System.Windows.Forms.PictureBox();
             this.pictureBoxBinariezed = new System.Windows.Forms.PictureBox();
-            this.teachNeural = new System.Windows.Forms.Button();
-            this.recognizeNeuron = new System.Windows.Forms.Button();
+            this.labelWhite = new System.Windows.Forms.Label();
+            this.labelBlack = new System.Windows.Forms.Label();
+            this.labelBlur = new System.Windows.Forms.Label();
+            this.labelNumber = new System.Windows.Forms.Label();
+            this.numericUpDownWhite = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownBlack = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownBlur = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownNumber = new System.Windows.Forms.NumericUpDown();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -59,6 +70,7 @@
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
+            this.groupBoxRecognizeType.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarClustersNumber)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarBlur)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarBlack)).BeginInit();
@@ -70,6 +82,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBlured)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLeveled)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBinariezed)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWhite)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlack)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlur)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNumber)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -127,8 +143,8 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.tableLayoutPanel1);
-            this.splitContainer1.Size = new System.Drawing.Size(1110, 570);
-            this.splitContainer1.SplitterDistance = 387;
+            this.splitContainer1.Size = new System.Drawing.Size(1110, 699);
+            this.splitContainer1.SplitterDistance = 545;
             this.splitContainer1.TabIndex = 1;
             // 
             // splitContainer2
@@ -139,8 +155,17 @@
             // 
             // splitContainer2.Panel1
             // 
-            this.splitContainer2.Panel1.Controls.Add(this.recognizeNeuron);
-            this.splitContainer2.Panel1.Controls.Add(this.teachNeural);
+            this.splitContainer2.Panel1.Controls.Add(this.numericUpDownNumber);
+            this.splitContainer2.Panel1.Controls.Add(this.numericUpDownBlur);
+            this.splitContainer2.Panel1.Controls.Add(this.numericUpDownBlack);
+            this.splitContainer2.Panel1.Controls.Add(this.numericUpDownWhite);
+            this.splitContainer2.Panel1.Controls.Add(this.labelNumber);
+            this.splitContainer2.Panel1.Controls.Add(this.labelBlur);
+            this.splitContainer2.Panel1.Controls.Add(this.labelBlack);
+            this.splitContainer2.Panel1.Controls.Add(this.labelWhite);
+            this.splitContainer2.Panel1.Controls.Add(this.groupBoxRecognizeType);
+            this.splitContainer2.Panel1.Controls.Add(this.buttonRecognizeNeural);
+            this.splitContainer2.Panel1.Controls.Add(this.buttonTeachNeural);
             this.splitContainer2.Panel1.Controls.Add(this.buttonStart);
             this.splitContainer2.Panel1.Controls.Add(this.trackBarClustersNumber);
             this.splitContainer2.Panel1.Controls.Add(this.buttonTry);
@@ -152,14 +177,71 @@
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.resultPictureBox);
-            this.splitContainer2.Size = new System.Drawing.Size(1110, 387);
+            this.splitContainer2.Size = new System.Drawing.Size(1110, 545);
             this.splitContainer2.SplitterDistance = 530;
             this.splitContainer2.TabIndex = 0;
+            // 
+            // groupBoxRecognizeType
+            // 
+            this.groupBoxRecognizeType.Controls.Add(this.radioButtonNeural);
+            this.groupBoxRecognizeType.Controls.Add(this.radioButtonClasters);
+            this.groupBoxRecognizeType.Location = new System.Drawing.Point(10, 365);
+            this.groupBoxRecognizeType.Name = "groupBoxRecognizeType";
+            this.groupBoxRecognizeType.Size = new System.Drawing.Size(161, 52);
+            this.groupBoxRecognizeType.TabIndex = 7;
+            this.groupBoxRecognizeType.TabStop = false;
+            this.groupBoxRecognizeType.Text = "Recognize type";
+            // 
+            // radioButtonNeural
+            // 
+            this.radioButtonNeural.AutoSize = true;
+            this.radioButtonNeural.Location = new System.Drawing.Point(99, 29);
+            this.radioButtonNeural.Name = "radioButtonNeural";
+            this.radioButtonNeural.Size = new System.Drawing.Size(56, 17);
+            this.radioButtonNeural.TabIndex = 1;
+            this.radioButtonNeural.Text = "Neural";
+            this.radioButtonNeural.UseVisualStyleBackColor = true;
+            this.radioButtonNeural.CheckedChanged += new System.EventHandler(this.radioButtonNeural_CheckedChanged);
+            // 
+            // radioButtonClasters
+            // 
+            this.radioButtonClasters.AutoSize = true;
+            this.radioButtonClasters.Checked = true;
+            this.radioButtonClasters.Location = new System.Drawing.Point(6, 29);
+            this.radioButtonClasters.Name = "radioButtonClasters";
+            this.radioButtonClasters.Size = new System.Drawing.Size(87, 17);
+            this.radioButtonClasters.TabIndex = 0;
+            this.radioButtonClasters.TabStop = true;
+            this.radioButtonClasters.Text = "Clasterization";
+            this.radioButtonClasters.UseVisualStyleBackColor = true;
+            this.radioButtonClasters.CheckedChanged += new System.EventHandler(this.radioButtonClasters_CheckedChanged);
+            // 
+            // buttonRecognizeNeural
+            // 
+            this.buttonRecognizeNeural.Location = new System.Drawing.Point(450, 458);
+            this.buttonRecognizeNeural.Name = "buttonRecognizeNeural";
+            this.buttonRecognizeNeural.Size = new System.Drawing.Size(75, 23);
+            this.buttonRecognizeNeural.TabIndex = 6;
+            this.buttonRecognizeNeural.Text = "Recognize";
+            this.buttonRecognizeNeural.UseVisualStyleBackColor = true;
+            this.buttonRecognizeNeural.Visible = false;
+            this.buttonRecognizeNeural.Click += new System.EventHandler(this.recognizeNeuron_Click);
+            // 
+            // buttonTeachNeural
+            // 
+            this.buttonTeachNeural.Location = new System.Drawing.Point(450, 429);
+            this.buttonTeachNeural.Name = "buttonTeachNeural";
+            this.buttonTeachNeural.Size = new System.Drawing.Size(75, 23);
+            this.buttonTeachNeural.TabIndex = 5;
+            this.buttonTeachNeural.Text = "Teach";
+            this.buttonTeachNeural.UseVisualStyleBackColor = true;
+            this.buttonTeachNeural.Visible = false;
+            this.buttonTeachNeural.Click += new System.EventHandler(this.teachNeural_Click);
             // 
             // buttonStart
             // 
             this.buttonStart.Cursor = System.Windows.Forms.Cursors.Default;
-            this.buttonStart.Location = new System.Drawing.Point(452, 333);
+            this.buttonStart.Location = new System.Drawing.Point(450, 389);
             this.buttonStart.Name = "buttonStart";
             this.buttonStart.Size = new System.Drawing.Size(75, 23);
             this.buttonStart.TabIndex = 4;
@@ -170,14 +252,15 @@
             // trackBarClustersNumber
             // 
             this.trackBarClustersNumber.LargeChange = 1;
-            this.trackBarClustersNumber.Location = new System.Drawing.Point(320, 311);
+            this.trackBarClustersNumber.Location = new System.Drawing.Point(278, 496);
             this.trackBarClustersNumber.Name = "trackBarClustersNumber";
-            this.trackBarClustersNumber.Size = new System.Drawing.Size(92, 45);
+            this.trackBarClustersNumber.Size = new System.Drawing.Size(112, 45);
             this.trackBarClustersNumber.TabIndex = 3;
+            this.trackBarClustersNumber.Scroll += new System.EventHandler(this.trackBarClustersNumber_Scroll);
             // 
             // buttonTry
             // 
-            this.buttonTry.Location = new System.Drawing.Point(452, 305);
+            this.buttonTry.Location = new System.Drawing.Point(450, 360);
             this.buttonTry.Name = "buttonTry";
             this.buttonTry.Size = new System.Drawing.Size(75, 23);
             this.buttonTry.TabIndex = 2;
@@ -188,44 +271,45 @@
             // trackBarBlur
             // 
             this.trackBarBlur.LargeChange = 3;
-            this.trackBarBlur.Location = new System.Drawing.Point(224, 311);
+            this.trackBarBlur.Location = new System.Drawing.Point(280, 445);
             this.trackBarBlur.Maximum = 21;
             this.trackBarBlur.Name = "trackBarBlur";
-            this.trackBarBlur.Size = new System.Drawing.Size(90, 45);
+            this.trackBarBlur.Size = new System.Drawing.Size(110, 45);
             this.trackBarBlur.TabIndex = 1;
             this.trackBarBlur.Scroll += new System.EventHandler(this.trackBarBlur_Scroll);
             // 
             // trackBarBlack
             // 
             this.trackBarBlack.LargeChange = 10;
-            this.trackBarBlack.Location = new System.Drawing.Point(115, 312);
+            this.trackBarBlack.Location = new System.Drawing.Point(278, 406);
             this.trackBarBlack.Maximum = 255;
             this.trackBarBlack.Name = "trackBarBlack";
-            this.trackBarBlack.Size = new System.Drawing.Size(103, 45);
+            this.trackBarBlack.Size = new System.Drawing.Size(112, 45);
             this.trackBarBlack.TabIndex = 1;
+            this.trackBarBlack.Scroll += new System.EventHandler(this.trackBarBlack_Scroll);
             // 
             // trackBarWhite
             // 
             this.trackBarWhite.LargeChange = 10;
-            this.trackBarWhite.Location = new System.Drawing.Point(3, 312);
+            this.trackBarWhite.Location = new System.Drawing.Point(278, 360);
             this.trackBarWhite.Maximum = 255;
             this.trackBarWhite.Name = "trackBarWhite";
-            this.trackBarWhite.Size = new System.Drawing.Size(106, 45);
+            this.trackBarWhite.Size = new System.Drawing.Size(112, 45);
             this.trackBarWhite.TabIndex = 1;
+            this.trackBarWhite.Scroll += new System.EventHandler(this.trackBarWhite_Scroll);
             // 
             // sourcePictureBox
             // 
             this.sourcePictureBox.Dock = System.Windows.Forms.DockStyle.Top;
             this.sourcePictureBox.Location = new System.Drawing.Point(0, 0);
             this.sourcePictureBox.Name = "sourcePictureBox";
-            this.sourcePictureBox.Size = new System.Drawing.Size(530, 306);
+            this.sourcePictureBox.Size = new System.Drawing.Size(530, 354);
             this.sourcePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.sourcePictureBox.TabIndex = 0;
             this.sourcePictureBox.TabStop = false;
             // 
             // resultPictureBox
             // 
-            this.resultPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.resultPictureBox.Location = new System.Drawing.Point(0, 0);
             this.resultPictureBox.Name = "resultPictureBox";
             this.resultPictureBox.Size = new System.Drawing.Size(576, 387);
@@ -249,7 +333,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1110, 179);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1110, 150);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // pictureBoxGrayScale
@@ -257,7 +341,7 @@
             this.pictureBoxGrayScale.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBoxGrayScale.Location = new System.Drawing.Point(3, 3);
             this.pictureBoxGrayScale.Name = "pictureBoxGrayScale";
-            this.pictureBoxGrayScale.Size = new System.Drawing.Size(271, 173);
+            this.pictureBoxGrayScale.Size = new System.Drawing.Size(271, 144);
             this.pictureBoxGrayScale.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxGrayScale.TabIndex = 0;
             this.pictureBoxGrayScale.TabStop = false;
@@ -267,7 +351,7 @@
             this.pictureBoxBlured.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBoxBlured.Location = new System.Drawing.Point(280, 3);
             this.pictureBoxBlured.Name = "pictureBoxBlured";
-            this.pictureBoxBlured.Size = new System.Drawing.Size(271, 173);
+            this.pictureBoxBlured.Size = new System.Drawing.Size(271, 144);
             this.pictureBoxBlured.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxBlured.TabIndex = 1;
             this.pictureBoxBlured.TabStop = false;
@@ -277,7 +361,7 @@
             this.pictureBoxLeveled.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBoxLeveled.Location = new System.Drawing.Point(557, 3);
             this.pictureBoxLeveled.Name = "pictureBoxLeveled";
-            this.pictureBoxLeveled.Size = new System.Drawing.Size(271, 173);
+            this.pictureBoxLeveled.Size = new System.Drawing.Size(271, 144);
             this.pictureBoxLeveled.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxLeveled.TabIndex = 1;
             this.pictureBoxLeveled.TabStop = false;
@@ -287,36 +371,90 @@
             this.pictureBoxBinariezed.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBoxBinariezed.Location = new System.Drawing.Point(834, 3);
             this.pictureBoxBinariezed.Name = "pictureBoxBinariezed";
-            this.pictureBoxBinariezed.Size = new System.Drawing.Size(273, 173);
+            this.pictureBoxBinariezed.Size = new System.Drawing.Size(273, 144);
             this.pictureBoxBinariezed.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxBinariezed.TabIndex = 1;
             this.pictureBoxBinariezed.TabStop = false;
             // 
-            // teachNeural
+            // labelWhite
             // 
-            this.teachNeural.Location = new System.Drawing.Point(372, 361);
-            this.teachNeural.Name = "teachNeural";
-            this.teachNeural.Size = new System.Drawing.Size(75, 23);
-            this.teachNeural.TabIndex = 5;
-            this.teachNeural.Text = "Teach";
-            this.teachNeural.UseVisualStyleBackColor = true;
-            this.teachNeural.Click += new System.EventHandler(this.teachNeural_Click);
+            this.labelWhite.AutoSize = true;
+            this.labelWhite.Location = new System.Drawing.Point(204, 365);
+            this.labelWhite.Name = "labelWhite";
+            this.labelWhite.Size = new System.Drawing.Size(68, 13);
+            this.labelWhite.TabIndex = 8;
+            this.labelWhite.Text = "White border";
             // 
-            // recognizeNeuron
+            // labelBlack
             // 
-            this.recognizeNeuron.Location = new System.Drawing.Point(452, 361);
-            this.recognizeNeuron.Name = "recognizeNeuron";
-            this.recognizeNeuron.Size = new System.Drawing.Size(75, 23);
-            this.recognizeNeuron.TabIndex = 6;
-            this.recognizeNeuron.Text = "Recognize";
-            this.recognizeNeuron.UseVisualStyleBackColor = true;
-            this.recognizeNeuron.Click += new System.EventHandler(this.recognizeNeuron_Click);
+            this.labelBlack.AutoSize = true;
+            this.labelBlack.Location = new System.Drawing.Point(205, 406);
+            this.labelBlack.Name = "labelBlack";
+            this.labelBlack.Size = new System.Drawing.Size(67, 13);
+            this.labelBlack.TabIndex = 8;
+            this.labelBlack.Text = "Black border";
+            // 
+            // labelBlur
+            // 
+            this.labelBlur.AutoSize = true;
+            this.labelBlur.Location = new System.Drawing.Point(247, 445);
+            this.labelBlur.Name = "labelBlur";
+            this.labelBlur.Size = new System.Drawing.Size(25, 13);
+            this.labelBlur.TabIndex = 8;
+            this.labelBlur.Text = "Blur";
+            // 
+            // labelNumber
+            // 
+            this.labelNumber.AutoSize = true;
+            this.labelNumber.Location = new System.Drawing.Point(191, 496);
+            this.labelNumber.Name = "labelNumber";
+            this.labelNumber.Size = new System.Drawing.Size(81, 13);
+            this.labelNumber.TabIndex = 8;
+            this.labelNumber.Text = "Objects number";
+            // 
+            // numericUpDownWhite
+            // 
+            this.numericUpDownWhite.Location = new System.Drawing.Point(397, 361);
+            this.numericUpDownWhite.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownWhite.Name = "numericUpDownWhite";
+            this.numericUpDownWhite.Size = new System.Drawing.Size(47, 20);
+            this.numericUpDownWhite.TabIndex = 9;
+            // 
+            // numericUpDownBlack
+            // 
+            this.numericUpDownBlack.Location = new System.Drawing.Point(397, 404);
+            this.numericUpDownBlack.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownBlack.Name = "numericUpDownBlack";
+            this.numericUpDownBlack.Size = new System.Drawing.Size(47, 20);
+            this.numericUpDownBlack.TabIndex = 9;
+            // 
+            // numericUpDownBlur
+            // 
+            this.numericUpDownBlur.Location = new System.Drawing.Point(397, 443);
+            this.numericUpDownBlur.Name = "numericUpDownBlur";
+            this.numericUpDownBlur.Size = new System.Drawing.Size(47, 20);
+            this.numericUpDownBlur.TabIndex = 9;
+            // 
+            // numericUpDownNumber
+            // 
+            this.numericUpDownNumber.Location = new System.Drawing.Point(397, 494);
+            this.numericUpDownNumber.Name = "numericUpDownNumber";
+            this.numericUpDownNumber.Size = new System.Drawing.Size(47, 20);
+            this.numericUpDownNumber.TabIndex = 9;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1110, 594);
+            this.ClientSize = new System.Drawing.Size(1110, 723);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -333,6 +471,8 @@
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
+            this.groupBoxRecognizeType.ResumeLayout(false);
+            this.groupBoxRecognizeType.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarClustersNumber)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarBlur)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarBlack)).EndInit();
@@ -344,6 +484,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBlured)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLeveled)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBinariezed)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWhite)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlack)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlur)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNumber)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -371,8 +515,19 @@
         private System.Windows.Forms.Button buttonTry;
         private System.Windows.Forms.Button buttonStart;
         private System.Windows.Forms.TrackBar trackBarClustersNumber;
-        private System.Windows.Forms.Button teachNeural;
-        private System.Windows.Forms.Button recognizeNeuron;
+        private System.Windows.Forms.Button buttonTeachNeural;
+        private System.Windows.Forms.Button buttonRecognizeNeural;
+        private System.Windows.Forms.GroupBox groupBoxRecognizeType;
+        private System.Windows.Forms.RadioButton radioButtonNeural;
+        private System.Windows.Forms.RadioButton radioButtonClasters;
+        private System.Windows.Forms.Label labelNumber;
+        private System.Windows.Forms.Label labelBlur;
+        private System.Windows.Forms.Label labelBlack;
+        private System.Windows.Forms.Label labelWhite;
+        private System.Windows.Forms.NumericUpDown numericUpDownNumber;
+        private System.Windows.Forms.NumericUpDown numericUpDownBlur;
+        private System.Windows.Forms.NumericUpDown numericUpDownBlack;
+        private System.Windows.Forms.NumericUpDown numericUpDownWhite;
 
     }
 }

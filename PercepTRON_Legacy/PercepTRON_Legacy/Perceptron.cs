@@ -96,76 +96,26 @@ namespace PercepTRON_Legacy
                     int[] x = _listPatterns[pattern];
 
                     // 2.1 пропускание входного вектора через скрытый слой
-                    for (int j = 0; j < _h; j++)
-                    {
-                        double q = _q[j];
-                        for (int i = 0; i < _n; i++)
-                        {
-                            q += _v[i, j] * x[i];
-                        }
-                        _g[j] = Fun(q);
-                    }
+                    InputToHiddenNeurons(x);
 
                     // 2.2 пропускание выхода скрытого слоя через выходной слой
-                    for (int k = 0; k < _m; k++)
-                    {
-                        double t = _t[k];
-                        for (int j = 0; j < _h; j++)
-                        {
-                            t += _w[j, k] * _g[j];
-                        }
-                        _y[k] = Fun(t);
-                    }
+                    HiddenToOutputNeurons();
 
                     // 2.6 Ошибка k-го нейрона выходного слоя определяется как
                     double maxError = 0.0;
-                    for (int i = 0; i < _m; i++)
-                    {
-                        double encodingVal = 0.0;
-                        if (pattern == i)
-                        {
-                            encodingVal = 1.0;
-                        }
-                        _d[i] = encodingVal - _y[i];
-                        double abs = Math.Abs(_d[i]);
-                        if (abs > maxError) maxError = abs;
-                    }
+                    maxError = KNeuronError(pattern, maxError);
 
                     // 2.11 + 2.12 При этом главной трудностью является определение 
                     // ошибки нейрона скрытого слоя. Эту ошибку явно определить по формуле, 
                     // аналогичной (2.6), невозможно, однако существует возможность 
                     // рассчитать ее через ошибки нейронов выходного слоя 
                     // (отсюда произошло название алгоритма обратного распространения ошибки):
-                    for (int j = 0; j < _h; j++)
-                    {
-                        _e[j] = 0.0;
-                        for (int k = 0; k < _m; k++)
-                        {
-                            _e[j] += _d[k] * (_y[k] * (1 - _y[k])) * _w[j, k];
-                        }
-                    }
+                    HiddenNeuronError();
 
                     // Происходит коррекция знаний сети, при этом главное значение имеет отклонение реально полученного выхода сети y от идеального вектора yr.
                     //Со-гласно методу градиентного спуска, изменение весовых коэффициентов и по-рогов нейронной сети происходит по следующим формулам
                     // Пересчёт весов и порогов каждого слоя
-                    // 2.13 
-                    for (int j = 0; j < _h; j++)
-                        for (int k = 0; k < _m; k++)
-                            _w[j, k] += _alpha * _y[k] * (1 - _y[k]) * _d[k] * _g[j];
-
-                    // 2.14
-                    for (int k = 0; k < _m; k++)
-                        _t[k] += _alpha * _y[k] * (1 - _y[k]) * _d[k];
-
-
-                    // 2.15
-                    for (int i = 0; i < _n; i++)
-                        for (int j = 0; j < _h; j++)
-                            _v[i, j] += _beta * _g[j] * (1 - _g[j]) * _e[j] * x[i];
-
-                    // 2.16
-                    for (int j = 0; j < _h; j++)
-                        _q[j] += _beta * _g[j] * (1 - _g[j]) * _e[j];
+                    LearningCorrection(x);
 
 
                     bool isContinue = (maxError > _error) && (to-- != 0);
@@ -176,6 +126,82 @@ namespace PercepTRON_Legacy
 
                 }
             } while (true);
+        }
+
+        private void LearningCorrection(int[] x)
+        {
+            // 2.13 
+            for (int j = 0; j < _h; j++)
+                for (int k = 0; k < _m; k++)
+                    _w[j, k] += _alpha * _y[k] * (1 - _y[k]) * _d[k] * _g[j];
+
+            // 2.14
+            for (int k = 0; k < _m; k++)
+                _t[k] += _alpha * _y[k] * (1 - _y[k]) * _d[k];
+
+
+            // 2.15
+            for (int i = 0; i < _n; i++)
+                for (int j = 0; j < _h; j++)
+                    _v[i, j] += _beta * _g[j] * (1 - _g[j]) * _e[j] * x[i];
+
+            // 2.16
+            for (int j = 0; j < _h; j++)
+                _q[j] += _beta * _g[j] * (1 - _g[j]) * _e[j];
+        }
+
+        private void HiddenNeuronError()
+        {
+            for (int j = 0; j < _h; j++)
+            {
+                _e[j] = 0.0;
+                for (int k = 0; k < _m; k++)
+                {
+                    _e[j] += _d[k] * (_y[k] * (1 - _y[k])) * _w[j, k];
+                }
+            }
+        }
+
+        private double KNeuronError(int pattern, double maxError)
+        {
+            for (int i = 0; i < _m; i++)
+            {
+                double encodingVal = 0.0;
+                if (pattern == i)
+                {
+                    encodingVal = 1.0;
+                }
+                _d[i] = encodingVal - _y[i];
+                double abs = Math.Abs(_d[i]);
+                if (abs > maxError) maxError = abs;
+            }
+            return maxError;
+        }
+
+        private void HiddenToOutputNeurons()
+        {
+            for (int k = 0; k < _m; k++)
+            {
+                double t = _t[k];
+                for (int j = 0; j < _h; j++)
+                {
+                    t += _w[j, k] * _g[j];
+                }
+                _y[k] = Fun(t);
+            }
+        }
+
+        private void InputToHiddenNeurons(int[] x)
+        {
+            for (int j = 0; j < _h; j++)
+            {
+                double q = _q[j];
+                for (int i = 0; i < _n; i++)
+                {
+                    q += _v[i, j] * x[i];
+                }
+                _g[j] = Fun(q);
+            }
         }
 
         protected virtual double Fun(double x)

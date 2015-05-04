@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MastaClasta", "MastaClasta\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Perceptron", "PercepTRON_Legacy\PercepTRON_Legacy\Perceptron.csproj", "{55B8AAF7-7BA0-46E2-B99F-35A9C8E802FF}"
 EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ModelingProject2", "ModelingProject2\ModelingProject2.modelproj", "{EE9B6ACC-6247-48E1-BB5E-8D402B5FEAB5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{55B8AAF7-7BA0-46E2-B99F-35A9C8E802FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55B8AAF7-7BA0-46E2-B99F-35A9C8E802FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55B8AAF7-7BA0-46E2-B99F-35A9C8E802FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE9B6ACC-6247-48E1-BB5E-8D402B5FEAB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE9B6ACC-6247-48E1-BB5E-8D402B5FEAB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE9B6ACC-6247-48E1-BB5E-8D402B5FEAB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE9B6ACC-6247-48E1-BB5E-8D402B5FEAB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

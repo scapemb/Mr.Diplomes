@@ -112,11 +112,6 @@ namespace MastaClasta
             pictureBoxBinariezed.SafetySetImageFromFile(Resources.BinarizedImageName);
         }
 
-        private void trackBarBlur_Scroll(object sender, EventArgs e)
-        {
-
-        }
-
         private void teachNeural_Click(object sender, EventArgs e)
         {
             _logic = new Logic
@@ -131,6 +126,13 @@ namespace MastaClasta
             };
 
             _logic.NeuralTeach();
+        }
+
+        private void recognizeNeuron_Click(object sender, EventArgs e)
+        {
+            _logic.ProcessBitmap = (Bitmap)sourcePictureBox.Image;
+
+            _logic.NeuralRecognize();
 
             resultPictureBox.SafetySetImageFromFile(Resources.ResultImageName);
             pictureBoxGrayScale.SafetySetImageFromFile(Resources.GrayScaleImageName);
@@ -139,13 +141,46 @@ namespace MastaClasta
             pictureBoxBinariezed.SafetySetImageFromFile(Resources.BinarizedImageName);
         }
 
-        private void recognizeNeuron_Click(object sender, EventArgs e)
-        {
-            _logic.ProcessBitmap = (Bitmap)sourcePictureBox.Image;
 
-            _logic.NeuralRecognize();
+        private void trackBarWhite_Scroll(object sender, EventArgs e)
+        {
+            numericUpDownWhite.Value = trackBarWhite.Value;
         }
 
+        private void trackBarBlack_Scroll(object sender, EventArgs e)
+        {
+            numericUpDownBlack.Value = trackBarBlack.Value;
+        }
+
+        private void trackBarBlur_Scroll(object sender, EventArgs e)
+        {
+            numericUpDownBlur.Value = trackBarBlur.Value;
+        }
+
+        private void trackBarClustersNumber_Scroll(object sender, EventArgs e)
+        {
+            numericUpDownNumber.Value = trackBarClustersNumber.Value;
+        }
+
+        private void radioButtonClasters_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButtonClasters.Checked)
+            {
+                buttonStart.Visible = true;
+                buttonTeachNeural.Visible = false;
+                buttonRecognizeNeural.Visible = false;
+            }
+        }
+
+        private void radioButtonNeural_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButtonNeural.Checked)
+            {
+                buttonStart.Visible = false;
+                buttonTeachNeural.Visible = true;
+                buttonRecognizeNeural.Visible = true;
+            }
+        }
 
     }
 }

@@ -71,6 +71,7 @@ namespace MastaClasta
 
             return rgbValues;
         }
+
         private Byte[] ConvertGrayScaleToRgbWithColors(Byte[] grayScaleValues)
         {
             var rgbValues = new Byte[grayScaleValues.Length * 3];
@@ -204,8 +205,6 @@ namespace MastaClasta
             resultBitmap.Save(Resources.ResultImageName);
         }
 
-
-
         public void NeuralTeach()
         {
             Int32 width = ProcessBitmap.Width;
@@ -281,6 +280,8 @@ namespace MastaClasta
                 );
 
             mPerceptron.Teach();
+
+            MessageBox.Show("Teaching complete");
 
         }
 
@@ -366,30 +367,84 @@ namespace MastaClasta
             Normalization(ref objects);
 
 
-            List<int[]> NeuronsForRecognize= new List<int[]>();
+            List<ObjectForRecognize> NeuronsForRecognize = new List<ObjectForRecognize>();
 
             foreach (LightImageClaster claster in objects)
             {
-                NeuronsForRecognize.Add(ObjectToNeurons(claster));
+                NeuronsForRecognize.Add(new ObjectForRecognize( ObjectToNeurons(claster), claster.BasicImageClass ));
             }
 
             var recognized = new List<double[]>();
 
-            foreach (int[] objectToRecognize in NeuronsForRecognize)
+            foreach (ObjectForRecognize objectToRecognize in NeuronsForRecognize)
             {
-                var mad = objectToRecognize;
-                double[] lol = new double[mad.Length];
+                var mad = objectToRecognize.Neurons;
+                double[] lol = new double[NumberOfClasters];
                 mPerceptron.Recognize(mad).CopyTo(lol, 0);
+                objectToRecognize.Result = lol;
                 recognized.Add(lol);
             }
 
-            var i = 0;
+            var changeObjectClassTable = new Hashtable();
+            var colorObjectClassTable = new Hashtable();
+
+            Random random = new Random();
+
+            foreach (ObjectForRecognize objectToRecognize in NeuronsForRecognize)
+            {
+                double maxValue = objectToRecognize.Result.Max();
+                int maxIndex = objectToRecognize.Result.ToList().IndexOf(maxValue);
+
+                objectToRecognize.ResultNumber = maxIndex + 1;
+            }
+
+
+            GetObjectClassTable(NeuronsForRecognize, changeObjectClassTable, colorObjectClassTable, random);
+
+            var resultBitmap = new Bitmap(width, height, pixelFormat);
+
+            SetRgbValuesToBmp(ref resultBitmap,
+                ConvertGrayScaleToRgbWithColors(ColorObjects(regions, changeObjectClassTable, width * height), changeObjectClassTable, colorObjectClassTable));
+            resultBitmap.Save(Resources.ResultImageName);
+
+        }
+
+        public class ObjectForRecognize
+        {
+            public int[] Neurons { get; set; }
+
+            public double[] Result { get; set; }
+
+            public int ObjectNumber { get; set; }
+
+            public int ResultNumber { get; set; }
+
+            public ObjectForRecognize(int[] neurons, int number) {
+                Neurons = neurons;
+                ObjectNumber = number;
+            }
+        }
+
+        private void GetObjectClassTable(List<ObjectForRecognize> results, Hashtable changeObjectClassTable, Hashtable colorObjectClassTable, Random random)
+        {
+            foreach (ObjectForRecognize result in results)
+            {
+                changeObjectClassTable.Add(result.ObjectNumber, result.ResultNumber);
+
+                    if (!colorObjectClassTable.ContainsKey(result.ResultNumber))
+                    {
+                        var randomColorMap = new double[3];
+                        randomColorMap[0] = GetRandomNumber(0, 255, random);
+                        randomColorMap[1] = GetRandomNumber(0, 255, random);
+                        randomColorMap[2] = GetRandomNumber(0, 255, random);
+                        colorObjectClassTable.Add(result.ResultNumber, randomColorMap);
+                    }
+                
+            }
         }
 
         private void GetObjectClassTable(List<LightImageClaster> objects, Hashtable changeObjectClassTable, Hashtable colorObjectClassTable, Random random)
         {
-             List<LightImageClaster> lol = CalculateGoodCenters(objects, Constants.Attributes.Square);
-
             foreach (LightImageClaster lightImageClaster in ClasterObjects(objects, CalculateGoodCenters(objects, Constants.Attributes.Square)))
             {
                 changeObjectClassTable.Add(lightImageClaster.BasicImageClass, lightImageClaster.ResultImageClass);

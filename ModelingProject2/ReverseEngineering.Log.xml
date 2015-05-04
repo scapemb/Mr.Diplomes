@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 12.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/ReverseEngineeringLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Журнал создания кода/преобразования текста">
+  <MessageClass Name="Message" Label="Сообщение" Option="Показывать информационные сообщения" />
+  <MessageClass Name="Warning" Label="Предупреждение" Option="Показывать предупреждения" />
+  <MessageClass Name="Error" Label="Ошибка" Option="Показывать ошибки" />
+  <MessageClass Name="Property" Label="Свойство" Option="Показывать метаданные" />
+  <MessageClass Name="Diagnostic" Label="Сообщение" Option="Показывать диагностические сообщения" />
+  <Message Timestamp="2015-05-03T17:10:16" Importance="High" Text="Реконструирование запущено." />
+  <Message Timestamp="2015-05-03T17:10:17" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject2::MastaClasta&quot; -  (Package)" />
+  <Message Timestamp="2015-05-03T17:10:17" Importance="Medium" Text="Элемент реконструирован в модели UML: &quot;ModelingProject2::MastaClasta::PictureBoxExt&quot; -  (Class)" />
+  <Message Timestamp="2015-05-03T17:10:17" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject2::MastaClasta::PictureBoxExt::SafetySetImageFromFile&quot; -  (Operation)" />
+  <Message Timestamp="2015-05-03T17:10:17" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject2::MastaClasta::PictureBoxExt::SafetySetImageFromFile::fileName&quot; -  (Parameter)" />
+  <Message Timestamp="2015-05-03T17:10:17" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject2::MastaClasta::PictureBoxExt::SafetySetImageFromFile::pictureBox&quot; -  (Parameter)" />
+  <Message Timestamp="2015-05-03T17:10:17" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject2::System&quot; -  (Package)" />
+  <Message Timestamp="2015-05-03T17:10:17" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject2::System::Windows&quot; -  (Package)" />
+  <Message Timestamp="2015-05-03T17:10:17" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject2::System::Windows::Forms&quot; -  (Package)" />
+  <Message Timestamp="2015-05-03T17:10:17" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;ModelingProject2::System::Windows::Forms::PictureBox&quot; -  (Class)   (реконструирован частично - определение не обновлено) " />
+  <Message Timestamp="2015-05-03T17:10:17" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;String&quot; -  (PrimitiveType)" />
+  <Message Timestamp="2015-05-03T17:10:17" Importance="High" Text="Полностью реконструировано (1) типов." />
+  <Message Timestamp="2015-05-03T17:10:17" Importance="High" Text="Частично реконструировано (1) типов.  Эти типы не были включены в исходный выбор, поэтому их полные определения не реконструированы.  Данная пустая операция лишь проверила наличие этих типов в модели UML, поскольку они необходимы для полного описания других элементов." />
+  <Message Timestamp="2015-05-03T17:10:17" Importance="High" Text="Операция реконструирования завершена; ошибок: (0), предупреждений: (0)." />
+</Log>
