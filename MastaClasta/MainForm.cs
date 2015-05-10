@@ -80,6 +80,14 @@ namespace MastaClasta
                 ProcessBitmap = (Bitmap)sourcePictureBox.Image
             };
 
+
+            if (null == _logic.ProcessBitmap)
+            {
+                MessageBox.Show("Please choose image to process",
+                  "Error");
+                return;
+            }
+
             _logic.Try();
 
             resultPictureBox.SafetySetImageFromFile(Resources.ResultImageName);
@@ -102,6 +110,13 @@ namespace MastaClasta
                 NumberOfClasters = trackBarClustersNumber.Value,
                 ProcessBitmap = (Bitmap)sourcePictureBox.Image
             };
+
+            if (null == _logic.ProcessBitmap)
+            {
+                MessageBox.Show("Please choose image to process",
+                  "Error");
+                return;
+            }
 
             _logic.Start();
 

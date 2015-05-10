@@ -275,7 +275,7 @@ namespace MastaClasta
                 NumberOfClasters,
                 0.1,
                 0.1,
-                100000,
+                500000,
                 0.001
                 );
 
@@ -1078,8 +1078,7 @@ namespace MastaClasta
                 }
                 catch (InvalidOperationException ex)
                 {
-                    MessageBox.Show(String.Format("{0} sosnul", localI));
-                    //centers.Remove(centers.First(t => t.ResultImageClass == localI));
+                    MessageBox.Show(String.Format("{0} is uncorrect", localI));
                 }
                 
             }
